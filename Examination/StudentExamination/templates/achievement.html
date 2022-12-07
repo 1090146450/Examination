@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+    <title>查询成绩</title>
+{% endblock %}
+{% block body %}
+    <div class="bs-example" data-example-id="simple-jumbotron">
+    <div class="jumbotron">
+      <h1>Hello, {{ request.session.info.user }}</h1>
+      <p>您的成绩为：{{ request.session.achievement }}分</p>
+      <p><a class="btn btn-primary btn-lg" href="/index/" role="button">重新考试</a></p>
+        <p><a class="btn btn-primary btn-lg" href="/login/" role="button">退出考试</a></p>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+    <title>主页面</title>
+{% endblock %}
+{% block css %}
+{% endblock %}
+{% block body %}
+    <div class="jumbotron" style="padding-left: 10px">
+        <form method="post">
+            {% csrf_token %}
+            {% for foo in paper_data %}
+                <div class="alert alert-info" role="alert">第{{ foo.id }}题:{{ foo.subject }}
+                    <div>
+                        <input type="radio" name="id{{ foo.id }}" value="{{ foo.option_a }}">
+                        <label>{{ foo.option_a }}</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="id{{ foo.id }}" value="{{ foo.option_b }}">
+                        <label>{{ foo.option_b }}</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="id{{ foo.id }}" value="{{ foo.option_c }}">
+                        <label>{{ foo.option_c }}</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="id{{ foo.id }}" value="{{ foo.option_d }}">
+                        <label>{{ foo.option_d }}</label>
+                    </div>
+                </div>
+            {% endfor %}
+            <input type="submit" value="提交">
+        </form>
+    </div>
+{% endblock %}
