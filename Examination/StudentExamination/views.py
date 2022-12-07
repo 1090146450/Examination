@@ -3,7 +3,7 @@ from io import BytesIO
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
-from StudentExamination.models import admin, test_paper
+from StudentExamination.models import admin, test_paper, teacher
 
 from StudentExamination.forms.StudentForm import RegisterModelForm, loginModelForm
 from StudentExamination.forms.randimg import check_code
@@ -46,11 +46,17 @@ def login(request):
             return render(request, "login.html", {"form": form})
         # 将获取的验证码大写
         if img.upper() == image_code.upper():
+            # 这个判断是判断为学生还是老师账号  但是账号重复则会出现问题
             if admin.objects.filter(**form.cleaned_data).first():
                 request.session['info'] = {"user": form.cleaned_data.get("user"),
                                            "passwd": form.cleaned_data.get("passwd")}
                 request.session.set_expiry(60 * 60 * 7)
                 return redirect("/index/")
+            elif teacher.objects.filter(**form.cleaned_data).first():
+                request.session['info'] = {"user": form.cleaned_data.get("user"),
+                                           "passwd": form.cleaned_data.get("passwd")}
+                request.session.set_expiry(60 * 60 * 7)
+                return render(request, "teacher_login.html")
             else:
                 form.add_error("passwd", "账号或密码错误")
         else:
@@ -79,8 +85,10 @@ def index(request):
     request.session["achievement"] = achievement
     return redirect("/achievement/")
 
+
 def achievement(request):
     return render(request, "achievement.html")
+
 
 def gtimg(request):
     """验证码获取"""
@@ -101,7 +109,5 @@ def exit(request):
     """注销登录"""
     request.session.clear()
     return redirect("/login/")
-
-
 
     return None
