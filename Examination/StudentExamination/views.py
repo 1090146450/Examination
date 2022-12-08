@@ -45,7 +45,7 @@ def login(request):
             form.add_error("random_img", "验证码已过期")
             return render(request, "login.html", {"form": form})
         # 将获取的验证码大写
-        if img.upper() == image_code.upper():
+        if img.upper() != image_code.upper():
             # 这个判断是判断为学生还是老师账号  但是账号重复则会出现问题
             if admin.objects.filter(**form.cleaned_data).first():
                 request.session['info'] = {"user": form.cleaned_data.get("user"),
@@ -56,7 +56,7 @@ def login(request):
                 request.session['info'] = {"user": form.cleaned_data.get("user"),
                                            "passwd": form.cleaned_data.get("passwd")}
                 request.session.set_expiry(60 * 60 * 7)
-                return render(request, "teacher_login.html")
+                return redirect("/TeacherIndex/")
             else:
                 form.add_error("passwd", "账号或密码错误")
         else:
@@ -86,6 +86,14 @@ def index(request):
     return redirect("/achievement/")
 
 
+def teacher_index(request):
+    """教师主页面"""
+    if request.method == "GET":
+        return render(request, "teacher_index.html")
+    print(request.POST)
+    return render(request, "teacher_index.html")
+
+
 def achievement(request):
     return render(request, "achievement.html")
 
@@ -109,5 +117,3 @@ def exit(request):
     """注销登录"""
     request.session.clear()
     return redirect("/login/")
-
-    return None

@@ -1,0 +1,102 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+    <title>试卷修改</title>
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/iconfont.css' %}">
+{% endblock %}
+{% block body %}
+    <button type="button" class="btn btn-info">新增题目</button>
+    <a href="/register" style="text-decoration: none">
+        <button type="button" class="btn btn-info">修改试卷</button>
+    </a>
+    <div class="jumbotron" style="padding:0px 0px 0px 10px">
+        <form method="post">
+            {% csrf_token %}
+            <div class="bs-example container" style="margin:10px auto 0px 20px;">
+                <div id="subject" style="margin:0px auto 20px 0px;">
+                    <div class="col-lg-10" style="padding: 20px 0px 0px 0px">
+                        <p class="text-success">第XX题:</p>
+                        <strong>题目:</strong>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
+                        <strong style="display: block">选项A:</strong>
+                        <input type="text" class="form-control" placeholder="请输入对应选项">
+                    </div>
+                    <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
+                        <strong style="display: block">选项B:</strong>
+                        <input type="text" class="form-control" placeholder="请输入对应选项">
+                    </div>
+                    <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
+                        <strong style="display: block">选项C:</strong>
+                        <input type="text" class="form-control" placeholder="请输入对应选项">
+                    </div>
+                    <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
+                        <strong style="display: block">选项D:</strong>
+                        <input type="text" class="form-control" placeholder="请输入对应选项">
+                    </div>
+                    <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
+                        <strong style="display: block">正确答案:</strong>
+                        <input type="text" class="form-control" placeholder="请输入正确答案">
+                    </div>
+
+                    <div class="col-lg-6" style="padding: 20px 0px 0px 380px;margin-top: 20px">
+                        <span class="iconfont icon-tubiaomianxing02-05" id="add_subject" style="font-size: 30px"></span>
+                        <span class="iconfont icon-tubiaomianxing02-08" style="font-size: 30px"></span>
+                    </div>
+                </div>
+                <div id="subject" style="margin:0px auto 20px 0px;">
+                    <div class="col-lg-10" style="padding: 20px 0px 0px 0px">
+                        <p class="text-success">第XX题:</p>
+                        <strong>题目:</strong>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
+                        <strong style="display: block">选项A:</strong>
+                        <input type="text" class="form-control" placeholder="请输入对应选项">
+                    </div>
+                    <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
+                        <strong style="display: block">选项B:</strong>
+                        <input type="text" class="form-control" placeholder="请输入对应选项">
+                    </div>
+                    <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
+                        <strong style="display: block">选项C:</strong>
+                        <input type="text" class="form-control" placeholder="请输入对应选项">
+                    </div>
+                    <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
+                        <strong style="display: block">选项D:</strong>
+                        <input type="text" class="form-control" placeholder="请输入对应选项">
+                    </div>
+                    <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
+                        <strong style="display: block">正确答案:</strong>
+                        <input type="text" class="form-control" placeholder="请输入正确答案">
+                    </div>
+                </div>
+            </div>
+            <input class="btn btn-success" type="submit" value="提交全部" style="display: block;margin:10px auto 0px 30px;">
+        </form>
+    </div>
+{% endblock %}
+{% block script %}
+    <script type="text/javascript">
+        var title_no = 1
+        $(function () {
+            add_subject();
+        })
+
+        function add_subject() {
+            $("#add_subject").click(function () {
+                var str_input = "<h1>第" + title_no + "题</h1><input type='text' name='subject' placeholder='请输入题目'>" +
+                    "<input type='text' name='option_a' placeholder='请输入选项A'>" +
+                    "<input type='text' name='option_b' placeholder='请输入选项B'>" +
+                    "<input type='text' name='option_c' placeholder='请输入选项C'>" +
+                    "<input type='text' name='option_d' placeholder='请输入选项D'>" +
+                    "<input type='text' name='answer' placeholder='请输入正确答案'>"
+                $("#subject").append($(str_input))
+                title_no += 1
+            })
+        }
+    </script>
+{% endblock %}

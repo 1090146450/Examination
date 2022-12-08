@@ -26,7 +26,7 @@ urlpatterns = [
     path("index/", views.index),  # 考试页面
     path("gtimg/", views.gtimg),  # 验证码获取
     path("login/", views.login),  # 登录页面
-    path("index/exit/",views.exit), #注销登录
-    path("achievement/",views.achievement), #查询成绩
-
+    path("index/exit/", views.exit),  # 注销登录
+    path("achievement/", views.achievement),  # 查询成绩
+    path("TeacherIndex/", views.teacher_index),  # 教师管理主页面
 ]
