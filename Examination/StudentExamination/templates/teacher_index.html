@@ -12,34 +12,34 @@
         <button type="button" class="btn btn-info">修改试卷</button>
     </a>
     <div class="jumbotron" style="padding:0px 0px 0px 10px">
-        <form method="post">
+        <form method="post" onsubmit="return check(this)">
             {% csrf_token %}
-            <div class="bs-example container modal" id="subject" style="margin:10px auto 0px 70px;" >
+            <div class="bs-example container" id="subject" style="margin:10px auto 0px 70px;">
                 <div id="subject_data" style="margin:0px auto 20px 0px;">
                     <div class="col-lg-10" style="padding: 20px 0px 0px 0px">
-                        <p class="text-success title"></p>
+                        <p class="text-success title" id="title_1"></p>
                         <strong>题目:</strong>
-                        <textarea class="form-control" rows="3"></textarea>
+                        <textarea class="form-control" rows="3" name="object_title"></textarea>
                     </div>
                     <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
                         <strong style="display: block">选项A:</strong>
-                        <input type="text" class="form-control" placeholder="请输入对应选项">
+                        <input type="text" class="form-control" id="option_1" name="option_A" placeholder="请输入对应选项">
                     </div>
                     <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
                         <strong style="display: block">选项B:</strong>
-                        <input type="text" class="form-control" placeholder="请输入对应选项">
+                        <input type="text" class="form-control" id="option_2" name="option_B" placeholder="请输入对应选项">
                     </div>
                     <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
                         <strong style="display: block">选项C:</strong>
-                        <input type="text" class="form-control" placeholder="请输入对应选项">
+                        <input type="text" class="form-control" id="option_3" name="option_C" placeholder="请输入对应选项">
                     </div>
                     <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
                         <strong style="display: block">选项D:</strong>
-                        <input type="text" class="form-control" placeholder="请输入对应选项">
+                        <input type="text" class="form-control" id="option_4" name="option_D" placeholder="请输入对应选项">
                     </div>
                     <div class="col-lg-5" style="padding: 20px 0px 0px 0px">
                         <strong style="display: block">正确答案:</strong>
-                        <input type="text" class="form-control" placeholder="请输入正确答案">
+                        <input type="text" class="form-control" id="option_5" name="auswer" placeholder="请输入正确答案">
                     </div>
                     <div class="col-lg-6" style="padding: 20px 0px 0px 380px;margin-top: 20px">
                         <span class="iconfont icon-tubiaomianxing02-05" onclick="add_subject()"
@@ -84,9 +84,14 @@
             * 获取复制的标签，然后复制到对应的div下，然后修改标题
             * */
             var subject_data = document.getElementById('subject_data').cloneNode(true);
-            console.log(subject_data);
             document.getElementById('subject').appendChild(subject_data);
-            document.getElementsByClassName('title')[title_no].innerHTML = "第" + (title_no + 1) + "题:";
+            title_sort();
+            document.getElementsByClassName('title')[title_no].getAttributeNode("id").value = "title_" + (title_no + 1);
+            var option_content = $('#title_' + (title_no + 1));
+            option_content.siblings("textarea").val("")
+            for (i = 0; i < 5; i++) {
+                option_content.parent().siblings().children("input").val("");
+            }
             title_no += 1;
         }
 
@@ -106,6 +111,35 @@
             for (i = 0; i < title.length; i++) {
                 title[i].innerHTML = "第" + (i + 1) + "题:";
             }
+        }
+
+        function check() {
+            /*
+            *查看题目是否为空
+            */
+            var er = true;
+            textarea_data = document.getElementsByTagName('textarea')
+            for (i = 0; i < textarea_data.length; i++) {
+                if (textarea_data[i].value == "" && ($("#title_" + (i + 1)).siblings("#error").length == 0)) {
+                    er = false;
+                    $("#title_" + (i + 1)).parent().append($("<div id='error'>题目不能为空！</div>"));
+                } else if (textarea_data[i].value != "") {
+                    if ($("#title_" + (i + 1)).siblings("#error")) {
+                        $("#title_" + (i + 1)).siblings("#error").remove();
+                    }
+                }
+            }
+            $('.col-lg-5 input').each(function () {
+                if ($(this).val() == "" && ($(this).siblings("#error").length == 0)) {
+                    er = false;
+                    $(this).parent().append(($("<div id='error'>输入框不能为空！</div>")));
+                } else if ($(this).val() != "") {
+                    if ($(this).siblings("#error")) {
+                        $(this).siblings("#error").remove();
+                    }
+                }
+            })
+            return er;
         }
     </script>
 {% endblock %}
