@@ -45,7 +45,7 @@ def login(request):
             form.add_error("random_img", "验证码已过期")
             return render(request, "login.html", {"form": form})
         # 将获取的验证码大写
-        if img.upper() != image_code.upper():
+        if img.upper() == image_code.upper():
             # 这个判断是判断为学生还是老师账号  但是账号重复则会出现问题
             if admin.objects.filter(**form.cleaned_data).first():
                 request.session['info'] = {"user": form.cleaned_data.get("user"),
@@ -62,6 +62,7 @@ def login(request):
         else:
             form.add_error("random_img", "验证码不正确")
         # 校验账号密码
+        print(form.errors)
     data = {
         "form": form
     }

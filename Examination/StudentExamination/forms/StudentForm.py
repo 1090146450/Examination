@@ -13,11 +13,9 @@ class StudentModelForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         for name, field in self.fields.items():
             if field.widget.attrs:
-                field.widget.attrs["class"] = "form-control"
                 field.widget.attrs["placeholder"] = field.label
             else:
                 field.widget.attrs = {
-                    "class": "form-control",
                     "placeholder": field.label
                 }
 
@@ -57,8 +55,10 @@ class RegisterModelForm(StudentModelForm):
 class loginModelForm(StudentModelForm):
     """登录页面"""
     random_img = forms.CharField(max_length=5, label="验证码",
-                                 widget=forms.TextInput(attrs={"style": "float:left;width:70%"}))
-    passwd = forms.CharField(label="密码", widget=forms.PasswordInput(render_value=True))
+                                 widget=forms.TextInput(attrs={'class': "e e1"}))
+    passwd = forms.CharField(label="密码", widget=forms.PasswordInput(render_value=True, attrs={"class": "e"}))
+    user = forms.CharField(label="用户名",
+                           widget=forms.TextInput(attrs={'class': "e"}))
 
     class Meta:
         model = models.admin
