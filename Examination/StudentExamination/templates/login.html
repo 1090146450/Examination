@@ -1,0 +1,114 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>登录页面</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                background-image: linear-gradient(to left, #fd79a8, #a29bfe);
+            }
+
+            .a {
+                background-color: #fff;
+                width: 350px;
+                height: 500px;
+                position: relative;
+                display: flex;
+                border-radius: 10px;
+                justify-content: center;
+                align-items: center;
+                top: 100px;
+            }
+
+            .b {
+                width: 300px;
+                height: 450px;
+                overflow: hidden;
+            }
+
+            .c {
+                font: 900 40px '';
+                margin: 40px 0;
+                text-align: center;
+                /* 设置字体间距 */
+                letter-spacing: 5px;
+            }
+
+            .e {
+                width: 100%;
+                margin-bottom: 20px;
+                outline: none;
+                border: 0;
+                padding: 10px;
+                border-bottom: 2px solid rgb(60, 60, 70);
+                font: 900 16px '';
+            }
+
+            .e1 {
+                width: 140px;
+            }
+
+            .f {
+                text-align: center;
+                height: 45px;
+                width: 160px;
+                padding: 10px;
+                font: 900 20px '';
+                border-radius: 10px;
+                margin: 10px 0px 0px 65px;
+                background-image: linear-gradient(to left, #fd79a8, #a29bfe);
+            }
+            .div {
+                height: 20px;
+            }
+            .getimg {
+                width: 140px;
+                height: 42px;
+                float: right;
+            }
+
+            .g {
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <di class="a">
+            <div class="b">
+                <p class="c">Login</p>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="d">
+                        {{ form.user }}
+                        {{ form.passwd }}
+                        <div class="div">{{form.errors.passwd.0}}</div>
+                        {{ form.random_img }}
+                        <div class="getimg">
+                            <img class="getimg" id="getimg" src="/gtimg/">
+                        </div>
+                        <div class="div">{{form.errors.random_img.0}}</div>
+                        <button class="f" type="submit">GO</button>
+                    </div>
+                </form>
+                <div class="g">Forget the password?<a href="#">Retrieve</a></div>
+            </div>
+        </di>
+    </body>
+    <script src="{% static 'plugins/jquery-3.6.1.min.js' %}"></script>
+    <script type="text/javascript">
+        $(function () {
+            get_rendomimg();
+        })
+
+        function get_rendomimg() {
+            $("#getimg").click(
+                function () {
+                    document.getElementById('getimg').src = '/gtimg/?r=' + Math.random();
+                })
+        }
+    </script>
+</html>
