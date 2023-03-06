@@ -2263,3 +2263,4 @@ Traceback (most recent call last):
 django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '175.27.43.108:80175.27.43.108:80'. The domain name provided is not valid according to RFC 1034/1035.
 Bad Request: /
 [pid: 31541|app: 0|req: 2/2] 180.101.244.16 () {42 vars in 691 bytes} [Mon Mar  6 03:25:07 2023] GET / => generated 57923 bytes in 22 msecs (HTTP/1.1 400) 4 headers in 172 bytes (1 switches on core 1)
+[pid: 31541|app: 0|req: 3/3] 35.81.163.135 () {34 vars in 501 bytes} [Mon Mar  6 03:27:47 2023] GET / => generated 0 bytes in 6 msecs (HTTP/1.1 302) 8 headers in 241 bytes (1 switches on core 0)
