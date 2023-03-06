@@ -91,7 +91,6 @@ def teacher_index(request):
     """教师主页面"""
     if request.method == "GET":
         return render(request, "teacher_index.html")
-    print(request.POST)
     return render(request, "teacher_index.html")
 
 
