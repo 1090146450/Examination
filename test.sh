@@ -25,7 +25,10 @@ if [[ "${du}" != "" ]];then
 else
  echo "无进程直接创建"
 fi
+sleep 2
+echo "加载uwsgi服务"
 uwsgi --ini uwsgi.ini
+echo "重启NGINX服务"
 nginx -s reload
 cd ../
 git add .
