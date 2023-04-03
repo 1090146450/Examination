@@ -74,6 +74,24 @@
             .g {
                 margin: 10px;
             }
+            .icp {
+            position: absolute;
+            bottom: 0px;
+            padding: 10px 0;
+            width: 100%;
+            height: 36px;
+            text-align: center;
+            color: gray;
+            z-index: 1000;
+        }
+        .icp > a {
+            color: gray;
+            text-decoration: none;
+        }
+        .icp > a:hover {
+            color: aqua;
+            text-decoration: none;
+        }
         </style>
     </head>
     <body>
@@ -97,6 +115,7 @@
                 <div class="g">Forget the password?<a href="#">Retrieve</a></div>
             </div>
         </di>
+    <div class="icp">© 2023 alsoeasy <a href="http://beian.miit.gov.cn/" target="_blank"> 京ICP备2023002782号-1</a></div>
     </body>
     <script src="{% static 'plugins/jquery-3.6.1.min.js' %}"></script>
     <script type="text/javascript">
