@@ -95,6 +95,7 @@ def teacher_index(request):
 
 
 def achievement(request):
+    """查询成绩"""
     return render(request, "achievement.html")
 
 
