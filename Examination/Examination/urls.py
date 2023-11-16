@@ -29,4 +29,5 @@ urlpatterns = [
     path("index/exit/", views.exit),  # 注销登录
     path("achievement/", views.achievement),  # 查询成绩
     path("TeacherIndex/", views.teacher_index),  # 教师管理主页面
+    path("test/",views.main_index),
 ]

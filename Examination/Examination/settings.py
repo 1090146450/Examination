@@ -43,7 +43,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -117,9 +117,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'/static/'), #注意别忘了写逗号,第二个参数就是项目中你存放静态文件的文件夹
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR,'/static/'), #注意别忘了写逗号,第二个参数就是项目中你存放静态文件的文件夹
+# ]
 
 # 进行收集
 # 如果在nginx配置了静态文件目录则去STATIC_ROOT中寻找 BASE_DIR是当前目录绝对路径
