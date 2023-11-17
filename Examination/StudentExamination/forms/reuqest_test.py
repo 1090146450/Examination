@@ -1,8 +1,27 @@
-import requests
+import json
 
-url = "http://82.157.53.97/index/"
-params = {
-    "Cookie": "f287673d8c0bb7a819ffc0e5cc1b5341=f1af7a3f-dcdc-4260-9393-9c1c2bfaa8fe.xqjJIsxjgZMEstncG2h7Gq1kr0o; order=id%20desc; pro_end=-1; ltd_end=-1; memSize=3694; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22156****9811%22%7D%7D; db_page_model=mysql; backup_path=/www/backup; rank=list; file_recycle_status=true; sites_path=/www/wwwroot; distribution=centos7; force=0; soft_remarks=%7B%22list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%225%u5206%u949F%u6781%u901F%u54CD%u5E94%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%22%u4F4E%u81F32.43%u5143/%u5929%22%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%uFF08%u5E74%u4ED8%uFF09%22%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%uFF08%u5E74%u4ED8%uFF09%22%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%uFF08%u5E74%u4ED8%uFF09%22%5D%2C%22pro_list%22%3A%5B%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%22%u53EF%u66F4%u6362IP%22%2C%22%u4F4E%u81F31.18%u5143/%u5929%22%2C%22%u5546%u7528%u9632%u706B%u5899%u6388%u6743%22%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%5D%2C%22kfqq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%2C%22qun%22%3A%22%22%2C%22kf_list%22%3A%5B%7B%22qq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%7D%2C%7B%22qq%22%3A%222927440070%22%2C%22kf%22%3A%22http%3A//wpa.qq.com/msgrd%3Fv%3D3%26uin%3D2927440070%26site%3Dqq%26menu%3Dyes%26from%3Dmessage%26isappinstalled%3D0%22%7D%5D%2C%22wx_list%22%3A%5B%7B%22ps%22%3A%22%u5728%u7EBF%u5BA2%u670D%22%2C%22kf%22%3A%22https%3A//www.bt.cn/new/wechat_customer%22%7D%5D%7D; p-1=1; load_page=1; serverType=nginx; commandInputViewUUID=dpeb3FZeyr46p3K; p0=1not_load; network-unitType=KB/s; disk-unitType=KB/s; firewall_type=safety; docker_model=container; site_model=php; softType=0; load_type=0; load_search=python; file_paths=/home/00_Django/; csrftoken=dnh7kcXwSpd9M6LIjxcFJXksDNLZeV44; sessionid=dfo4u7ykmk5tvhsaccc014djnz4lvhnz; Path=/home"
-}
-request = requests.get(url=url, headers=params)
-print(request.text)
+import requests
+import datetime,re
+def get_kd(dh):
+    now = datetime.datetime.now()
+    timestamp = now.timestamp()
+    re1 = re.compile(r".*\"(.*?)\".")
+
+    params = {
+        "Content-Type": "application/javascript; charset=utf-8",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+        "Accept": "*/*",
+        "Cookie": "BIDUPSID=A412AD29217981C3265D94D4BC00B823; PSTM=1697633315;"
+                  " BAIDUID=A412AD29217981C33A7B969011876766:SL=0:NR=10:FG=1; BDUSS=216NGhLdk43Nnp3UlVKOWRnUVZWYlJ1UGJnLXNsMmIxM0hJbi1JazNhVGJvMkpsRVFBQUFBJCQAAAAAAAAAAAEAAAAxee5Mx8DM4tChxNzK1gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANsWO2XbFjtld; "
+                  "BDUSS_BFESS=216NGhLdk43Nnp3UlVKOWRnUVZWYlJ1UGJnLXNsMmIxM0hJbi1JazNhVGJvMkpsRVFBQUFBJCQAAAAAAAAAAAEAAAAxee5Mx8DM4tChxNzK1gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANsWO2XbFjtld; newlogin=1; MCITY=-132%3A131%3A; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; H_PS_PSSID=39633_39647_39664_39688_39676_39678_39712_39736_39738_39753; BA_HECTOR=21a5aka1al858k8h2l058h0l1ildhde1q; ZFY=877LN7i:Ah37gzwQu42Ih69pLqFAcPNIuRoG8DKEjDrk:C; BAIDUID_BFESS=A412AD29217981C33A7B969011876766:SL=0:NR=10:FG=1; delPer=0; PSINO=2; ab_sr=1.0.1_ZDAxMmRiYTBiODBmMTFlNmQ3MjE2ZjAxZWQwMzg3ZTk1OWI4ZmY5OGM1N2MwZWY1MWUzM2M2ODcyNWJlODFkMWVmNWEwNmM3ODFkYjkxYjJlMmQ5MmJlMWJiOTEzOGVjNGU3NmEzNDE0MDc1YWUwOTdiMDNjYjc3OTEwZjcwNGIyNDI2OTYzZDRjYzM0NmIyNWI0NmRkYmI5NDAzMDk1MzE2MWY0YmZiZGU1NThmODBlNTI1ODYyMzg4NjVhMWQ3; RT='z=1&dm=baidu.com&si=271667d6-810f-4d97-a708-498924d57601&ss=lp1ys7d4&sl=1&tt=6fv&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf&ld=78p&ul=7xd&hd=7xx'; BCLID=7669815110825854193; BCLID_BFESS=7669815110825854193; BDSFRCVID=E0_OJeC62mZvLfcqousbKwLlyTUNiXvTH6ao36BEy_tFhGAHAEACEG0PFx8g0KubVwkKogKK0mOTHv-F_2uxOjjg8UtVJeC6EG0Ptf8g0x5; "
+                  "BDSFRCVID_BFESS=E0_OJeC62mZvLfcqousbKwLlyTUNiXvTH6ao36BEy_tFhGAHAEACEG0PFx8g0KubVwkKogKK0mOTHv-F_2uxOjjg8UtVJeC6EG0Ptf8g0x5; "
+                  "H_BDCLCKID_SF=tbC8VCDKJKD3H48k-4QEbbQH-UnLq5Q33gOZ04n-ah058UcSXnQoBpFpypJr2ncbBDrP0Pom3UTKsq76Wh35K5tTQP6rLf5eLRc4KKJxbP8aKJbH5tK-M6JQhUJiB5OLBan7LDnIXKohJh7FM4tW3J0ZyxomtfQxtNRJ0DnjtpChbC-we5L-DjbbeUQja45yMPo2WbCQMnOr8pcNLTDKMttZQh7yb4RyQmJiLhRsMlrEMJR-hlO1j4_eyM6e0x6q5IO-bx72BbT-Kq5jDh3Jb6ksD-RtWljBaa6y0hvctn6cShnCeMjrDRLbXU6BK5vPbNcZ0l8K3l02V-bIe-t225QhDNDJtTK8JRPs34JVHJvhHJTgMjL2DKCShUFs0M3RB2Q-5KL-2RQH8MOPKtnhXU_U5PvQhxc2JGQD_MbdJJjoJbnVyPPBW4InQP7fBtRE3gTxoUJM5DnJhhvGXfO83xIebPRiJPr9QgbqslQ7tt5W8ncFbT7l5hKpbt-q0x-jLTnhVn0M5DK0hDPxjT8MDToM5pJfetnbaD5KW5rJabC3sDJ3XU6qLT5XhJ6qWP52-COtQbocbhRSJfbaX4ri5l0njxQyJ55G365dLpQS3hj1Eq5qLUonDh8z2a7MJUntKHcfBhvO5hvvhb6O3M7-qfKmDloOW-TB5bbPLUQF5l8-sq0x0bOte-bQ2a_E5bj2qRPD_DLK3f; H_BDCLCKID_SF_BFESS=tbC8VCDKJKD3H48k-4QEbbQH-UnLq5Q33gOZ04n-ah058UcSXnQoBpFpypJr2ncbBDrP0Pom3UTKsq76Wh35K5tTQP6rLf5eLRc4KKJxbP8aKJbH5tK-M6JQhUJiB5OLBan7LDnIXKohJh7FM4tW3J0ZyxomtfQxtNRJ0DnjtpChbC-we5L-DjbbeUQja45yMPo2WbCQMnOr8pcNLTDKMttZQh7yb4RyQmJiLhRsMlrEMJR-hlO1j4_eyM6e0x6q5IO-bx72BbT-Kq5jDh3Jb6ksD-RtWljBaa6y0hvctn6cShnCeMjrDRLbXU6BK5vPbNcZ0l8K3l02V-bIe-t225QhDNDJtTK8JRPs34JVHJvhHJTgMjL2DKCShUFs0M3RB2Q-5KL-2RQH8MOPKtnhXU_U5PvQhxc2JGQD_MbdJJjoJbnVyPPBW4InQP7fBtRE3gTxoUJM5DnJhhvGXfO83xIebPRiJPr9QgbqslQ7tt5W8ncFbT7l5hKpbt-q0x-jLTnhVn0M5DK0hDPxjT8MDToM5pJfetnbaD5KW5rJabC3sDJ3XU6qLT5XhJ6qWP52-COtQbocbhRSJfbaX4ri5l0njxQyJ55G365dLpQS3hj1Eq5qLUonDh8z2a7MJUntKHcfBhvO5hvvhb6O3M7-qfKmDloOW-TB5bbPLUQF5l8-sq0x0bOte-bQ2a_E5bj2qRPD_DLK3f",
+    }
+    url = f"https://alayn.baidu.com/express/appdetail/get_com?num={dh}&cb=jsonp_{str(timestamp).replace('.','_')}"
+    request = requests.get(url=url, headers=params)
+    gs = re1.findall(request.text)[0]
+    url = f"https://alayn.baidu.com/express/appdetail/get_detail?query_from_srcid=51151&tokenV2=tmtMT2ckxiG4xM2MvB9M%2Be9fXkHjFXBjEEYzT2hwVcwDCT%2FtLSnbKEe1jZAUkxOE&appid=4001&nu={dh}&com={gs}&qid=4879176651996235000&ds=&tk=&verifyMode=1&cb=jsonp_jsonp_{str(timestamp).replace('.','_')}"
+    re1 = re.compile(r"\{\"time\".*?\}")
+    reque = requests.get(url=url, headers=params)
+    return re1.findall(reque.text)
+print(get_kd("777178512616535"))

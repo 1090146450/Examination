@@ -29,5 +29,7 @@ urlpatterns = [
     path("index/exit/", views.exit),  # 注销登录
     path("achievement/", views.achievement),  # 查询成绩
     path("TeacherIndex/", views.teacher_index),  # 教师管理主页面
-    path("test/",views.main_index),
+    path("test/", views.main_register),  # 注册接口
+    path("testlogin/", views.main_login),  # 登录接口
+    path("testmain/", views.main_index),  # 登录接口
 ]
