@@ -147,9 +147,10 @@ def get_kd(dh):
     url = f"https://alayn.baidu.com/express/appdetail/get_com?num={dh}&cb=jsonp_{str(timestamp).replace('.', '_')}"
     request = requests.get(url=url, headers=params)
     gs = re1.findall(request.text)[0]
-    url = f"https://alayn.baidu.com/express/appdetail/get_detail?query_from_srcid=51151&tokenV2=tmtMT2ckxiG4xM2MvB9M%2Be9fXkHjFXBjEEYzT2hwVcwDCT%2FtLSnbKEe1jZAUkxOE&appid=4001&nu={dh}&com={gs}&qid=4879176651996235000&ds=&tk=&verifyMode=1&cb=jsonp_jsonp_{str(timestamp).replace('.', '_')}"
+    url = f"https://alayn.baidu.com/express/appdetail/get_detail?query_from_srcid=51151&tokenV2=XLDf58ZCx5yHFQiK+QmGAocRLaCHmtG99IAoROwrnOUCrqGi0Yqfajr7aqpojohO&appid=4001&nu={dh}&com={gs}&qid=4879176651996235000&ds=&tk=&verifyMode=1&cb=jsonp_jsonp_{str(timestamp).replace('.', '_')}"
     re1 = re.compile(r"\{\"time\".*?\}")
     reque = requests.get(url=url, headers=params)
+    print(request.text,url)
     return re1.findall(reque.text)
 
 
@@ -212,13 +213,16 @@ def main_login(request):
         json_data["data"] = "无法处理该请求"
         return JsonResponse(json_data)
 
+
 def main_index(request):
     """主页面"""
     if request.method == "GET":
         danhao = request.GET.get("dh")
-
-        print(danhao,type(danhao))
-        return JsonResponse({"结果:":get_kd(danhao)})
+        try:
+            jg = get_kd(danhao)
+        except Exception as e:
+            jg = str(e)
+        return JsonResponse({"结果:": jg})
     else:
-        return JsonResponse({"status":502,"data":"无法处理该请求"})
+        return JsonResponse({"status": 502, "data": "无法处理该请求"})
     pass
