@@ -7690,3 +7690,88 @@ uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
 uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 Python version: 3.9.1 (default, Feb 17 2023, 13:53:38)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x260cbc0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x260cbc0 pid: 22090 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22090)
+spawned uWSGI worker 1 (pid: 22126, cores: 2)
+spawned uWSGI worker 2 (pid: 22127, cores: 2)
+spawned uWSGI worker 3 (pid: 22128, cores: 2)
+spawned uWSGI worker 4 (pid: 22129, cores: 2)
+[pid: 22126|app: 0|req: 1/1] 120.245.128.45 () {44 vars in 872 bytes} [Sun Nov 19 12:18:28 2023] GET /login/ => generated 4232 bytes in 97 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 0)
+480U
+[pid: 22126|app: 0|req: 2/2] 120.245.128.45 () {42 vars in 776 bytes} [Sun Nov 19 12:18:28 2023] GET /gtimg/ => generated 2517 bytes in 26 msecs (HTTP/1.1 200) 8 headers in 362 bytes (1 switches on core 1)
+[pid: 22126|app: 0|req: 3/3] 120.245.128.45 () {42 vars in 786 bytes} [Sun Nov 19 12:18:28 2023] GET /favicon.ico => generated 0 bytes in 8 msecs (HTTP/1.1 302) 8 headers in 241 bytes (1 switches on core 0)
+[pid: 22126|app: 0|req: 4/4] 120.245.128.45 () {42 vars in 776 bytes} [Sun Nov 19 12:18:28 2023] GET /login/ => generated 4232 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 1)
+[pid: 22126|app: 0|req: 5/5] 120.245.128.45 () {42 vars in 841 bytes} [Sun Nov 19 12:18:32 2023] GET /getxx/ => generated 0 bytes in 4 msecs (HTTP/1.1 302) 8 headers in 241 bytes (1 switches on core 0)
+[pid: 22126|app: 0|req: 6/6] 120.245.128.45 () {42 vars in 841 bytes} [Sun Nov 19 12:18:32 2023] GET /login/ => generated 4232 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 1)
+U76O
+[pid: 22126|app: 0|req: 7/7] 120.245.128.45 () {42 vars in 776 bytes} [Sun Nov 19 12:18:32 2023] GET /gtimg/ => generated 2397 bytes in 16 msecs (HTTP/1.1 200) 8 headers in 362 bytes (1 switches on core 0)
+[pid: 22127|app: 0|req: 1/8] 120.245.128.45 () {42 vars in 786 bytes} [Sun Nov 19 12:18:32 2023] GET /favicon.ico => generated 0 bytes in 96 msecs (HTTP/1.1 302) 8 headers in 241 bytes (1 switches on core 0)
+[pid: 22127|app: 0|req: 2/9] 120.245.128.45 () {42 vars in 776 bytes} [Sun Nov 19 12:18:32 2023] GET /login/ => generated 4232 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 208 bytes (1 switches on core 1)
+[pid: 22126|app: 0|req: 8/10] 159.65.165.152 () {40 vars in 710 bytes} [Sun Nov 19 12:20:10 2023] GET / => generated 0 bytes in 0 msecs (HTTP/1.1 302) 8 headers in 241 bytes (1 switches on core 1)
+[pid: 22126|app: 0|req: 9/11] 113.128.83.27 () {48 vars in 826 bytes} [Sun Nov 19 12:22:58 2023] OPTIONS /testlogin/ => generated 48 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 198 bytes (1 switches on core 0)
+Sun Nov 19 12:23:14 2023 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Nov 19 12:23:14 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Nov 19 12:23:14 2023 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Nov 19 12:23:14 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Nov 19 12:23:14 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Nov 19 12:23:14 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Nov 19 12:23:14 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Nov 19 12:23:14 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.21 (64bit) on [Sun Nov 19 20:23:16 2023] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 28 February 2023 12:04:58
+os: Linux-3.10.0-1160.83.1.el7.x86_64 #1 SMP Wed Jan 25 16:41:43 UTC 2023
+nodename: VM-8-15-centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/an/Examin/Examination
+writing pidfile to uwsgi.pid
+detected binary path: /home/an/python_examin/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/an/Examin/Examination
+your processes number limit is 7907
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.1 (default, Feb 17 2023, 13:53:38)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x1cadbc0
+*** Starting uWSGI 2.0.21 (64bit) on [Sun Nov 19 20:30:03 2023] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 28 February 2023 12:04:58
+os: Linux-3.10.0-1160.83.1.el7.x86_64 #1 SMP Wed Jan 25 16:41:43 UTC 2023
+nodename: VM-8-15-centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/an/Examin/Examination
+writing pidfile to uwsgi.pid
+detected binary path: /home/an/python_examin/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/an/Examin/Examination
+your processes number limit is 7907
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.1 (default, Feb 17 2023, 13:53:38)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
