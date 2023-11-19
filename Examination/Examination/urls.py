@@ -32,4 +32,5 @@ urlpatterns = [
     path("test/", views.main_register),  # 注册接口
     path("testlogin/", views.main_login),  # 登录接口
     path("testmain/", views.main_index),  # 登录接口
+    path("getxx/", views.get_Logistic),  # 获取推送
 ]

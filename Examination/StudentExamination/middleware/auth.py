@@ -7,7 +7,8 @@ class LoginSeesion(MiddlewareMixin):
 
     def process_request(self, request):
         if request.path_info in ["/login/", "/gtimg/", "/register/",
-                                 "/test/","/testlogin/","/testmain/",]:
+                                 "/test/","/testlogin/","/testmain/",
+                                 "/getxx/",]:
             pass
         else:
             if request.session.get("info"):
