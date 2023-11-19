@@ -231,8 +231,12 @@ def main_index(request):
 def get_Logistic(request):
     """获取物流信息"""
     if request.method == "GET":
-        with open("tests.text","w",encoding="utf-8") as f:
-            f.write(request.GET)
+        print(request.method)
+        with open("tests.txt","w+",encoding="utf-8") as f:
+            f.write(str(request.GET))
+        return JsonResponse({"123":"123"})
     else:
-        with open("tests.text","w",encoding="utf-8") as f:
-            f.write(request.POST)
+        print("123")
+        with open("tests.txt","w+",encoding="utf-8") as f:
+            f.write(str(request.POST))
+        return JsonResponse({"123": "123"})
