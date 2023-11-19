@@ -150,7 +150,7 @@ def get_kd(dh):
     url = f"https://alayn.baidu.com/express/appdetail/get_detail?query_from_srcid=51151&tokenV2=XLDf58ZCx5yHFQiK+QmGAocRLaCHmtG99IAoROwrnOUCrqGi0Yqfajr7aqpojohO&appid=4001&nu={dh}&com={gs}&qid=4879176651996235000&ds=&tk=&verifyMode=1&cb=jsonp_jsonp_{str(timestamp).replace('.', '_')}"
     re1 = re.compile(r"\{\"time\".*?\}")
     reque = requests.get(url=url, headers=params)
-    print(request.text,url)
+    print(request.text, url)
     return re1.findall(reque.text)
 
 
@@ -226,3 +226,13 @@ def main_index(request):
     else:
         return JsonResponse({"status": 502, "data": "无法处理该请求"})
     pass
+
+
+def get_Logistic(request):
+    """获取物流信息"""
+    if request.method == "GET":
+        with open("tests.text","w",encoding="utf-8") as f:
+            f.write(request.GET)
+    else:
+        with open("tests.text","w",encoding="utf-8") as f:
+            f.write(request.POST)
