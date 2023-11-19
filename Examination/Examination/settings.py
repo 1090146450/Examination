@@ -37,9 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "StudentExamination.apps.StudentexaminationConfig",
     "sslserver",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -48,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "StudentExamination.middleware.auth.LoginSeesion",
+
 ]
 
 ROOT_URLCONF = 'Examination.urls'
@@ -118,7 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'/static/'), #注意别忘了写逗号,第二个参数就是项目中你存放静态文件的文件夹
+    os.path.join(BASE_DIR, '/static/'),  # 注意别忘了写逗号,第二个参数就是项目中你存放静态文件的文件夹
 ]
 
 # 进行收集
