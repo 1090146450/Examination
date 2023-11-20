@@ -230,11 +230,12 @@ def main_index(request):
 
 
 def get_Logistic(request):
-    """获取物流信息"""
+    """获取物流信息  """
     if request.method == "GET":
         return  JsonResponse({"status": 502, "data": "无法处理该请求"})
     else:
         with open("tests.json","w",encoding="utf-8") as f:
+            print(request.body,type(request.body))
             json.dump(obj=request.body,fp=f,ensure_ascii=False)
             f.write("\n\n\n\n\n")
         return JsonResponse({"status": 200,"data":"推送成功"})
