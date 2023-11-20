@@ -263,7 +263,7 @@ def get_Logistic(request):
         for i in range(len(data)):
             data_dict[data[i]["time_raw"]["date"] + "_" + data[i]["time_raw"]["time"]] = data[i]["description"] + " " + \
                                                                                          data[i]["location"]
-        data_json =json.dumps(data_dict)
+        data_json =json.dumps(data_dict,ensure_ascii=False)
         if not Express_delivry.objects.filter(dh=dh).first():
             Express_delivry.objects.create(dh=dh,expre_data=str(data_json))
         else:
