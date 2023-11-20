@@ -24,7 +24,7 @@ urlpatterns = [
     # 考试系统
     path("register/", views.register),  # 注册页面
     path("index/", views.index),  # 考试页面
-    path("gtimg/", views.gtimg),  # 验证码获取
+    path("api/gtimg/", views.gtimg),  # 验证码获取
     path("login/", views.login),  # 登录页面
     path("index/exit/", views.exit),  # 注销登录
     path("achievement/", views.achievement),  # 查询成绩
