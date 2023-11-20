@@ -19,8 +19,8 @@ def get_kd(dh):
 ]
     # request = requests.post(url=f"https://api.17track.net/track/v2/register",headers=params,json=data)
     # request = requests.request("POST", "https://api.17track.net/track/v2/gettracklist", headers=params)
-    # request = requests.post(url="https://api.17track.net/track/v2.2/push",headers=params,json=data)
-    # print(request.json())
+    request = requests.post(url="https://api.17track.net/track/v2.2/push",headers=params,json=data)
+    print(request.json())
 
 
 

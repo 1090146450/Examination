@@ -234,7 +234,7 @@ def get_Logistic(request):
     if request.method == "GET":
         return  JsonResponse({"status": 502, "data": "无法处理该请求"})
     else:
-        with open("tests.txt","w+",encoding="utf-8") as f:
+        with open("tests.json","w",encoding="utf-8") as f:
             json.dump(obj=request.body,fp=f,ensure_ascii=False)
             f.write("\n\n\n\n\n")
         return JsonResponse({"status": 200,"data":"推送成功"})
