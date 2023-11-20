@@ -123,3 +123,45 @@ your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 416880 bytes (407 KB) for 8 cores
 *** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2a1fbc0 pid: 12638 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12638)
+spawned uWSGI worker 1 (pid: 12645, cores: 2)
+spawned uWSGI worker 2 (pid: 12646, cores: 2)
+spawned uWSGI worker 3 (pid: 12648, cores: 2)
+spawned uWSGI worker 4 (pid: 12649, cores: 2)
+[pid: 12648|app: 0|req: 1/1] 175.178.167.241 () {36 vars in 554 bytes} [Mon Nov 20 07:54:12 2023] POST /api/getxx/ => generated 39 bytes in 92 msecs (HTTP/1.1 200) 7 headers in 212 bytes (1 switches on core 0)
+[pid: 12648|app: 0|req: 2/2] 175.178.167.241 () {36 vars in 554 bytes} [Mon Nov 20 08:15:51 2023] POST /api/getxx/ => generated 39 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 212 bytes (1 switches on core 1)
+[pid: 12648|app: 0|req: 3/3] 175.178.167.241 () {36 vars in 554 bytes} [Mon Nov 20 08:22:40 2023] POST /api/getxx/ => generated 39 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 212 bytes (1 switches on core 0)
+[pid: 12648|app: 0|req: 4/4] 34.159.236.244 () {28 vars in 314 bytes} [Mon Nov 20 08:36:11 2023] OPTIONS / => generated 0 bytes in 4 msecs (HTTP/1.0 302) 8 headers in 249 bytes (1 switches on core 1)
+[pid: 12648|app: 0|req: 5/5] 180.101.245.249 () {40 vars in 758 bytes} [Mon Nov 20 08:45:35 2023] GET / => generated 0 bytes in 0 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 12649|app: 0|req: 1/6] 220.196.160.154 () {38 vars in 727 bytes} [Mon Nov 20 08:45:35 2023] GET / => generated 0 bytes in 91 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 12648|app: 0|req: 6/7] 220.196.160.154 () {38 vars in 739 bytes} [Mon Nov 20 08:45:35 2023] GET /login/ => generated 4232 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+[pid: 12648|app: 0|req: 7/8] 220.196.160.154 () {38 vars in 690 bytes} [Mon Nov 20 08:45:36 2023] GET /gtimg/ => generated 0 bytes in 0 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 12649|app: 0|req: 2/9] 220.196.160.154 () {38 vars in 690 bytes} [Mon Nov 20 08:45:36 2023] GET /login/ => generated 4232 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+[pid: 12648|app: 0|req: 8/10] 175.178.167.241 () {36 vars in 554 bytes} [Mon Nov 20 09:12:04 2023] POST /api/getxx/ => generated 39 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 212 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Nov 20 17:13:27 2023] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 28 February 2023 12:04:58
+os: Linux-3.10.0-1160.83.1.el7.x86_64 #1 SMP Wed Jan 25 16:41:43 UTC 2023
+nodename: VM-8-15-centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/an/Examin/Examination
+writing pidfile to uwsgi.pid
+detected binary path: /home/an/python_examin/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/an/Examin/Examination
+your processes number limit is 7907
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.1 (default, Feb 17 2023, 13:53:38)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
