@@ -8,11 +8,11 @@ class LoginSeesion(MiddlewareMixin):
     def process_request(self, request):
         try:
             re_d = re.compile(r"\/api\/.?").findall(request.path_info)
-            print(re_d)
+            print(request.path_info)
         except Exception as e:
             print(str(e))
             re_d = None
-        if request.path_info in ["/login/", "/register/",] and re_d:
+        if request.path_info in ["/login/", "/register/",] or re_d:
             pass
         else:
             if request.session.get("info"):
