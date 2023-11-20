@@ -163,13 +163,13 @@ LOGGING = {
             'formatter': 'standard',  # 输出格式
             'encoding': 'utf-8',  # 设置默认编码
         },
-        # 控制台输出
+        # # 控制台输出
         # 'console': {
         #     'level': 'DEBUG',
         #     'class': 'logging.StreamHandler',
         #     'formatter': 'standard'
         # },
-        # 输出info日志
+        # # 输出info日志
         # 'info': {
         #     'level': 'INFO',
         #     'class': 'logging.handlers.RotatingFileHandler',
