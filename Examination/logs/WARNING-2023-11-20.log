@@ -88,3 +88,4 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.9/json/encoder.py", line 179, in default
     raise TypeError(f'Object of type {o.__class__.__name__} '
 TypeError: Object of type bytes is not JSON serializable
+[2023-11-20 10:34:40,809] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/getimg
