@@ -1,4 +1,8 @@
 #! /bin/bash
+echo "开始拉取代码"
+git stash
+git pull origin master
+git stash pop
 echo "进入虚拟环境"
 source /home/an/python_examin/bin/activate python_examin
 echo "进入成功"
