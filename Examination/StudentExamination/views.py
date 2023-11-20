@@ -238,5 +238,5 @@ def get_Logistic(request):
     else:
         print("123")
         with open("tests.txt","w+",encoding="utf-8") as f:
-            f.write(str(request.POST))
+            f.write(str(request.body))
         return JsonResponse({"123": "123"})

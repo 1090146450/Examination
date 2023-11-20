@@ -24,4 +24,4 @@ def get_kd(dh):
 
 
 
-print(get_kd("777178512616535"))
+print(get_kd())
