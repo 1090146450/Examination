@@ -218,3 +218,66 @@ uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
 uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 Python version: 3.9.1 (default, Feb 17 2023, 13:53:38)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x2108bc0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2108bc0 pid: 13547 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13547)
+spawned uWSGI worker 1 (pid: 13554, cores: 2)
+spawned uWSGI worker 2 (pid: 13555, cores: 2)
+spawned uWSGI worker 3 (pid: 13557, cores: 2)
+spawned uWSGI worker 4 (pid: 13558, cores: 2)
+VS25
+[pid: 13557|app: 0|req: 1/1] 111.198.24.76 () {40 vars in 748 bytes} [Mon Nov 20 10:12:08 2023] GET /api/gtimg/ => generated 2350 bytes in 113 msecs (HTTP/1.1 200) 8 headers in 370 bytes (1 switches on core 0)
+[pid: 13558|app: 0|req: 1/2] 111.198.24.76 () {42 vars in 746 bytes} [Mon Nov 20 10:12:08 2023] GET /favicon.ico => generated 0 bytes in 95 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 1)
+[pid: 13558|app: 0|req: 2/3] 111.198.24.76 () {42 vars in 736 bytes} [Mon Nov 20 10:12:08 2023] GET /login/ => generated 4232 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 13558|app: 0|req: 3/4] 175.178.167.241 () {36 vars in 554 bytes} [Mon Nov 20 10:12:16 2023] POST /api/getxx/ => generated 5105 bytes in 9 msecs (HTTP/1.1 200) 7 headers in 214 bytes (1 switches on core 1)
+[pid: 13558|app: 0|req: 4/5] 132.255.133.139 () {34 vars in 522 bytes} [Mon Nov 20 10:16:08 2023] HEAD / => generated 0 bytes in 0 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 13558|app: 0|req: 5/6] 193.34.75.179 () {34 vars in 518 bytes} [Mon Nov 20 10:16:10 2023] GET / => generated 0 bytes in 0 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 1)
+[pid: 13555|app: 0|req: 1/7] 52.87.244.75 () {34 vars in 515 bytes} [Mon Nov 20 10:16:11 2023] GET / => generated 0 bytes in 93 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 13558|app: 0|req: 6/8] 54.91.154.80 () {34 vars in 520 bytes} [Mon Nov 20 10:16:12 2023] GET / => generated 0 bytes in 0 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 13558|app: 0|req: 7/9] 54.91.154.80 () {34 vars in 532 bytes} [Mon Nov 20 10:16:12 2023] GET /login/ => generated 4232 bytes in 2 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+[pid: 13558|app: 0|req: 8/10] 170.231.251.102 () {34 vars in 543 bytes} [Mon Nov 20 10:16:14 2023] GET /favicon.ico => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 13558|app: 0|req: 9/11] 52.205.250.128 () {34 vars in 539 bytes} [Mon Nov 20 10:16:14 2023] GET /favicon.ico => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 1)
+[pid: 13558|app: 0|req: 10/12] 54.91.154.80 () {34 vars in 542 bytes} [Mon Nov 20 10:16:15 2023] GET /favicon.ico => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 13558|app: 0|req: 11/13] 54.91.154.80 () {34 vars in 532 bytes} [Mon Nov 20 10:16:15 2023] GET /login/ => generated 4232 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+[pid: 13558|app: 0|req: 12/14] 170.254.179.158 () {34 vars in 543 bytes} [Mon Nov 20 10:16:15 2023] GET /favicon.ico => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Nov 20 18:26:58 2023] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 28 February 2023 12:04:58
+os: Linux-3.10.0-1160.83.1.el7.x86_64 #1 SMP Wed Jan 25 16:41:43 UTC 2023
+nodename: VM-8-15-centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/an/Examin/Examination
+writing pidfile to uwsgi.pid
+detected binary path: /home/an/python_examin/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/an/Examin/Examination
+your processes number limit is 7907
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.1 (default, Feb 17 2023, 13:53:38)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x24ebbc0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
