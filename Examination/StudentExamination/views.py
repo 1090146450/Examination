@@ -234,7 +234,11 @@ def get_Logistic(request):
     if request.method == "GET":
         return JsonResponse({"status": 502, "data": "无法处理该请求"})
     else:
-        with open("tests.json","w+",encoding="utf-8") as f:
-            json.dump(obj=json.loads(request.body),fp=f,ensure_ascii=False)
-            f.write("\n\n\n\n\n")
+        data = json.loads(request.body)
+        data = data["data"]["track_info"]["tracking"]["providers"][0]["events"]
+        data_dict = {}
+        for i in range(len(data)):
+            data_dict[data[i]["time_raw"]["date"] + "_" + data[i]["time_raw"]["time"]] = data[i]["description"] + " " + \
+                                                                                         data[i]["location"]
+        print(data_dict)
         return JsonResponse({"status": 200,"data":"推送成功"})
