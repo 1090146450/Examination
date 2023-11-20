@@ -17,11 +17,12 @@ def get_kd(dh):
         'number': f'{dh}',
     }
 ]
-    request = requests.post(url=f"https://api.17track.net/track/v2/register",headers=params,json=data)
-    response = requests.request("POST", "https://api.17track.net/track/v2/gettracklist", headers=params)
-    print(response.json())
+    # request = requests.post(url=f"https://api.17track.net/track/v2/register",headers=params,json=data)
+    # request = requests.request("POST", "https://api.17track.net/track/v2/gettracklist", headers=params)
+    # request = requests.post(url="https://api.17track.net/track/v2.2/push",headers=params,json=data)
+    # print(request.json())
 
 
 
 
-print(get_kd())
+print(get_kd("JDX020948274499"))

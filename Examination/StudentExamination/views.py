@@ -1,3 +1,4 @@
+import json
 from io import BytesIO
 
 from django.http import HttpResponse, JsonResponse
@@ -231,12 +232,9 @@ def main_index(request):
 def get_Logistic(request):
     """获取物流信息"""
     if request.method == "GET":
-        print(request.method)
-        with open("tests.txt","w+",encoding="utf-8") as f:
-            f.write(str(request.GET))
-        return JsonResponse({"123":"123"})
+        return  JsonResponse({"status": 502, "data": "无法处理该请求"})
     else:
-        print("123")
         with open("tests.txt","w+",encoding="utf-8") as f:
-            f.write(str(request.body))
-        return JsonResponse({"123": "123"})
+            json.dump(obj=request.body,fp=f,ensure_ascii=False)
+            f.write("\n\n\n\n\n")
+        return JsonResponse({"status": 200,"data":"推送成功"})

@@ -1,0 +1,22 @@
+[2023-11-20 14:22:27,775] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-20 14:29:14,720] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-20 14:30:06,683] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /testlogin/ HTTP/1.1" 302 0
+[2023-11-20 14:30:06,734] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /login/ HTTP/1.1" 200 4232
+[2023-11-20 14:30:06,766] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /gtimg/ HTTP/1.1" 302 0
+[2023-11-20 14:30:06,799] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /login/ HTTP/1.1" 200 4232
+[2023-11-20 14:30:06,848] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2023-11-20 14:30:06,853] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /login/ HTTP/1.1" 200 4232
+[2023-11-20 15:02:42,597] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-20 15:02:43,574] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-20 15:03:23,415] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-20 15:03:24,330] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-20 15:03:54,708] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-20 15:03:55,618] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-20 15:06:21,759] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-20 15:06:22,853] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-20 15:06:27,706] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-20 15:06:28,609] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-20 15:07:22,285] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-20 15:07:23,381] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-20 15:08:05,456] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-20 15:08:06,622] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
