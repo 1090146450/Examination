@@ -8,7 +8,6 @@ class LoginSeesion(MiddlewareMixin):
     def process_request(self, request):
         try:
             re_d = re.compile(r"\/api\/.?").findall(request.path_info)
-            print(request.path_info)
         except Exception as e:
             print(str(e))
             re_d = None
