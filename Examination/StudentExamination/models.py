@@ -52,4 +52,10 @@ class ProductDetails(models.Model):
     stateEnd = 1
     state = ((stateOpen, "未结算"),
              (stateEnd, "已结算"))
-    purchaseState = models.PositiveIntegerField(choices=state,default=stateOpen,verbose_name="商品状态")
+    purchaseState = models.PositiveIntegerField(choices=state, default=stateOpen, verbose_name="商品状态")
+
+
+class Express_delivry(models.Model):
+    """快递查询"""
+    dh = models.CharField(max_length=20, verbose_name="快递单号")
+    expre_data = models.TextField(verbose_name="快递路径")

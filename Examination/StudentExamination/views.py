@@ -4,7 +4,7 @@ from io import BytesIO
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
-from StudentExamination.models import admin, test_paper, teacher
+from StudentExamination.models import admin, test_paper, teacher,Express_delivry
 
 from StudentExamination.forms.StudentForm import RegisterModelForm, loginModelForm
 from StudentExamination.forms.randimg import check_code
@@ -148,11 +148,7 @@ def get_kd(dh):
     url = f"https://alayn.baidu.com/express/appdetail/get_com?num={dh}&cb=jsonp_{str(timestamp).replace('.', '_')}"
     request = requests.get(url=url, headers=params)
     gs = re1.findall(request.text)[0]
-    url = f"https://alayn.baidu.com/express/appdetail/get_detail?query_from_srcid=51151&tokenV2=XLDf58ZCx5yHFQiK+QmGAocRLaCHmtG99IAoROwrnOUCrqGi0Yqfajr7aqpojohO&appid=4001&nu={dh}&com={gs}&qid=4879176651996235000&ds=&tk=&verifyMode=1&cb=jsonp_jsonp_{str(timestamp).replace('.', '_')}"
-    re1 = re.compile(r"\{\"time\".*?\}")
-    reque = requests.get(url=url, headers=params)
-    print(request.text, url)
-    return re1.findall(reque.text)
+    return gs
 
 
 def main_register(request):
@@ -227,7 +223,33 @@ def main_index(request):
     else:
         return JsonResponse({"status": 502, "data": "无法处理该请求"})
     pass
-
+def add_Logistic(request):
+    if request.method == "POST":
+        dh = request.POST.get("dh")
+        if not dh:
+            return JsonResponse({"status": 200, "error": "不是？你传的单号呢吃了？？？"})
+        if get_kd(dh):
+            if Express_delivry.objects.filter(dh=dh).first():
+                return JsonResponse({"status": 200, "error": "已经添加过了别添加了"})
+            params = {
+                "Content-Type": "application/json",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+                "Accept": "*/*",
+                "17token": "6AFA3318BFD3451E0B30D95677C2F430",
+            }
+            data = [
+                {
+                    'number': f'{dh}',
+                }
+            ]
+            request = requests.post(url=f"https://api.17track.net/track/v2/register", headers=params, json=data)
+            print(request.text)
+            Express_delivry.objects.create(dh=dh,expre_data="")
+            return JsonResponse({"status": 200, "error": "注册成功了,等会再查找吧"})
+        else:
+            return JsonResponse({"status": 200, "error": "快递单号错误，自己找找原因"})
+    else:
+        return JsonResponse({"status": 502, "data": "无法处理该请求"})
 
 def get_Logistic(request):
     """获取物流信息  """
@@ -235,10 +257,15 @@ def get_Logistic(request):
         return JsonResponse({"status": 502, "data": "无法处理该请求"})
     else:
         data = json.loads(request.body)
+        dh = data["data"]["number"]
         data = data["data"]["track_info"]["tracking"]["providers"][0]["events"]
         data_dict = {}
         for i in range(len(data)):
             data_dict[data[i]["time_raw"]["date"] + "_" + data[i]["time_raw"]["time"]] = data[i]["description"] + " " + \
                                                                                          data[i]["location"]
-        print(data_dict)
-        return JsonResponse({"status": 200,"data":"推送成功"})
+        data_json =json.dumps(data_dict)
+        if not Express_delivry.objects.filter(dh=dh).first():
+            Express_delivry.objects.create(dh=dh,expre_data=str(data_json))
+        else:
+            Express_delivry.objects.filter(dh=dh).update(expre_data=str(data_json))
+        return JsonResponse({"status": 200,"data":data_json})

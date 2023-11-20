@@ -21,20 +21,14 @@ def get_kd(dh):
     # 获取注册列表
     # request = requests.request("POST", "https://api.17track.net/track/v2/gettracklist", headers=params)
     # 进行推送
-    # request = requests.post(url="https://api.17track.net/track/v2.2/push",headers=params,json=data)
+    request = requests.post(url="https://api.17track.net/track/v2.2/push",headers=params,json=data)
     # 获取详情
-    request = requests.post(url="https://api.17track.net/track/v2.2/gettrackinfo", json=data, headers=params)
+    # request = requests.post(url="https://api.17track.net/track/v2.2/gettrackinfo", json=data, headers=params)
     # print(request.text)
     return json.loads(request.text)
 
 
-data = get_kd("JDX020948274499")
+print(get_kd("JDX020948274499"))
 
 
 
-
-data = data["data"]["track_info"]["tracking"]["providers"][0]["events"]
-data_dict ={}
-for i in range(len(data)):
-    data_dict[data[i]["time_raw"]["date"]+"_"+data[i]["time_raw"]["time"]] = data[i]["description"]+" "+data[i]["location"]
-print(data_dict)
