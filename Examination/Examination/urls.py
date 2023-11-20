@@ -33,4 +33,6 @@ urlpatterns = [
     path("api/testlogin/", views.main_login),  # 登录接口
     path("api/testmain/", views.main_index),  # 登录接口
     path("api/getxx/", views.get_Logistic),  # 获取推送
+    path("api/addkd/", views.add_Logistic),  # 添加快递
+
 ]
