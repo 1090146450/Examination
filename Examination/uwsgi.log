@@ -165,3 +165,56 @@ uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
 uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 Python version: 3.9.1 (default, Feb 17 2023, 13:53:38)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x1220bc0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1220bc0 pid: 31895 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 31895)
+spawned uWSGI worker 1 (pid: 31902, cores: 2)
+spawned uWSGI worker 2 (pid: 31903, cores: 2)
+spawned uWSGI worker 3 (pid: 31905, cores: 2)
+spawned uWSGI worker 4 (pid: 31906, cores: 2)
+{'2023-11-20_13:05:31': '您的快件已由本人签收，感谢您使用京东物流，期待再次为您服务 武汉宗关营业部', '2023-11-20_07:25:46': '您的快件正在派送中，请您准备签收（快递员：周攀，联系电话：13971324477）。 武汉宗关营业部', '2023-11-20_06:39:59': '您的快件已经到达【武汉宗关营业部】，共计3个包裹，为便于您签收，待所有包裹到齐后，我们会为您一次派送，请注意查收。 武汉宗关营业部', '2023-11-20_06:39:58': '您的快件在【武汉宗关营业部】收货完成 武汉宗关营业部', '2023-11-20_05:23:31': '您的快件已发车 武汉新洲散货分拣中心', '2023-11-20_00:59:21': '您的快件由【武汉新洲散货分拣中心】准备发往【武汉宗关营业部】 武汉新洲散货分拣中心', '2023-11-20_00:59:16': '您的快件在【武汉新洲散货分拣中心】分拣完成 武汉新洲散货分拣中心', '2023-11-20_00:47:40': '您的快件已到达【武汉新洲散货分拣中心】 武汉新洲散货分拣中心', '2023-11-19_21:25:34': '您的快件已发车 武汉江北集货分拣中心', '2023-11-19_21:20:11': '您的快件由【武汉江北集货分拣中心】准备发往【武汉新洲散货分拣中心】 武汉江北集货分拣中心', '2023-11-19_21:20:06': '您的快件在【武汉江北集货分拣中心】分拣完成 武汉江北集货分拣中心', '2023-11-19_21:19:53': '您的快件已到达【武汉江北集货分拣中心】 武汉江北集货分拣中心', '2023-11-19_01:55:45': '您的快件已发车 北京顺义分拣中心', '2023-11-18_23:00:43': '您的快件由【北京顺义分拣中心】准备发往【武汉江北集货分拣中心】 北京顺义分拣中心', '2023-11-18_23:00:38': '您的快件在【北京顺义分拣中心】分拣完成 北京顺义分拣中心', '2023-11-18_22:58:00': '您的快件已到达【北京顺义分拣中心】 北京顺义分拣中心', '2023-11-18_21:39:18': '您的快件已发车 北京回龙观营业部', '2023-11-18_21:39:13': '快递司机收箱 北京回龙观营业部', '2023-11-18_21:04:09': '您的快件已到达【北京回龙观营业部】 北京回龙观营业部', '2023-11-18_20:39:46': '您的快件已由【北京回龙观营业部】揽收完成 北京回龙观营业部', '2023-11-18_20:39:45': '京东快递 已收取快件 北京回龙观营业部', '2023-11-18_08:37:09': '揽收任务已分配给曹林。 北京回龙观营业部'}
+[pid: 31906|app: 0|req: 1/1] 175.178.167.241 () {36 vars in 554 bytes} [Mon Nov 20 09:13:37 2023] POST /api/getxx/ => generated 39 bytes in 89 msecs (HTTP/1.1 200) 7 headers in 212 bytes (1 switches on core 0)
+[pid: 31906|app: 0|req: 2/2] 71.6.232.24 () {34 vars in 487 bytes} [Mon Nov 20 09:45:02 2023] GET / => generated 0 bytes in 4 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 1)
+{'2023-11-20_13:05:31': '您的快件已由本人签收，感谢您使用京东物流，期待再次为您服务 武汉宗关营业部', '2023-11-20_07:25:46': '您的快件正在派送中，请您准备签收（快递员：周攀，联系电话：13971324477）。 武汉宗关营业部', '2023-11-20_06:39:59': '您的快件已经到达【武汉宗关营业部】，共计3个包裹，为便于您签收，待所有包裹到齐后，我们会为您一次派送，请注意查收。 武汉宗关营业部', '2023-11-20_06:39:58': '您的快件在【武汉宗关营业部】收货完成 武汉宗关营业部', '2023-11-20_05:23:31': '您的快件已发车 武汉新洲散货分拣中心', '2023-11-20_00:59:21': '您的快件由【武汉新洲散货分拣中心】准备发往【武汉宗关营业部】 武汉新洲散货分拣中心', '2023-11-20_00:59:16': '您的快件在【武汉新洲散货分拣中心】分拣完成 武汉新洲散货分拣中心', '2023-11-20_00:47:40': '您的快件已到达【武汉新洲散货分拣中心】 武汉新洲散货分拣中心', '2023-11-19_21:25:34': '您的快件已发车 武汉江北集货分拣中心', '2023-11-19_21:20:11': '您的快件由【武汉江北集货分拣中心】准备发往【武汉新洲散货分拣中心】 武汉江北集货分拣中心', '2023-11-19_21:20:06': '您的快件在【武汉江北集货分拣中心】分拣完成 武汉江北集货分拣中心', '2023-11-19_21:19:53': '您的快件已到达【武汉江北集货分拣中心】 武汉江北集货分拣中心', '2023-11-19_01:55:45': '您的快件已发车 北京顺义分拣中心', '2023-11-18_23:00:43': '您的快件由【北京顺义分拣中心】准备发往【武汉江北集货分拣中心】 北京顺义分拣中心', '2023-11-18_23:00:38': '您的快件在【北京顺义分拣中心】分拣完成 北京顺义分拣中心', '2023-11-18_22:58:00': '您的快件已到达【北京顺义分拣中心】 北京顺义分拣中心', '2023-11-18_21:39:18': '您的快件已发车 北京回龙观营业部', '2023-11-18_21:39:13': '快递司机收箱 北京回龙观营业部', '2023-11-18_21:04:09': '您的快件已到达【北京回龙观营业部】 北京回龙观营业部', '2023-11-18_20:39:46': '您的快件已由【北京回龙观营业部】揽收完成 北京回龙观营业部', '2023-11-18_20:39:45': '京东快递 已收取快件 北京回龙观营业部', '2023-11-18_08:37:09': '揽收任务已分配给曹林。 北京回龙观营业部'}
+[pid: 31906|app: 0|req: 3/3] 175.178.167.241 () {36 vars in 554 bytes} [Mon Nov 20 10:03:40 2023] POST /api/getxx/ => generated 39 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 212 bytes (1 switches on core 0)
+[pid: 31906|app: 0|req: 4/4] 148.153.45.238 () {34 vars in 473 bytes} [Mon Nov 20 10:08:40 2023] GET /o9hL => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 1)
+[pid: 31903|app: 0|req: 1/5] 148.153.45.238 () {36 vars in 519 bytes} [Mon Nov 20 10:08:40 2023] GET /login/ => generated 4232 bytes in 97 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 31906|app: 0|req: 5/6] 148.153.45.238 () {34 vars in 473 bytes} [Mon Nov 20 10:08:40 2023] GET /naJD => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 31906|app: 0|req: 6/7] 148.153.45.238 () {36 vars in 519 bytes} [Mon Nov 20 10:08:42 2023] GET /login/ => generated 4232 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+[pid: 31903|app: 0|req: 2/8] 148.153.45.238 () {34 vars in 473 bytes} [Mon Nov 20 10:08:42 2023] GET /aab8 => generated 0 bytes in 4 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 1)
+[pid: 31903|app: 0|req: 3/9] 148.153.45.238 () {36 vars in 519 bytes} [Mon Nov 20 10:08:43 2023] GET /login/ => generated 4232 bytes in 2 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 31906|app: 0|req: 7/10] 148.153.45.238 () {34 vars in 473 bytes} [Mon Nov 20 10:08:43 2023] GET /aab9 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 31903|app: 0|req: 4/11] 148.153.45.238 () {36 vars in 519 bytes} [Mon Nov 20 10:08:43 2023] GET /login/ => generated 4232 bytes in 2 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Nov 20 18:11:54 2023] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 28 February 2023 12:04:58
+os: Linux-3.10.0-1160.83.1.el7.x86_64 #1 SMP Wed Jan 25 16:41:43 UTC 2023
+nodename: VM-8-15-centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/an/Examin/Examination
+writing pidfile to uwsgi.pid
+detected binary path: /home/an/python_examin/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/an/Examin/Examination
+your processes number limit is 7907
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.1 (default, Feb 17 2023, 13:53:38)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
