@@ -31,7 +31,8 @@ urlpatterns = [
     path("TeacherIndex/", views.teacher_index),  # 教师管理主页面
     path("api/test/", views.main_register),  # 注册接口
     path("api/testlogin/", views.main_login),  # 登录接口
-    path("api/testmain/", views.main_index),  # 登录接口
+    path("api/testmain/", views.main_index),  # 主页面接口
     path("api/getxx/", views.get_Logistic),  # 获取推送
     path("api/addkd/", views.add_Logistic),  # 添加快递
+
 ]

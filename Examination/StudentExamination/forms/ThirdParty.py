@@ -38,3 +38,29 @@ def get_kd(dh):
             return kdbm[gs]
     else:
         return None
+
+def check_field(field):
+    """校验字段"""
+    field = {"pid": 1, "pdName": "huawei", "purchasePlatform": 0, "buyDate": "2021.1.3", "goonDate": "2023.1.1",
+     "expectDate": "2024.1.1", "price": 1999, "sellproce": 2999, "purchaseState": 0}
+
+    re_dic = {"status": 200, "error": "无法处理该请求"}
+    re1  = re.compile(r"^\d{5,20}$").fullmatch(field["pid"])
+    if re1:
+        re_dic["error"] = "pid字段格式错误"
+        return re_dic
+    if len(field["pdName"]) >30:
+        re_dic["error"] = "商品名称超长"
+        return re_dic
+    elif len(field["pdName"]) == 0:
+        re_dic["error"] = "商品名称不能为空"
+        return re_dic
+    if re_dic["purchasePlatform"]  not in [0,1,2,3]:
+        re_dic["error"] = "购买平台错误"
+        return re_dic
+    re1 = re.compile(r"^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$")
+    for k,y in {"购买日期":"buyDate","发走日期":"goonDate","预期到达日期":"expectDate"}.items():
+        if not re1.fullmatch(field[y]):
+            re_dic["error"] = f"{k}格式错误请检查格式"
+            return re_dic
+

@@ -4,7 +4,7 @@ from io import BytesIO
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
-from StudentExamination.models import admin, test_paper, teacher, Express_delivry
+from StudentExamination.models import admin, test_paper, teacher, Express_delivry, ProductDetails
 from StudentExamination.forms.ThirdParty import get_kd
 from StudentExamination.forms.StudentForm import RegisterModelForm, loginModelForm
 from StudentExamination.forms.randimg import check_code
@@ -131,11 +131,8 @@ class JsonResponse(JsonResponse):
         super().__init__(*args, **kwargs, json_dumps_params={"ensure_ascii": False})
 
 
-
-
-
 def main_register(request):
-    """主页面"""
+    """注册页面"""
     json_data = {"status": "", "data": ""}
     if request.method == "POST":
         usename = request.POST.get("username")
@@ -196,16 +193,23 @@ def main_login(request):
 
 def main_index(request):
     """主页面"""
-    if request.method == "GET":
-        danhao = request.GET.get("dh")
-        try:
-            jg = get_kd(danhao)
-        except Exception as e:
-            jg = str(e)
-        return JsonResponse({"结果:": jg})
+    if request.method == "POST":
+        all_data = list(ProductDetails.objects.values())
+        return JsonResponse(all_data, safe=False)
     else:
         return JsonResponse({"status": 502, "data": "无法处理该请求"})
-    pass
+
+
+def add_index(request):
+    """添加页面"""
+    if request.method == "POST":
+        plat = json.dumps(request.body)
+        for i, y in plat.items():
+            if not y:
+                return JsonResponse({"status": 200, "error": f"{i}不能为空"})
+
+    else:
+        return JsonResponse({"status": 502, "data": "无法处理该请求"})
 
 
 def add_Logistic(request):

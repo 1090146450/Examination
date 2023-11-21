@@ -14,7 +14,7 @@ def get_kd(dh):
     data = [
         {
             'number': f'{dh}',
-            'carrier': 3001
+            # 'carrier': 3011
         }
     ]
     # 注册
@@ -26,14 +26,14 @@ def get_kd(dh):
     # 获取详情
     # request = requests.post(url="https://api.17track.net/track/v2.2/gettrackinfo", json=data, headers=params)
     # print(request.text)
-    request = requests.get(url="https://tools.mgtv100.com/external/v1/logistics/query?no=JDX021030924355")
+    # request = requests.get(url="https://tools.mgtv100.com/external/v1/logistics/query?no=JDX021030924355")
     return json.loads(request.text)
 
 
-# print(get_kd("JDX021030924355"))
+print(get_kd("9856768075519"))
 
 
-dh = "1600330803428"
+dh = "9856768075519"
 
 
 def get_kd(dh):
