@@ -32,3 +32,11 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2023-11-20 19:05:13,220] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
 [2023-11-20 19:05:23,996] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addkd/ HTTP/1.1" 200 58
 [2023-11-20 19:05:34,863] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addkd/ HTTP/1.1" 200 70
+[2023-11-20 19:07:59,175] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-20 19:08:40,224] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-20 19:08:41,215] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-20 19:08:59,781] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-20 19:09:00,864] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-20 19:09:07,141] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addkd/?dh=123 HTTP/1.1" 200 70
+[2023-11-20 19:09:27,881] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addkd/ HTTP/1.1" 200 58
+[2023-11-20 19:09:38,353] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addkd/ HTTP/1.1" 200 62

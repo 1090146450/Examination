@@ -1,42 +1,9 @@
-import json
-
 import requests
 import datetime, re
 
 
 def get_kd(dh):
-    params = {
-        "Content-Type": "application/json",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-        "Accept": "*/*",
-        "17token": "6AFA3318BFD3451E0B30D95677C2F430",
-    }
-    data = [
-        {
-            'number': f'{dh}',
-            'carrier': 3001
-        }
-    ]
-    # 注册
-    request = requests.post(url=f"https://api.17track.net/track/v2.2/register", headers=params, json=data)
-    # 获取注册列表
-    # request = requests.request("POST", "https://api.17track.net/track/v2/gettracklist", headers=params)
-    # 进行推送
-    # request = requests.post(url="https://api.17track.net/track/v2.2/push",headers=params,json=data)
-    # 获取详情
-    # request = requests.post(url="https://api.17track.net/track/v2.2/gettrackinfo", json=data, headers=params)
-    # print(request.text)
-    request = requests.get(url="https://tools.mgtv100.com/external/v1/logistics/query?no=JDX021030924355")
-    return json.loads(request.text)
-
-
-# print(get_kd("JDX021030924355"))
-
-
-dh = "1600330803428"
-
-
-def get_kd(dh):
+    """获取快递编码"""
     data = [
         r"^([GA]|[KQ]|[PH]){2}[0-9]{9}([2-5][0-9]|[1][1-9]|[6][0-5])$|^[99]{2}[0-9]{11}$|^[96]{2}[0-9]{11}$|^[98]{2}[0-9]{11}$",
         r"^[0-9]{8,10}$|^\\d{15,}[-\\d]+$",
@@ -71,6 +38,3 @@ def get_kd(dh):
             return kdbm[gs]
     else:
         return None
-
-
-print(get_kd(dh))

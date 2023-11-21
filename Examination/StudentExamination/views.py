@@ -4,8 +4,8 @@ from io import BytesIO
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
-from StudentExamination.models import admin, test_paper, teacher,Express_delivry
-
+from StudentExamination.models import admin, test_paper, teacher, Express_delivry
+from StudentExamination.forms.ThirdParty import get_kd
 from StudentExamination.forms.StudentForm import RegisterModelForm, loginModelForm
 from StudentExamination.forms.randimg import check_code
 from StudentExamination.forms.MD5 import md5
@@ -131,24 +131,7 @@ class JsonResponse(JsonResponse):
         super().__init__(*args, **kwargs, json_dumps_params={"ensure_ascii": False})
 
 
-def get_kd(dh):
-    now = datetime.datetime.now()
-    timestamp = now.timestamp()
-    re1 = re.compile(r".*\"(.*?)\".")
-    params = {
-        "Content-Type": "application/javascript; charset=utf-8",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-        "Accept": "*/*",
-        "Cookie": "BIDUPSID=A412AD29217981C3265D94D4BC00B823; PSTM=1697633315;"
-                  " BAIDUID=A412AD29217981C33A7B969011876766:SL=0:NR=10:FG=1; BDUSS=216NGhLdk43Nnp3UlVKOWRnUVZWYlJ1UGJnLXNsMmIxM0hJbi1JazNhVGJvMkpsRVFBQUFBJCQAAAAAAAAAAAEAAAAxee5Mx8DM4tChxNzK1gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANsWO2XbFjtld; "
-                  "BDUSS_BFESS=216NGhLdk43Nnp3UlVKOWRnUVZWYlJ1UGJnLXNsMmIxM0hJbi1JazNhVGJvMkpsRVFBQUFBJCQAAAAAAAAAAAEAAAAxee5Mx8DM4tChxNzK1gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANsWO2XbFjtld; newlogin=1; MCITY=-132%3A131%3A; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; H_PS_PSSID=39633_39647_39664_39688_39676_39678_39712_39736_39738_39753; BA_HECTOR=21a5aka1al858k8h2l058h0l1ildhde1q; ZFY=877LN7i:Ah37gzwQu42Ih69pLqFAcPNIuRoG8DKEjDrk:C; BAIDUID_BFESS=A412AD29217981C33A7B969011876766:SL=0:NR=10:FG=1; delPer=0; PSINO=2; ab_sr=1.0.1_ZDAxMmRiYTBiODBmMTFlNmQ3MjE2ZjAxZWQwMzg3ZTk1OWI4ZmY5OGM1N2MwZWY1MWUzM2M2ODcyNWJlODFkMWVmNWEwNmM3ODFkYjkxYjJlMmQ5MmJlMWJiOTEzOGVjNGU3NmEzNDE0MDc1YWUwOTdiMDNjYjc3OTEwZjcwNGIyNDI2OTYzZDRjYzM0NmIyNWI0NmRkYmI5NDAzMDk1MzE2MWY0YmZiZGU1NThmODBlNTI1ODYyMzg4NjVhMWQ3; RT='z=1&dm=baidu.com&si=271667d6-810f-4d97-a708-498924d57601&ss=lp1ys7d4&sl=1&tt=6fv&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf&ld=78p&ul=7xd&hd=7xx'; BCLID=7669815110825854193; BCLID_BFESS=7669815110825854193; BDSFRCVID=E0_OJeC62mZvLfcqousbKwLlyTUNiXvTH6ao36BEy_tFhGAHAEACEG0PFx8g0KubVwkKogKK0mOTHv-F_2uxOjjg8UtVJeC6EG0Ptf8g0x5; "
-                  "BDSFRCVID_BFESS=E0_OJeC62mZvLfcqousbKwLlyTUNiXvTH6ao36BEy_tFhGAHAEACEG0PFx8g0KubVwkKogKK0mOTHv-F_2uxOjjg8UtVJeC6EG0Ptf8g0x5; "
-                  "H_BDCLCKID_SF=tbC8VCDKJKD3H48k-4QEbbQH-UnLq5Q33gOZ04n-ah058UcSXnQoBpFpypJr2ncbBDrP0Pom3UTKsq76Wh35K5tTQP6rLf5eLRc4KKJxbP8aKJbH5tK-M6JQhUJiB5OLBan7LDnIXKohJh7FM4tW3J0ZyxomtfQxtNRJ0DnjtpChbC-we5L-DjbbeUQja45yMPo2WbCQMnOr8pcNLTDKMttZQh7yb4RyQmJiLhRsMlrEMJR-hlO1j4_eyM6e0x6q5IO-bx72BbT-Kq5jDh3Jb6ksD-RtWljBaa6y0hvctn6cShnCeMjrDRLbXU6BK5vPbNcZ0l8K3l02V-bIe-t225QhDNDJtTK8JRPs34JVHJvhHJTgMjL2DKCShUFs0M3RB2Q-5KL-2RQH8MOPKtnhXU_U5PvQhxc2JGQD_MbdJJjoJbnVyPPBW4InQP7fBtRE3gTxoUJM5DnJhhvGXfO83xIebPRiJPr9QgbqslQ7tt5W8ncFbT7l5hKpbt-q0x-jLTnhVn0M5DK0hDPxjT8MDToM5pJfetnbaD5KW5rJabC3sDJ3XU6qLT5XhJ6qWP52-COtQbocbhRSJfbaX4ri5l0njxQyJ55G365dLpQS3hj1Eq5qLUonDh8z2a7MJUntKHcfBhvO5hvvhb6O3M7-qfKmDloOW-TB5bbPLUQF5l8-sq0x0bOte-bQ2a_E5bj2qRPD_DLK3f; H_BDCLCKID_SF_BFESS=tbC8VCDKJKD3H48k-4QEbbQH-UnLq5Q33gOZ04n-ah058UcSXnQoBpFpypJr2ncbBDrP0Pom3UTKsq76Wh35K5tTQP6rLf5eLRc4KKJxbP8aKJbH5tK-M6JQhUJiB5OLBan7LDnIXKohJh7FM4tW3J0ZyxomtfQxtNRJ0DnjtpChbC-we5L-DjbbeUQja45yMPo2WbCQMnOr8pcNLTDKMttZQh7yb4RyQmJiLhRsMlrEMJR-hlO1j4_eyM6e0x6q5IO-bx72BbT-Kq5jDh3Jb6ksD-RtWljBaa6y0hvctn6cShnCeMjrDRLbXU6BK5vPbNcZ0l8K3l02V-bIe-t225QhDNDJtTK8JRPs34JVHJvhHJTgMjL2DKCShUFs0M3RB2Q-5KL-2RQH8MOPKtnhXU_U5PvQhxc2JGQD_MbdJJjoJbnVyPPBW4InQP7fBtRE3gTxoUJM5DnJhhvGXfO83xIebPRiJPr9QgbqslQ7tt5W8ncFbT7l5hKpbt-q0x-jLTnhVn0M5DK0hDPxjT8MDToM5pJfetnbaD5KW5rJabC3sDJ3XU6qLT5XhJ6qWP52-COtQbocbhRSJfbaX4ri5l0njxQyJ55G365dLpQS3hj1Eq5qLUonDh8z2a7MJUntKHcfBhvO5hvvhb6O3M7-qfKmDloOW-TB5bbPLUQF5l8-sq0x0bOte-bQ2a_E5bj2qRPD_DLK3f",
-    }
-    url = f"https://alayn.baidu.com/express/appdetail/get_com?num={dh}&cb=jsonp_{str(timestamp).replace('.', '_')}"
-    request = requests.get(url=url, headers=params)
-    gs = re1.findall(request.text)[0]
-    return gs
+
 
 
 def main_register(request):
@@ -223,12 +206,15 @@ def main_index(request):
     else:
         return JsonResponse({"status": 502, "data": "无法处理该请求"})
     pass
+
+
 def add_Logistic(request):
     if request.method == "POST":
         dh = request.POST.get("dh")
         if not dh:
             return JsonResponse({"status": 200, "error": "不是？你传的单号呢吃了？？？"})
-        if get_kd(dh):
+        gsbm = get_kd(dh)
+        if gsbm:
             if Express_delivry.objects.filter(dh=dh).first():
                 return JsonResponse({"status": 200, "error": "已经添加过了别添加了"})
             params = {
@@ -240,16 +226,18 @@ def add_Logistic(request):
             data = [
                 {
                     'number': f'{dh}',
+                    "carrier": gsbm,
                 }
             ]
             request = requests.post(url=f"https://api.17track.net/track/v2/register", headers=params, json=data)
             print(request.text)
-            Express_delivry.objects.create(dh=dh,expre_data="")
+            Express_delivry.objects.create(dh=dh, expre_data="")
             return JsonResponse({"status": 200, "error": "注册成功了,等会再查找吧"})
         else:
             return JsonResponse({"status": 200, "error": "快递单号错误，自己找找原因"})
     else:
         return JsonResponse({"status": 502, "data": "无法处理该请求"})
+
 
 def get_Logistic(request):
     """获取物流信息  """
@@ -263,9 +251,9 @@ def get_Logistic(request):
         for i in range(len(data)):
             data_dict[data[i]["time_raw"]["date"] + "_" + data[i]["time_raw"]["time"]] = data[i]["description"] + " " + \
                                                                                          data[i]["location"]
-        data_json =json.dumps(data_dict,ensure_ascii=False)
+        data_json = json.dumps(data_dict, ensure_ascii=False)
         if not Express_delivry.objects.filter(dh=dh).first():
-            Express_delivry.objects.create(dh=dh,expre_data=str(data_json))
+            Express_delivry.objects.create(dh=dh, expre_data=str(data_json))
         else:
             Express_delivry.objects.filter(dh=dh).update(expre_data=str(data_json))
-        return JsonResponse({"status": 200,"data":data_json})
+        return JsonResponse({"status": 200, "data": data_json})
