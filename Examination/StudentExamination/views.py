@@ -1,11 +1,12 @@
 import json
 from io import BytesIO
 
+from django.db import transaction
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
 from StudentExamination.models import admin, test_paper, teacher, Express_delivry, ProductDetails
-from StudentExamination.forms.ThirdParty import get_kd
+from StudentExamination.forms.ThirdParty import get_kd, check_field, check_Logistic
 from StudentExamination.forms.StudentForm import RegisterModelForm, loginModelForm
 from StudentExamination.forms.randimg import check_code
 from StudentExamination.forms.MD5 import md5
@@ -195,19 +196,54 @@ def main_index(request):
     """主页面"""
     if request.method == "POST":
         all_data = list(ProductDetails.objects.values())
+        for i in all_data:
+            i["purchaseState"] = ProductDetails(purchaseState=i["purchaseState"]).get_purchaseState_display()
+            i["purchasePlatform"] = ProductDetails(
+                purchasePlatform=i["purchasePlatform"]).get_purchasePlatform_display()
         return JsonResponse(all_data, safe=False)
     else:
         return JsonResponse({"status": 502, "data": "无法处理该请求"})
 
 
+field = {"pid": 1, "pdName": "huawei", "purchasePlatform": 0, "buyDate": "2021.1.3", "goonDate": "2023.1.1",
+         "expectDate": "2024.1.1", "price": 1999, "sellproce": 2999, "purchaseState": 0}
+
+
+@transaction.atomic
 def add_index(request):
     """添加页面"""
     if request.method == "POST":
-        plat = json.dumps(request.body)
-        for i, y in plat.items():
-            if not y:
-                return JsonResponse({"status": 200, "error": f"{i}不能为空"})
-
+        by = request.body.decode("utf-8")
+        for i in ["pid", "pdName", "purchasePlatform",
+                  "buyDate", "goonDate", "expectDate",
+                  "price", "sellproce", "purchaseState", "kddh", ]:
+            if i not in by:
+                return JsonResponse({"status": 200, "error": f"缺少参数{i}"})
+        print(by)
+        plat = json.loads(by)
+        cf = check_field(plat)
+        if cf["status"] == 201:
+            return JsonResponse(cf)
+        if not ProductDetails.objects.filter(pid=plat["pid"]).exists() and not ProductDetails.objects.filter(
+                pdName=plat["pdName"]).exists():
+            try:
+                kd = check_Logistic(plat["kddh"])
+                if kd["status"] == 201:
+                    return JsonResponse(kd)
+                ProductDetails(pid=plat["pid"], pdName=plat["pdName"],
+                               purchasePlatform=plat["purchasePlatform"]
+                               , buyDate=plat["buyDate"], goonDate=plat["goonDate"],
+                               expectDate=plat["expectDate"],
+                               price=plat["price"], sellPrice=plat["sellproce"],
+                               purchaseState=plat["purchaseState"], kddh=plat["kddh"]).save()
+                transaction.on_commit(lambda: print("添加成功"))
+                return JsonResponse({"status": 200, "data": "数据添加成功"})
+            except Exception as e:
+                transaction.set_rollback(True)
+                return JsonResponse({"status": 201, "error": f"{str(e)}"})
+        else:
+            return JsonResponse({"status": 201, "error": "购买名称或者编号已存在"})
+        return JsonResponse(cf)
     else:
         return JsonResponse({"status": 502, "data": "无法处理该请求"})
 
