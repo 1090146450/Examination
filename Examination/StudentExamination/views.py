@@ -216,7 +216,7 @@ def add_index(request):
         by = request.body.decode("utf-8")
         for i in ["pid", "pdName", "purchasePlatform",
                   "buyDate", "goonDate", "expectDate",
-                  "price", "sellproce", "purchaseState", "kddh", ]:
+                  "price", "sellprice", "purchaseState", "kddh", ]:
             if i not in by:
                 return JsonResponse({"status": 200, "error": f"缺少参数{i}"})
         print(by)
@@ -297,3 +297,83 @@ def get_Logistic(request):
         else:
             Express_delivry.objects.filter(dh=dh).update(expre_data=str(data_json))
         return JsonResponse({"status": 200, "data": data_json})
+
+
+def get_OneLogistic(request):
+    """获取单个详细信息"""
+    if request.method == "POST":
+        pid = request.POST.get("pid")
+        if not pid:
+            return JsonResponse({"status": 201, "error": "缺少参数pid"})
+        try:
+            pid = int(pid)
+        except Exception:
+            return JsonResponse({"status": 201, "error": "参数格式错误应该为数字"})
+        xq = ProductDetails.objects.filter(pid=pid)
+        if xq.exists():
+            one_data = list(xq.values())
+            for i in one_data:
+                i["purchaseState"] = ProductDetails(purchaseState=i["purchaseState"]).get_purchaseState_display()
+                i["purchasePlatform"] = ProductDetails(
+                    purchasePlatform=i["purchasePlatform"]).get_purchasePlatform_display()
+            return JsonResponse(one_data, safe=False)
+        else:
+            return JsonResponse({"status": 201, "error": "数据库中无此数据"})
+    else:
+        return JsonResponse({"status": 502, "data": "无法处理该请求"})
+
+@transaction.atomic
+def updata_information(request):
+    """更改详情数据"""
+    if request.method == "POST":
+        by = request.body.decode("utf-8")
+        for i in ["pid", "pdName", "purchasePlatform",
+                  "buyDate", "goonDate", "expectDate",
+                  "price", "sellprice", "purchaseState", "kddh", ]:
+            if i not in by:
+                return JsonResponse({"status": 200, "error": f"缺少参数{i}"})
+        plat = json.loads(by)
+        cf = check_field(plat)
+        if cf["status"] == 201:
+            return JsonResponse(cf)
+        pid = ProductDetails.objects.filter(pid=plat["pid"])
+        if pid.exists() and ProductDetails.objects.filter(
+                pdName=plat["pdName"]).exists():
+            try:
+                gsdm = get_kd(plat["kddh"])
+                if gsdm:
+                    kddh = pid.values("kddh")[0]["kddh"]
+                    kdd = Express_delivry.objects.filter(dh=kddh)
+                    if kdd.exists():
+                        kdd.update(dh=plat["kddh"], expre_data="")
+                    else:
+                        Express_delivry.objects.create(dh=plat["kddh"], expre_data="")
+                    params = {"17token": "6AFA3318BFD3451E0B30D95677C2F430", }
+                    data = [
+                        {
+                            'number': f'{plat["kddh"]}',
+                            "carrier": gsdm,
+                        }
+                    ]
+                    requests.post(url=f"https://api.17track.net/track/v2/register", headers=params, json=data)
+                else:
+                    return JsonResponse({"status": 201, "error": "快递单号格式错误"})
+                ProductDetails.objects.filter(pid=plat["pid"]).update(pdName=plat["pdName"],
+                                                                      purchasePlatform=plat["purchasePlatform"]
+                                                                      , buyDate=plat["buyDate"],
+                                                                      goonDate=plat["goonDate"],
+                                                                      expectDate=plat["expectDate"],
+                                                                      price=plat["price"], sellPrice=plat["sellprice"],
+                                                                      purchaseState=plat["purchaseState"],
+                                                                      kddh=plat["kddh"])
+                transaction.on_commit(lambda: print("修改成功"))
+                return JsonResponse({"status": 200, "data": "数据修改成功"})
+            except Exception as e:
+                print(str(e))
+                transaction.set_rollback(True)
+                return JsonResponse({"status": 201, "error": f"{str(e)}"})
+        else:
+            return JsonResponse({"status": 201, "error": "购买名称或者编号已存在"})
+        return JsonResponse(cf)
+    else:
+        return JsonResponse({"status": 502, "data": "无法处理该请求"})

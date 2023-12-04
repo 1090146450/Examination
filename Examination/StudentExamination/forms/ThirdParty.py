@@ -66,7 +66,7 @@ def check_field(field):
     if not isinstance(field["price"], int):
         re_dic["error"] == "购买价格式错误"
         return re_dic
-    if not isinstance(field["sellproce"], int):
+    if not isinstance(field["sellprice"], int):
         re_dic["error"] == "出售价格式错误"
         return re_dic
     if field["purchaseState"] not in [0, 1]:

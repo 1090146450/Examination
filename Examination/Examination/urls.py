@@ -24,15 +24,18 @@ urlpatterns = [
     # 考试系统
     path("register/", views.register),  # 注册页面
     path("index/", views.index),  # 考试页面
-    path("api/gtimg/", views.gtimg),  # 验证码获取
     path("login/", views.login),  # 登录页面
     path("index/exit/", views.exit),  # 注销登录
     path("achievement/", views.achievement),  # 查询成绩
     path("TeacherIndex/", views.teacher_index),  # 教师管理主页面
+
+    path("api/gtimg/", views.gtimg),  # 验证码获取
     path("api/test/", views.main_register),  # 注册接口
     path("api/testlogin/", views.main_login),  # 登录接口
     path("api/getmain/", views.main_index),  # 获取商品详情
     path("api/getxx/", views.get_Logistic),  # 获取推送
     path("api/addkd/", views.add_Logistic),  # 添加快递
-    path("api/addmain/",views.add_index),#添加商品详情
+    path("api/addmain/", views.add_index),  # 添加商品详情
+    path("api/getonedata/", views.get_OneLogistic),  # 获取单个数据
+    path("api/updata/", views.updata_information),  # 更新数据
 ]
