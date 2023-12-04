@@ -1,0 +1,423 @@
+[2023-11-29 09:18:16,403] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 09:49:46,447] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 09:50:08,396] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/getonedata/ HTTP/1.1" 200 52
+[2023-11-29 09:50:12,030] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/getonedata/ HTTP/1.1" 200 298
+[2023-11-29 09:50:57,661] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\Examination\urls.py changed, reloading.
+[2023-11-29 09:50:58,616] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 09:51:31,960] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/updata/ HTTP/1.1" 200 48
+[2023-11-29 09:51:35,521] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/updata/ HTTP/1.1" 200 43
+[2023-11-29 09:52:00,349] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/updata/ HTTP/1.1" 200 49
+[2023-11-29 09:52:22,716] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 09:52:23,778] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 09:52:32,857] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 09:52:33,822] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 09:58:49,874] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/updata/ HTTP/1.1" 200 49
+[2023-11-29 09:59:15,011] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/updata/ HTTP/1.1" 200 46
+[2023-11-29 10:05:39,887] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/getmain/ HTTP/1.1" 200 818
+[2023-11-29 10:06:17,415] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/updata/ HTTP/1.1" 200 67
+[2023-11-29 10:06:43,040] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 334, in updata_information
+    plat = json.loads(by)
+  File "D:\baiduwangpan\python\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\baiduwangpan\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\baiduwangpan\python\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Invalid control character at: line 6 column 41 (char 146)
+[2023-11-29 10:06:43,083] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/updata/ HTTP/1.1" 500 145
+[2023-11-29 10:07:27,902] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 334, in updata_information
+    plat = json.loads(by)
+  File "D:\baiduwangpan\python\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "D:\baiduwangpan\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\baiduwangpan\python\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 13 column 5 (char 359)
+[2023-11-29 10:07:27,903] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/updata/ HTTP/1.1" 500 145
+[2023-11-29 10:07:39,763] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/updata/ HTTP/1.1" 200 67
+[2023-11-29 10:07:59,755] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 335, in updata_information
+    cf = check_field(plat)
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py", line 69, in check_field
+    if not isinstance(field["sellproce"], int):
+KeyError: 'sellproce'
+[2023-11-29 10:07:59,773] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/updata/ HTTP/1.1" 500 145
+[2023-11-29 10:08:20,785] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-11-29 10:08:21,847] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:08:29,591] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 335, in updata_information
+    cf = check_field(plat)
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py", line 69, in check_field
+    if not isinstance(field["sellproice"], int):
+KeyError: 'sellproice'
+[2023-11-29 10:08:29,594] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/updata/ HTTP/1.1" 500 145
+[2023-11-29 10:08:46,054] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-11-29 10:08:47,167] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:08:49,979] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 360, in updata_information
+    price=plat["price"], sellPrice=plat["sellproce"],
+KeyError: 'sellproce'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 365, in updata_information
+    transaction.set_rollback(True)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\transaction.py", line 97, in set_rollback
+    return get_connection(using).set_rollback(rollback)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\base\base.py", line 506, in set_rollback
+    raise TransactionManagementError(
+django.db.transaction.TransactionManagementError: The rollback flag doesn't work outside of an 'atomic' block.
+[2023-11-29 10:08:50,000] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/updata/ HTTP/1.1" 500 145
+[2023-11-29 10:10:49,378] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:10:50,367] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:10:55,350] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/updata/ HTTP/1.1" 200 45
+[2023-11-29 10:12:20,874] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1264, "Out of range value for column 'price' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 356, in updata_information
+    ProductDetails.objects.filter(pid=plat["pid"]).update(pdName=plat["pdName"],
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\query.py", line 1191, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.DataError: (1264, "Out of range value for column 'price' at row 1")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 365, in updata_information
+    transaction.set_rollback(True)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\transaction.py", line 97, in set_rollback
+    return get_connection(using).set_rollback(rollback)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\base\base.py", line 506, in set_rollback
+    raise TransactionManagementError(
+django.db.transaction.TransactionManagementError: The rollback flag doesn't work outside of an 'atomic' block.
+[2023-11-29 10:12:20,963] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/updata/ HTTP/1.1" 500 145
+[2023-11-29 10:12:48,418] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:12:49,585] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:12:51,877] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1264, "Out of range value for column 'price' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 356, in updata_information
+    ProductDetails.objects.filter(pid=plat["pid"]).update(pdName=plat["pdName"],
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\query.py", line 1191, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.DataError: (1264, "Out of range value for column 'price' at row 1")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 366, in updata_information
+    transaction.set_rollback(True)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\transaction.py", line 97, in set_rollback
+    return get_connection(using).set_rollback(rollback)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\base\base.py", line 506, in set_rollback
+    raise TransactionManagementError(
+django.db.transaction.TransactionManagementError: The rollback flag doesn't work outside of an 'atomic' block.
+[2023-11-29 10:12:51,884] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/updata/ HTTP/1.1" 500 145
+[2023-11-29 10:14:16,611] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:14:17,501] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:14:33,108] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/updata/ HTTP/1.1" 200 45
+[2023-11-29 10:19:59,454] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:20:00,450] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:20:11,158] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:20:12,109] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:20:14,419] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:20:15,311] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:20:53,615] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:20:54,603] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:21:27,518] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:21:28,437] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:21:49,478] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 345, in updata_information
+    kdd = Express_delivry.objects.filter(dh=kddh)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\lookups.py", line 337, in get_prep_lookup
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 371, in updata_information
+    transaction.set_rollback(True)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\transaction.py", line 97, in set_rollback
+    return get_connection(using).set_rollback(rollback)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\base\base.py", line 506, in set_rollback
+    raise TransactionManagementError(
+django.db.transaction.TransactionManagementError: The rollback flag doesn't work outside of an 'atomic' block.
+[2023-11-29 10:21:49,516] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/updata/ HTTP/1.1" 500 145
+[2023-11-29 10:25:29,805] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:25:31,014] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:25:35,841] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 345, in updata_information
+    kdd = Express_delivry.objects.filter(dh=kddh)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\lookups.py", line 337, in get_prep_lookup
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 372, in updata_information
+    transaction.set_rollback(True)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\transaction.py", line 97, in set_rollback
+    return get_connection(using).set_rollback(rollback)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\base\base.py", line 506, in set_rollback
+    raise TransactionManagementError(
+django.db.transaction.TransactionManagementError: The rollback flag doesn't work outside of an 'atomic' block.
+[2023-11-29 10:25:35,850] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/updata/ HTTP/1.1" 500 145
+[2023-11-29 10:26:17,771] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:26:18,796] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:28:03,581] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:28:04,642] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:29:13,440] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:29:14,361] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:29:45,773] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:29:46,857] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:29:51,762] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 346, in updata_information
+    kdd = Express_delivry.objects.filter(dh=kddh)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\sql\query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\models\lookups.py", line 337, in get_prep_lookup
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 373, in updata_information
+    transaction.set_rollback(True)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\transaction.py", line 97, in set_rollback
+    return get_connection(using).set_rollback(rollback)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\db\backends\base\base.py", line 506, in set_rollback
+    raise TransactionManagementError(
+django.db.transaction.TransactionManagementError: The rollback flag doesn't work outside of an 'atomic' block.
+[2023-11-29 10:29:51,768] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/updata/ HTTP/1.1" 500 145
+[2023-11-29 10:30:34,433] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:30:35,590] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:30:38,401] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/updata/ HTTP/1.1" 200 45
+[2023-11-29 10:31:14,988] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/updata/ HTTP/1.1" 200 45
+[2023-11-29 10:31:42,707] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/getonedata/ HTTP/1.1" 200 269
+[2023-11-29 10:31:54,169] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:31:55,071] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:31:59,878] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:32:00,846] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:32:17,343] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:32:18,333] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-11-29 10:32:21,019] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-11-29 10:32:22,039] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
