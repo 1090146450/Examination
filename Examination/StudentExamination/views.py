@@ -206,7 +206,7 @@ def main_index(request):
 
 
 field = {"pid": 1, "pdName": "huawei", "purchasePlatform": 0, "buyDate": "2021.1.3", "goonDate": "2023.1.1",
-         "expectDate": "2024.1.1", "price": 1999, "sellproce": 2999, "purchaseState": 0}
+         "expectDate": "2024.1.1", "price": 1999, "sellprice": 2999, "purchaseState": 0}
 
 
 @transaction.atomic
@@ -234,7 +234,7 @@ def add_index(request):
                                purchasePlatform=plat["purchasePlatform"]
                                , buyDate=plat["buyDate"], goonDate=plat["goonDate"],
                                expectDate=plat["expectDate"],
-                               price=plat["price"], sellPrice=plat["sellproce"],
+                               price=plat["price"], sellPrice=plat["sellprice"],
                                purchaseState=plat["purchaseState"], kddh=plat["kddh"]).save()
                 transaction.on_commit(lambda: print("添加成功"))
                 return JsonResponse({"status": 200, "data": "数据添加成功"})
@@ -243,7 +243,6 @@ def add_index(request):
                 return JsonResponse({"status": 201, "error": f"{str(e)}"})
         else:
             return JsonResponse({"status": 201, "error": "购买名称或者编号已存在"})
-        return JsonResponse(cf)
     else:
         return JsonResponse({"status": 502, "data": "无法处理该请求"})
 
@@ -322,6 +321,7 @@ def get_OneLogistic(request):
     else:
         return JsonResponse({"status": 502, "data": "无法处理该请求"})
 
+
 @transaction.atomic
 def updata_information(request):
     """更改详情数据"""
@@ -373,7 +373,37 @@ def updata_information(request):
                 transaction.set_rollback(True)
                 return JsonResponse({"status": 201, "error": f"{str(e)}"})
         else:
-            return JsonResponse({"status": 201, "error": "购买名称或者编号已存在"})
-        return JsonResponse(cf)
+            return JsonResponse({"status": 201, "error": "购买名称或者编号不存在请先创建"})
     else:
         return JsonResponse({"status": 502, "data": "无法处理该请求"})
+
+
+@transaction.atomic
+def deleteCommodity(request):
+    """删除商品"""
+    if request.method == "POST":
+        pid = request.POST.get("pid")
+        if pid:
+            try:
+                pid = int(pid)
+            except Exception as e:
+                print(str(e))
+                return JsonResponse({"stats": 201, "error": "pid参数格式错误"})
+            pd = ProductDetails.objects.filter(pid=pid)
+            try:
+                if pd.first():
+                    dh = pd.values("kddh")[0]["kddh"]
+                    if Express_delivry.objects.filter(dh=dh).first():
+                        Express_delivry.objects.filter(dh=dh).delete()
+                    pd.delete()
+                    transaction.on_commit(lambda: print("删除成功"))
+                    return JsonResponse({"status": 200, "data": f"编号{pid}删除成功"})
+                return JsonResponse({"status": 201, "error": f"编号{pid}不存在请重新查看"})
+            except Exception as e:
+                print(str(e))
+                transaction.set_rollback(True)
+                return JsonResponse({"status": 201, "error": f"{str(e)}"})
+        else:
+            return JsonResponse({"status": 201, "error": "缺少参数pid"})
+    else:
+        return JsonResponse({"status": 201, "error": "不支持的请求方法"})

@@ -38,4 +38,5 @@ urlpatterns = [
     path("api/addmain/", views.add_index),  # 添加商品详情
     path("api/getonedata/", views.get_OneLogistic),  # 获取单个数据
     path("api/updata/", views.updata_information),  # 更新数据
+    path("api/deletecommodity/",views.deleteCommodity),#删除商品
 ]
