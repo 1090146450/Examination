@@ -1,0 +1,10 @@
+[2023-12-05 16:34:05,144] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/deletecommodity/
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view StudentExamination.views.deleteCommodity didn't return an HttpResponse object. It returned None instead.
+[2023-12-05 16:34:05,159] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/deletecommodity/ HTTP/1.1" 500 145

@@ -42,11 +42,12 @@ class ProductDetails(models.Model):
     )
     purchasePlatform = models.PositiveIntegerField(choices=Platform_Index, default=Platform_Other,
                                                    verbose_name="购买平台")  # 购买平台
-    buyDate = models.DateTimeField(verbose_name="购买日期")  # 购买日期
-    goonDate = models.DateTimeField(verbose_name="发走日期")  # 发走日期
-    expectDate = models.DateTimeField(verbose_name="预期到达日期")
+    buyDate = models.CharField(max_length=100,verbose_name="购买日期")  # 购买日期
+    goonDate = models.CharField(max_length=100,verbose_name="发走日期")  # 发走日期
+    expectDate = models.CharField(max_length=100,verbose_name="预期到达日期")
     price = models.SmallIntegerField(verbose_name="购买价格")
     sellPrice = models.SmallIntegerField(verbose_name="出售价格")
+    kddh = models.CharField(max_length=100,verbose_name="快递单号")
     # 利润
     stateOpen = 0
     stateEnd = 1

@@ -1,6 +1,8 @@
 import requests
 import datetime, re
 
+from StudentExamination.models import Express_delivry
+
 
 def get_kd(dh):
     """获取快递编码"""
@@ -38,3 +40,61 @@ def get_kd(dh):
             return kdbm[gs]
     else:
         return None
+
+
+def check_field(field):
+    """校验字段"""
+    re_dic = {"status": 201, "error": "无法处理该请求"}
+    re1 = re.compile(r"^\d{5,20}$").fullmatch(str(field["pid"]))
+    if re1:
+        re_dic["error"] = "pid字段格式错误"
+        return re_dic
+    if len(field["pdName"]) > 30:
+        re_dic["error"] = "商品名称超长"
+        return re_dic
+    elif len(field["pdName"]) == 0:
+        re_dic["error"] = "商品名称不能为空"
+        return re_dic
+    if field["purchasePlatform"] not in [0, 1, 2, 3]:
+        re_dic["error"] = "购买平台错误"
+        return re_dic
+    re1 = re.compile(r"^\d{4}\.\d{2}\.\d{2} \d{2}:\d{2}$")
+    for k, y in {"购买日期": "buyDate", "发走日期": "goonDate", "预期到达日期": "expectDate"}.items():
+        if not re1.fullmatch(str(field[y])):
+            re_dic["error"] = f"{k}格式错误请检查格式"
+            return re_dic
+    if not isinstance(field["price"], int):
+        re_dic["error"] == "购买价格式错误"
+        return re_dic
+    if not isinstance(field["sellprice"], int):
+        re_dic["error"] == "出售价格式错误"
+        return re_dic
+    if field["purchaseState"] not in [0, 1]:
+        re_dic["error"] == "商品状态格式错误"
+        return re_dic
+    return {"status": 200, "data": "添加成功"}
+
+
+def check_Logistic(dh):
+    dh = str(dh)
+    gsbm = get_kd(dh)
+    if gsbm:
+        if Express_delivry.objects.filter(dh=dh).first():
+            return {"status": 201, "error": "快递单号已存在"}
+        params = {
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+            "Accept": "*/*",
+            "17token": "6AFA3318BFD3451E0B30D95677C2F430",
+        }
+        data = [
+            {
+                'number': f'{dh}',
+                "carrier": gsbm,
+            }
+        ]
+        request = requests.post(url=f"https://api.17track.net/track/v2/register", headers=params, json=data)
+        Express_delivry.objects.create(dh=dh, expre_data="")
+        return {"status": 200, "error": "注册成功"}
+    else:
+        return {"status": 201, "error": "快递单号错误，自己找找原因"}

@@ -1,11 +1,12 @@
 import json
 from io import BytesIO
 
+from django.db import transaction
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
-from StudentExamination.models import admin, test_paper, teacher, Express_delivry
-from StudentExamination.forms.ThirdParty import get_kd
+from StudentExamination.models import admin, test_paper, teacher, Express_delivry, ProductDetails
+from StudentExamination.forms.ThirdParty import get_kd, check_field, check_Logistic
 from StudentExamination.forms.StudentForm import RegisterModelForm, loginModelForm
 from StudentExamination.forms.randimg import check_code
 from StudentExamination.forms.MD5 import md5
@@ -131,11 +132,8 @@ class JsonResponse(JsonResponse):
         super().__init__(*args, **kwargs, json_dumps_params={"ensure_ascii": False})
 
 
-
-
-
 def main_register(request):
-    """主页面"""
+    """注册页面"""
     json_data = {"status": "", "data": ""}
     if request.method == "POST":
         usename = request.POST.get("username")
@@ -196,16 +194,57 @@ def main_login(request):
 
 def main_index(request):
     """主页面"""
-    if request.method == "GET":
-        danhao = request.GET.get("dh")
-        try:
-            jg = get_kd(danhao)
-        except Exception as e:
-            jg = str(e)
-        return JsonResponse({"结果:": jg})
+    if request.method == "POST":
+        all_data = list(ProductDetails.objects.values())
+        for i in all_data:
+            i["purchaseState"] = ProductDetails(purchaseState=i["purchaseState"]).get_purchaseState_display()
+            i["purchasePlatform"] = ProductDetails(
+                purchasePlatform=i["purchasePlatform"]).get_purchasePlatform_display()
+        return JsonResponse(all_data, safe=False)
     else:
         return JsonResponse({"status": 502, "data": "无法处理该请求"})
-    pass
+
+
+field = {"pid": 1, "pdName": "huawei", "purchasePlatform": 0, "buyDate": "2021.1.3", "goonDate": "2023.1.1",
+         "expectDate": "2024.1.1", "price": 1999, "sellprice": 2999, "purchaseState": 0}
+
+
+@transaction.atomic
+def add_index(request):
+    """添加页面"""
+    if request.method == "POST":
+        by = request.body.decode("utf-8")
+        for i in ["pid", "pdName", "purchasePlatform",
+                  "buyDate", "goonDate", "expectDate",
+                  "price", "sellprice", "purchaseState", "kddh", ]:
+            if i not in by:
+                return JsonResponse({"status": 200, "error": f"缺少参数{i}"})
+        print(by)
+        plat = json.loads(by)
+        cf = check_field(plat)
+        if cf["status"] == 201:
+            return JsonResponse(cf)
+        if not ProductDetails.objects.filter(pid=plat["pid"]).exists() and not ProductDetails.objects.filter(
+                pdName=plat["pdName"]).exists():
+            try:
+                kd = check_Logistic(plat["kddh"])
+                if kd["status"] == 201:
+                    return JsonResponse(kd)
+                ProductDetails(pid=plat["pid"], pdName=plat["pdName"],
+                               purchasePlatform=plat["purchasePlatform"]
+                               , buyDate=plat["buyDate"], goonDate=plat["goonDate"],
+                               expectDate=plat["expectDate"],
+                               price=plat["price"], sellPrice=plat["sellprice"],
+                               purchaseState=plat["purchaseState"], kddh=plat["kddh"]).save()
+                transaction.on_commit(lambda: print("添加成功"))
+                return JsonResponse({"status": 200, "data": "数据添加成功"})
+            except Exception as e:
+                transaction.set_rollback(True)
+                return JsonResponse({"status": 201, "error": f"{str(e)}"})
+        else:
+            return JsonResponse({"status": 201, "error": "购买名称或者编号已存在"})
+    else:
+        return JsonResponse({"status": 502, "data": "无法处理该请求"})
 
 
 def add_Logistic(request):
@@ -257,3 +296,114 @@ def get_Logistic(request):
         else:
             Express_delivry.objects.filter(dh=dh).update(expre_data=str(data_json))
         return JsonResponse({"status": 200, "data": data_json})
+
+
+def get_OneLogistic(request):
+    """获取单个详细信息"""
+    if request.method == "POST":
+        pid = request.POST.get("pid")
+        if not pid:
+            return JsonResponse({"status": 201, "error": "缺少参数pid"})
+        try:
+            pid = int(pid)
+        except Exception:
+            return JsonResponse({"status": 201, "error": "参数格式错误应该为数字"})
+        xq = ProductDetails.objects.filter(pid=pid)
+        if xq.exists():
+            one_data = list(xq.values())
+            for i in one_data:
+                i["purchaseState"] = ProductDetails(purchaseState=i["purchaseState"]).get_purchaseState_display()
+                i["purchasePlatform"] = ProductDetails(
+                    purchasePlatform=i["purchasePlatform"]).get_purchasePlatform_display()
+            return JsonResponse(one_data, safe=False)
+        else:
+            return JsonResponse({"status": 201, "error": "数据库中无此数据"})
+    else:
+        return JsonResponse({"status": 502, "data": "无法处理该请求"})
+
+
+@transaction.atomic
+def updata_information(request):
+    """更改详情数据"""
+    if request.method == "POST":
+        by = request.body.decode("utf-8")
+        for i in ["pid", "pdName", "purchasePlatform",
+                  "buyDate", "goonDate", "expectDate",
+                  "price", "sellprice", "purchaseState", "kddh", ]:
+            if i not in by:
+                return JsonResponse({"status": 200, "error": f"缺少参数{i}"})
+        plat = json.loads(by)
+        cf = check_field(plat)
+        if cf["status"] == 201:
+            return JsonResponse(cf)
+        pid = ProductDetails.objects.filter(pid=plat["pid"])
+        if pid.exists() and ProductDetails.objects.filter(
+                pdName=plat["pdName"]).exists():
+            try:
+                gsdm = get_kd(plat["kddh"])
+                if gsdm:
+                    kddh = pid.values("kddh")[0]["kddh"]
+                    kdd = Express_delivry.objects.filter(dh=kddh)
+                    if kdd.exists():
+                        kdd.update(dh=plat["kddh"], expre_data="")
+                    else:
+                        Express_delivry.objects.create(dh=plat["kddh"], expre_data="")
+                    params = {"17token": "6AFA3318BFD3451E0B30D95677C2F430", }
+                    data = [
+                        {
+                            'number': f'{plat["kddh"]}',
+                            "carrier": gsdm,
+                        }
+                    ]
+                    requests.post(url=f"https://api.17track.net/track/v2/register", headers=params, json=data)
+                else:
+                    return JsonResponse({"status": 201, "error": "快递单号格式错误"})
+                ProductDetails.objects.filter(pid=plat["pid"]).update(pdName=plat["pdName"],
+                                                                      purchasePlatform=plat["purchasePlatform"]
+                                                                      , buyDate=plat["buyDate"],
+                                                                      goonDate=plat["goonDate"],
+                                                                      expectDate=plat["expectDate"],
+                                                                      price=plat["price"], sellPrice=plat["sellprice"],
+                                                                      purchaseState=plat["purchaseState"],
+                                                                      kddh=plat["kddh"])
+                transaction.on_commit(lambda: print("修改成功"))
+                return JsonResponse({"status": 200, "data": "数据修改成功"})
+            except Exception as e:
+                print(str(e))
+                transaction.set_rollback(True)
+                return JsonResponse({"status": 201, "error": f"{str(e)}"})
+        else:
+            return JsonResponse({"status": 201, "error": "购买名称或者编号不存在请先创建"})
+    else:
+        return JsonResponse({"status": 502, "data": "无法处理该请求"})
+
+
+@transaction.atomic
+def deleteCommodity(request):
+    """删除商品"""
+    if request.method == "POST":
+        pid = request.POST.get("pid")
+        if pid:
+            try:
+                pid = int(pid)
+            except Exception as e:
+                print(str(e))
+                return JsonResponse({"stats": 201, "error": "pid参数格式错误"})
+            pd = ProductDetails.objects.filter(pid=pid)
+            try:
+                if pd.first():
+                    dh = pd.values("kddh")[0]["kddh"]
+                    if Express_delivry.objects.filter(dh=dh).first():
+                        Express_delivry.objects.filter(dh=dh).delete()
+                    pd.delete()
+                    transaction.on_commit(lambda: print("删除成功"))
+                    return JsonResponse({"status": 200, "data": f"编号{pid}删除成功"})
+                return JsonResponse({"status": 201, "error": f"编号{pid}不存在请重新查看"})
+            except Exception as e:
+                print(str(e))
+                transaction.set_rollback(True)
+                return JsonResponse({"status": 201, "error": f"{str(e)}"})
+        else:
+            return JsonResponse({"status": 201, "error": "缺少参数pid"})
+    else:
+        return JsonResponse({"status": 201, "error": "不支持的请求方法"})
