@@ -45,8 +45,8 @@ def get_kd(dh):
 def check_field(field):
     """校验字段"""
     re_dic = {"status": 201, "error": "无法处理该请求"}
-    re1 = re.compile(r"^\d{5,20}$").fullmatch(str(field["pid"]))
-    if re1:
+    re1 = re.compile(r"^\d{1,}$").fullmatch(str(field["pid"]))
+    if not re1:
         re_dic["error"] = "pid字段格式错误"
         return re_dic
     if len(field["pdName"]) > 30:
@@ -55,22 +55,34 @@ def check_field(field):
     elif len(field["pdName"]) == 0:
         re_dic["error"] = "商品名称不能为空"
         return re_dic
-    if field["purchasePlatform"] not in [0, 1, 2, 3]:
-        re_dic["error"] = "购买平台错误"
+    try:
+        if int(field["purchasePlatform"]) not in [0, 1, 2, 3]:
+            re_dic["error"] = "购买平台错误"
+            return re_dic
+    except Exception as e:
+        re_dic["error"] = str(e)
         return re_dic
     re1 = re.compile(r"^\d{4}\.\d{2}\.\d{2} \d{2}:\d{2}$")
     for k, y in {"购买日期": "buyDate", "发走日期": "goonDate", "预期到达日期": "expectDate"}.items():
         if not re1.fullmatch(str(field[y])):
             re_dic["error"] = f"{k}格式错误请检查格式"
             return re_dic
-    if not isinstance(field["price"], int):
-        re_dic["error"] == "购买价格式错误"
+    try:
+        int(field["price"])
+    except Exception:
+        re_dic["error"] = "购买价格式错误"
         return re_dic
-    if not isinstance(field["sellprice"], int):
-        re_dic["error"] == "出售价格式错误"
+    try:
+        int(field["sellprice"])
+    except Exception:
+        re_dic["error"] = "购买价格式错误"
         return re_dic
-    if field["purchaseState"] not in [0, 1]:
-        re_dic["error"] == "商品状态格式错误"
+    try:
+        if int(field["purchaseState"]) not in [0, 1]:
+            re_dic["error"] = "商品状态格式错误"
+            return re_dic
+    except Exception as e:
+        re_dic["error"] = str(e)
         return re_dic
     return {"status": 200, "data": "添加成功"}
 

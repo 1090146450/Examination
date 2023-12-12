@@ -1,10 +1,9 @@
 import json
+import logging
 from io import BytesIO
-
 from django.db import transaction
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
-
 from StudentExamination.models import admin, test_paper, teacher, Express_delivry, ProductDetails
 from StudentExamination.forms.ThirdParty import get_kd, check_field, check_Logistic
 from StudentExamination.forms.StudentForm import RegisterModelForm, loginModelForm
@@ -12,6 +11,7 @@ from StudentExamination.forms.randimg import check_code
 from StudentExamination.forms.MD5 import md5
 import requests, datetime, re
 
+logger =logging.getLogger("django")
 
 # Create your views here.
 def register(request):
@@ -108,7 +108,7 @@ def gtimg(request):
     img, img_str = check_code()
     # 将验证码正确数子放入session中
     request.session["image_code"] = img_str
-    print(img_str)
+    logger.info(f"验证码:{img_str}")
     # 设置验证码超时时间 10S
     request.session.set_expiry(30)
     # 创建虚拟内存对象并返回前端
@@ -176,10 +176,10 @@ def main_login(request):
                 return JsonResponse({"status": 200, "error": f"{i}不能为空"})
         passwd1 = md5(passwd1)
         image_code = request.session.get("image_code")
-        if not image_code:
-            return JsonResponse({"status": 200, "error": "验证码已过期请重新获取!"})
-        if image_code.upper() != ima.upper():
-            return JsonResponse({"status": 200, "error": "验证码错误!"})
+        # if not image_code:
+        #     return JsonResponse({"status": 200, "error": "验证码已过期请重新获取!"})
+        # if image_code.upper() != ima.upper():
+        #     return JsonResponse({"status": 200, "error": "验证码错误!"})
         if admin.objects.filter(user=usename, passwd=passwd1).first():
             request.session['info'] = {"user": usename,
                                        "passwd": passwd1}
@@ -213,14 +213,15 @@ field = {"pid": 1, "pdName": "huawei", "purchasePlatform": 0, "buyDate": "2021.1
 def add_index(request):
     """添加页面"""
     if request.method == "POST":
-        by = request.body.decode("utf-8")
+        plat = {}
         for i in ["pid", "pdName", "purchasePlatform",
                   "buyDate", "goonDate", "expectDate",
                   "price", "sellprice", "purchaseState", "kddh", ]:
-            if i not in by:
+            if not request.POST.get(i):
                 return JsonResponse({"status": 200, "error": f"缺少参数{i}"})
-        print(by)
-        plat = json.loads(by)
+            else:
+                plat[i] = request.POST.get(i)
+        logger.info(plat)
         cf = check_field(plat)
         if cf["status"] == 201:
             return JsonResponse(cf)
@@ -240,7 +241,7 @@ def add_index(request):
                 return JsonResponse({"status": 200, "data": "数据添加成功"})
             except Exception as e:
                 transaction.set_rollback(True)
-                return JsonResponse({"status": 201, "error": f"{str(e)}"})
+                return JsonResponse({"status": 201, "error": f"添加失败:{str(e)}"})
         else:
             return JsonResponse({"status": 201, "error": "购买名称或者编号已存在"})
     else:
@@ -326,13 +327,15 @@ def get_OneLogistic(request):
 def updata_information(request):
     """更改详情数据"""
     if request.method == "POST":
-        by = request.body.decode("utf-8")
+        plat = {}
         for i in ["pid", "pdName", "purchasePlatform",
                   "buyDate", "goonDate", "expectDate",
                   "price", "sellprice", "purchaseState", "kddh", ]:
-            if i not in by:
+            if not request.POST.get(i):
                 return JsonResponse({"status": 200, "error": f"缺少参数{i}"})
-        plat = json.loads(by)
+            else:
+                plat[i] = request.POST.get(i)
+        logger.info(plat)
         cf = check_field(plat)
         if cf["status"] == 201:
             return JsonResponse(cf)

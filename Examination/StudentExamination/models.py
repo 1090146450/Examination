@@ -28,7 +28,7 @@ class test_paper(models.Model):
 
 class ProductDetails(models.Model):
     """商品详情"""
-    pid = models.IntegerField()  # 商品编号
+    pid = models.CharField(max_length=255,verbose_name="商品编号") # 商品编号
     pdName = models.CharField(max_length=255, verbose_name="商品名称")  # 商品名称
     Platform_Pdd = 0
     Platform_Tb = 1

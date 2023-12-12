@@ -1,0 +1,841 @@
+<<<<<<< Updated upstream
+[2023-12-13 13:50:25,335] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-13 13:50:34,919] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4370
+[2023-12-13 13:50:34,979] [views.py:111] [views:gtimg] [INFO]- VG3W
+[2023-12-13 13:50:34,979] [views.py:112] [views:gtimg] [INFO]- 验证码:VG3W
+[2023-12-13 13:50:35,321] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2796
+[2023-12-13 13:50:35,394] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2023-12-13 13:50:35,399] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /login/ HTTP/1.1" 200 4317
+[2023-12-13 13:50:39,882] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4370
+[2023-12-13 13:50:40,026] [views.py:111] [views:gtimg] [INFO]- H0AW
+[2023-12-13 13:50:40,026] [views.py:112] [views:gtimg] [INFO]- 验证码:H0AW
+[2023-12-13 13:50:40,070] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2281
+[2023-12-13 13:50:40,193] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2023-12-13 13:50:40,198] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /login/ HTTP/1.1" 200 4317
+[2023-12-13 13:50:41,006] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4370
+[2023-12-13 13:50:41,083] [views.py:111] [views:gtimg] [INFO]- B35Q
+[2023-12-13 13:50:41,084] [views.py:112] [views:gtimg] [INFO]- 验证码:B35Q
+[2023-12-13 13:50:41,120] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2559
+[2023-12-13 13:50:41,197] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2023-12-13 13:50:41,201] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /login/ HTTP/1.1" 200 4317
+[2023-12-13 13:51:06,494] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4370
+[2023-12-13 13:51:06,566] [views.py:111] [views:gtimg] [INFO]- 486K
+[2023-12-13 13:51:06,567] [views.py:112] [views:gtimg] [INFO]- 验证码:486K
+[2023-12-13 13:51:06,602] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2423
+[2023-12-13 13:51:06,694] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2023-12-13 13:51:06,700] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /login/ HTTP/1.1" 200 4317
+[2023-12-13 13:51:13,745] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 302 0
+[2023-12-13 13:51:13,897] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /index/ HTTP/1.1" 200 3599
+[2023-12-13 13:51:14,013] [log.py:241] [log:log_response] [WARNING]- Not Found: /static/plugins/bootstrap-3.4.1/css/bootstrap.min.css
+[2023-12-13 13:51:14,014] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET /static/plugins/bootstrap-3.4.1/css/bootstrap.min.css HTTP/1.1" 404 13967
+[2023-12-13 13:51:14,100] [log.py:241] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2023-12-13 13:51:14,101] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 13967
+[2023-12-13 13:51:21,392] [views.py:111] [views:gtimg] [INFO]- 8WMY
+[2023-12-13 13:51:21,393] [views.py:112] [views:gtimg] [INFO]- 验证码:8WMY
+[2023-12-13 13:51:21,432] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/?r=0.802664386274025 HTTP/1.1" 200 2474
+[2023-12-13 13:52:10,593] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-12-13 13:52:11,736] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-13 13:52:51,706] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-13 13:52:53,082] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4370
+[2023-12-13 13:52:53,103] [views.py:111] [views:gtimg] [INFO]- 验证码:K7A6
+[2023-12-13 13:52:53,407] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2121
+[2023-12-13 13:53:01,117] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /login/ HTTP/1.1" 200 4317
+[2023-12-13 13:53:01,238] [views.py:111] [views:gtimg] [INFO]- 验证码:U[F6
+[2023-12-13 13:53:01,283] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 1883
+[2023-12-13 13:53:08,002] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4371
+[2023-12-13 13:53:08,215] [views.py:111] [views:gtimg] [INFO]- 验证码:G5MA
+[2023-12-13 13:53:08,303] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2826
+[2023-12-13 13:53:10,374] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4371
+[2023-12-13 13:53:10,481] [views.py:111] [views:gtimg] [INFO]- 验证码:H368
+[2023-12-13 13:53:10,524] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2190
+[2023-12-13 13:53:11,314] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4371
+[2023-12-13 13:53:11,412] [views.py:111] [views:gtimg] [INFO]- 验证码:4RK1
+[2023-12-13 13:53:11,513] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2235
+[2023-12-13 13:53:12,142] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4371
+[2023-12-13 13:53:12,239] [views.py:111] [views:gtimg] [INFO]- 验证码:6U8I
+[2023-12-13 13:53:12,284] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2277
+=======
+[2023-12-13 04:48:19,476] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-13 05:33:55,130] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+>>>>>>> Stashed changes
+[2023-12-13 05:57:05,544] [views.py:111] [views:gtimg] [INFO]- 验证码:K387
+[2023-12-13 06:03:57,700] [views.py:111] [views:gtimg] [INFO]- 验证码:B7JR
+[2023-12-13 06:04:12,379] [views.py:111] [views:gtimg] [INFO]- 验证码:309I
+[2023-12-13 06:04:16,273] [views.py:111] [views:gtimg] [INFO]- 验证码:R[MH
+[2023-12-13 06:04:20,332] [views.py:111] [views:gtimg] [INFO]- 验证码:WRYK
+[2023-12-13 06:07:36,409] [views.py:111] [views:gtimg] [INFO]- 验证码:GM97
+[2023-12-13 06:07:39,809] [views.py:111] [views:gtimg] [INFO]- 验证码:5N10
+[2023-12-13 06:13:20,592] [views.py:111] [views:gtimg] [INFO]- 验证码:89BB
+[2023-12-13 06:17:40,828] [views.py:111] [views:gtimg] [INFO]- 验证码:0AF4
+[2023-12-13 06:42:45,191] [views.py:111] [views:gtimg] [INFO]- 验证码:38TD
+[2023-12-13 07:04:07,809] [views.py:111] [views:gtimg] [INFO]- 验证码:5Q58
+[2023-12-13 07:04:07,812] [views.py:111] [views:gtimg] [INFO]- 验证码:RIFS
+[2023-12-13 07:04:08,061] [views.py:111] [views:gtimg] [INFO]- 验证码:M14M
+[2023-12-13 07:04:08,105] [views.py:111] [views:gtimg] [INFO]- 验证码:H9HK
+[2023-12-13 07:04:08,408] [views.py:111] [views:gtimg] [INFO]- 验证码:248E
+[2023-12-13 07:04:08,420] [views.py:111] [views:gtimg] [INFO]- 验证码:HFNQ
+[2023-12-13 07:09:10,352] [views.py:111] [views:gtimg] [INFO]- 验证码:VDYK
+[2023-12-13 07:12:10,430] [views.py:111] [views:gtimg] [INFO]- 验证码:U5J[
+[2023-12-13 07:25:03,467] [views.py:111] [views:gtimg] [INFO]- 验证码:D213
+[2023-12-13 07:25:04,802] [views.py:111] [views:gtimg] [INFO]- 验证码:HRT4
+[2023-12-13 07:25:20,863] [views.py:111] [views:gtimg] [INFO]- 验证码:89JN
+[2023-12-13 07:25:21,930] [views.py:111] [views:gtimg] [INFO]- 验证码:98Z2
+[2023-12-13 07:25:22,339] [views.py:111] [views:gtimg] [INFO]- 验证码:T921
+[2023-12-13 07:25:22,537] [views.py:111] [views:gtimg] [INFO]- 验证码:1F6K
+[2023-12-13 07:25:22,733] [views.py:111] [views:gtimg] [INFO]- 验证码:MQ4U
+[2023-12-13 07:25:30,674] [views.py:111] [views:gtimg] [INFO]- 验证码:9755
+[2023-12-13 07:28:23,252] [views.py:111] [views:gtimg] [INFO]- 验证码:9277
+[2023-12-13 07:32:02,813] [views.py:111] [views:gtimg] [INFO]- 验证码:1343
+[2023-12-13 07:39:52,824] [views.py:111] [views:gtimg] [INFO]- 验证码:43NH
+[2023-12-13 13:33:40,953] [views.py:111] [views:gtimg] [INFO]- 验证码:E8F9
+[2023-12-14 01:59:15,759] [views.py:111] [views:gtimg] [INFO]- 验证码:07B9
+[2023-12-14 01:59:21,626] [log.py:241] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2023-12-14 02:04:42,882] [views.py:111] [views:gtimg] [INFO]- 验证码:8B47
+[2023-12-14 05:54:08,700] [views.py:111] [views:gtimg] [INFO]- 验证码:GEF3
+[2023-12-14 11:11:24,190] [views.py:111] [views:gtimg] [INFO]- 验证码:JCC5
+[2023-12-14 11:13:55,535] [views.py:111] [views:gtimg] [INFO]- 验证码:88A1
+[2023-12-14 11:14:11,175] [views.py:111] [views:gtimg] [INFO]- 验证码:IG66
+[2023-12-14 11:14:54,061] [views.py:111] [views:gtimg] [INFO]- 验证码:9819
+[2023-12-14 11:15:03,691] [views.py:111] [views:gtimg] [INFO]- 验证码:31IV
+[2023-12-14 11:15:09,913] [views.py:111] [views:gtimg] [INFO]- 验证码:B6F0
+[2023-12-14 11:17:20,067] [views.py:111] [views:gtimg] [INFO]- 验证码:[W46
+[2023-12-14 11:17:22,867] [views.py:111] [views:gtimg] [INFO]- 验证码:LZC0
+[2023-12-14 11:17:27,163] [views.py:111] [views:gtimg] [INFO]- 验证码:A06J
+[2023-12-14 11:17:35,718] [views.py:111] [views:gtimg] [INFO]- 验证码:1N1C
+[2023-12-14 11:17:59,763] [views.py:111] [views:gtimg] [INFO]- 验证码:SDWM
+[2023-12-14 11:19:29,114] [views.py:111] [views:gtimg] [INFO]- 验证码:94UV
+[2023-12-14 11:19:34,600] [views.py:111] [views:gtimg] [INFO]- 验证码:6Q8N
+[2023-12-14 11:19:41,870] [views.py:111] [views:gtimg] [INFO]- 验证码:NDU8
+[2023-12-14 11:20:29,698] [views.py:111] [views:gtimg] [INFO]- 验证码:UAYM
+[2023-12-14 11:20:33,837] [views.py:111] [views:gtimg] [INFO]- 验证码:4AVN
+[2023-12-14 11:20:38,923] [views.py:111] [views:gtimg] [INFO]- 验证码:MK6Y
+[2023-12-14 11:20:47,649] [views.py:111] [views:gtimg] [INFO]- 验证码:25GL
+[2023-12-14 11:20:48,282] [views.py:111] [views:gtimg] [INFO]- 验证码:VHSE
+[2023-12-14 11:20:48,669] [views.py:111] [views:gtimg] [INFO]- 验证码:0R7B
+[2023-12-14 11:20:48,866] [views.py:111] [views:gtimg] [INFO]- 验证码:U0F3
+[2023-12-14 11:20:49,109] [views.py:111] [views:gtimg] [INFO]- 验证码:E8OS
+[2023-12-14 11:21:04,160] [views.py:111] [views:gtimg] [INFO]- 验证码:M93[
+[2023-12-14 11:21:07,538] [views.py:111] [views:gtimg] [INFO]- 验证码:015E
+[2023-12-14 11:21:22,592] [views.py:111] [views:gtimg] [INFO]- 验证码:4G22
+[2023-12-14 11:21:26,171] [views.py:111] [views:gtimg] [INFO]- 验证码:SMH7
+[2023-12-14 11:21:46,210] [views.py:111] [views:gtimg] [INFO]- 验证码:[35N
+[2023-12-14 11:21:49,068] [views.py:111] [views:gtimg] [INFO]- 验证码:4ZKF
+[2023-12-14 11:22:18,909] [views.py:111] [views:gtimg] [INFO]- 验证码:W935
+[2023-12-14 11:23:01,880] [views.py:111] [views:gtimg] [INFO]- 验证码:0526
+[2023-12-14 11:23:06,118] [views.py:111] [views:gtimg] [INFO]- 验证码:JAJO
+[2023-12-14 11:24:09,919] [views.py:111] [views:gtimg] [INFO]- 验证码:OU57
+[2023-12-14 11:24:11,969] [views.py:111] [views:gtimg] [INFO]- 验证码:C[N9
+[2023-12-14 11:24:12,491] [views.py:111] [views:gtimg] [INFO]- 验证码:D1EI
+[2023-12-14 11:26:16,780] [views.py:111] [views:gtimg] [INFO]- 验证码:8GRV
+[2023-12-14 11:27:54,075] [views.py:111] [views:gtimg] [INFO]- 验证码:SUT1
+[2023-12-14 11:27:54,088] [views.py:111] [views:gtimg] [INFO]- 验证码:383O
+[2023-12-14 11:27:58,018] [views.py:111] [views:gtimg] [INFO]- 验证码:72FF
+[2023-12-14 11:28:11,445] [views.py:111] [views:gtimg] [INFO]- 验证码:TPUJ
+[2023-12-14 11:28:11,475] [views.py:111] [views:gtimg] [INFO]- 验证码:1OIV
+[2023-12-14 11:28:20,972] [views.py:111] [views:gtimg] [INFO]- 验证码:8HL9
+[2023-12-14 11:28:20,986] [views.py:111] [views:gtimg] [INFO]- 验证码:O5U1
+[2023-12-14 11:28:32,826] [views.py:111] [views:gtimg] [INFO]- 验证码:KAG0
+[2023-12-14 11:28:32,861] [views.py:111] [views:gtimg] [INFO]- 验证码:[LP0
+[2023-12-14 11:28:36,058] [views.py:111] [views:gtimg] [INFO]- 验证码:0BF2
+[2023-12-14 11:28:36,078] [views.py:111] [views:gtimg] [INFO]- 验证码:P95F
+[2023-12-14 11:28:38,532] [views.py:111] [views:gtimg] [INFO]- 验证码:5078
+[2023-12-14 11:28:38,563] [views.py:111] [views:gtimg] [INFO]- 验证码:08L7
+[2023-12-14 11:32:23,865] [views.py:111] [views:gtimg] [INFO]- 验证码:8W6U
+[2023-12-14 11:32:27,088] [views.py:111] [views:gtimg] [INFO]- 验证码:20GH
+[2023-12-14 11:32:50,332] [views.py:111] [views:gtimg] [INFO]- 验证码:5YWS
+[2023-12-14 11:32:53,492] [views.py:111] [views:gtimg] [INFO]- 验证码:3ZY1
+[2023-12-14 11:32:57,199] [views.py:111] [views:gtimg] [INFO]- 验证码:M971
+[2023-12-14 11:33:47,029] [views.py:111] [views:gtimg] [INFO]- 验证码:043D
+[2023-12-14 11:33:53,536] [views.py:111] [views:gtimg] [INFO]- 验证码:83I1
+[2023-12-14 11:35:22,437] [views.py:111] [views:gtimg] [INFO]- 验证码:E7I6
+[2023-12-14 11:35:23,521] [views.py:111] [views:gtimg] [INFO]- 验证码:OQPL
+[2023-12-14 11:35:29,551] [views.py:111] [views:gtimg] [INFO]- 验证码:HJI0
+[2023-12-14 11:35:35,625] [views.py:111] [views:gtimg] [INFO]- 验证码:3QK0
+[2023-12-14 11:35:56,570] [views.py:111] [views:gtimg] [INFO]- 验证码:SXV5
+[2023-12-14 11:35:59,765] [views.py:111] [views:gtimg] [INFO]- 验证码:1N1R
+[2023-12-14 11:37:21,502] [views.py:111] [views:gtimg] [INFO]- 验证码:S7MP
+[2023-12-14 11:37:26,671] [views.py:111] [views:gtimg] [INFO]- 验证码:227X
+[2023-12-14 11:37:47,037] [views.py:111] [views:gtimg] [INFO]- 验证码:54VV
+[2023-12-14 11:37:51,936] [views.py:111] [views:gtimg] [INFO]- 验证码:L1CP
+[2023-12-14 11:37:55,492] [views.py:111] [views:gtimg] [INFO]- 验证码:58PT
+[2023-12-14 11:38:06,305] [views.py:111] [views:gtimg] [INFO]- 验证码:3175
+[2023-12-14 11:38:22,945] [views.py:111] [views:gtimg] [INFO]- 验证码:K83P
+[2023-12-14 11:38:48,989] [views.py:111] [views:gtimg] [INFO]- 验证码:K727
+[2023-12-14 11:38:52,499] [views.py:111] [views:gtimg] [INFO]- 验证码:X59E
+[2023-12-14 11:39:14,238] [views.py:111] [views:gtimg] [INFO]- 验证码:7CXT
+[2023-12-14 11:39:19,006] [views.py:111] [views:gtimg] [INFO]- 验证码:Y30S
+[2023-12-14 11:40:40,547] [views.py:111] [views:gtimg] [INFO]- 验证码:7O95
+[2023-12-14 11:40:45,459] [views.py:111] [views:gtimg] [INFO]- 验证码:7413
+[2023-12-14 11:50:49,163] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 335, in updata_information
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-12-14 11:52:49,961] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 335, in updata_information
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-12-14 11:54:48,617] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 335, in updata_information
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-12-14 12:04:33,323] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 335, in updata_information
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-12-14 12:04:49,007] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 335, in updata_information
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-12-14 12:10:11,989] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 335, in updata_information
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-12-14 12:12:24,714] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 335, in updata_information
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-12-14 12:16:12,150] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-12-14 12:20:58,621] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 335, in updata_information
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-12-14 12:45:11,807] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+[2023-12-14 12:45:18,979] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+[2023-12-14 12:45:24,781] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+[2023-12-14 12:47:42,659] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-14 12:48:08,021] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-14 12:49:01,084] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-14 12:50:14,833] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-14 12:50:16,787] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-14 12:50:57,959] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-14 12:51:05,033] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-14 12:51:14,054] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-14 12:51:53,879] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-14 12:51:58,029] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-14 12:53:55,576] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-14 12:55:42,943] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-14 12:56:42,453] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 11)
+[2023-12-14 12:57:01,441] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 3 column 1 (char 17)
+[2023-12-14 12:57:09,499] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 3 column 1 (char 17)
+[2023-12-14 12:57:14,207] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 3 column 1 (char 17)
+[2023-12-14 13:30:19,405] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 3 column 1 (char 17)
+[2023-12-14 13:31:29,231] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 14 column 1 (char 286)
+[2023-12-14 13:31:45,459] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 14 column 1 (char 350)
+[2023-12-14 13:31:50,333] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 14 column 1 (char 350)
+[2023-12-14 13:31:54,939] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 14 column 1 (char 350)
+[2023-12-14 13:31:59,261] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 14 column 1 (char 350)
+[2023-12-14 13:32:14,029] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 14 column 1 (char 354)
+[2023-12-14 13:33:13,681] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 14 column 1 (char 354)
+[2023-12-14 13:43:23,675] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 14 column 1 (char 354)
+[2023-12-14 13:50:35,624] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 14 column 1 (char 354)
+[2023-12-14 13:59:41,904] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 13 column 1 (char 343)
+[2023-12-14 14:01:21,488] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 14 column 1 (char 349)
+[2023-12-15 07:02:26,372] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 223, in add_index
+    plat = json.loads(by)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 13 column 1 (char 343)
