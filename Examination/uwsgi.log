@@ -27,3 +27,15 @@ uWSGI running as root, you can use --uid/--gid/--chroot options
 python threads support enabled
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+/home/an/Examin/Examination/Examination /home/an/Examin/Examination/logs
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x293ebb0 pid: 20333 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20333)
+spawned uWSGI worker 1 (pid: 20345, cores: 2)
+spawned uWSGI worker 2 (pid: 20346, cores: 2)
+spawned uWSGI worker 3 (pid: 20348, cores: 2)
+spawned uWSGI worker 4 (pid: 20349, cores: 2)
