@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [2023-12-13 13:50:25,335] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
 [2023-12-13 13:50:34,919] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4370
 [2023-12-13 13:50:34,979] [views.py:111] [views:gtimg] [INFO]- VG3W
@@ -53,3 +54,7 @@
 [2023-12-13 13:53:12,142] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4371
 [2023-12-13 13:53:12,239] [views.py:111] [views:gtimg] [INFO]- 验证码:6U8I
 [2023-12-13 13:53:12,284] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2277
+=======
+[2023-12-13 04:48:19,476] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-13 05:33:55,130] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+>>>>>>> Stashed changes
