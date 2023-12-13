@@ -1,0 +1,356 @@
+[2023-11-23 06:43:01,489] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/session/properties
+[2023-11-23 12:14:44,542] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/info.php
+[2023-11-23 12:14:45,498] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/phpinfo.php
+[2023-11-23 12:16:16,941] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/.env
+[2023-11-23 12:16:17,811] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/.env.local
+[2023-11-23 12:16:18,896] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/.env.production
+[2023-11-23 12:16:19,420] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/.env.staging
+[2023-11-23 12:16:19,945] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/src/.env
+[2023-11-23 12:16:47,692] [log.py:241] [log:log_response] [WARNING]- Not Found: /code/api/.env
+[2023-11-23 12:17:55,245] [log.py:241] [log:log_response] [WARNING]- Not Found: /packages/api/.env
+[2023-11-24 18:11:45,634] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/.env
+[2023-11-25 14:10:04,414] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-25 16:32:33,925] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-25 19:17:12,059] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-11-25 20:17:47,316] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-11-25 20:20:14,085] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-11-25 21:23:35,109] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-25 22:12:04,600] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-25 22:20:01,430] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-11-25 22:50:46,780] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-11-25 22:58:07,917] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-25 23:04:34,531] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-25 23:22:11,032] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-11-26 01:59:46,583] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-11-26 02:54:02,813] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-26 03:00:21,982] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-26 04:43:16,309] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-26 04:58:30,047] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-26 05:16:39,127] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-26 06:18:18,467] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-26 07:25:11,519] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-26 08:46:35,776] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-11-26 08:52:55,474] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-26 09:07:56,974] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-26 09:30:25,225] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-11-26 09:36:47,359] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-26 09:42:26,111] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-26 09:45:19,321] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-11-26 09:52:23,189] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-26 10:21:12,367] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-26 10:57:03,396] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-26 11:03:47,513] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-26 11:08:24,683] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-26 11:39:18,351] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-26 11:51:37,024] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-26 12:13:13,488] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-26 13:34:23,788] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-26 13:42:58,657] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-11-26 13:48:30,979] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-11-26 13:49:49,330] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-26 14:00:00,870] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-26 14:20:53,481] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-26 14:31:05,628] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-26 14:38:57,197] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-26 14:40:58,256] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-26 15:07:40,444] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-26 15:22:05,259] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-11-26 16:05:32,989] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-26 16:26:50,050] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-26 16:53:10,722] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-26 17:02:03,849] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-26 18:24:13,087] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-26 18:33:54,616] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-26 18:38:12,621] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-11-26 18:44:19,845] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-26 18:48:23,084] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-26 18:49:02,920] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-11-26 19:07:04,611] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-26 19:17:52,990] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-11-26 19:54:56,796] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-11-26 20:03:04,351] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-11-26 20:31:47,544] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-26 20:35:32,722] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-11-26 20:44:36,196] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-11-26 20:50:46,633] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-11-26 20:51:57,508] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-11-26 21:40:02,869] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-26 21:57:04,840] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-26 22:36:28,663] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-26 22:38:11,598] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-11-26 23:02:59,662] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-27 00:37:53,880] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-11-27 01:29:15,992] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-27 01:45:31,269] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-27 01:48:01,712] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-27 01:57:04,967] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-27 01:59:43,764] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-11-27 02:12:04,850] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-27 02:46:50,246] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-27 03:05:49,699] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-27 03:16:55,824] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-27 04:04:33,935] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-27 04:22:02,894] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-27 04:29:11,401] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-27 04:40:18,864] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-27 05:26:18,583] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-27 06:18:01,155] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-27 06:20:13,981] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-27 06:26:16,661] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-27 06:35:29,619] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-11-27 06:46:43,603] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-27 07:24:48,243] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-27 07:27:48,033] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-11-27 09:22:55,828] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-27 09:44:49,576] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-27 09:54:25,111] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-27 11:19:46,312] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-27 11:23:24,190] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-27 11:30:50,384] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-27 11:30:55,365] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-11-27 11:48:04,485] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-27 11:57:32,396] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-27 12:37:04,286] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-27 13:18:47,892] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-27 14:06:41,940] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-27 14:09:18,693] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-27 14:37:51,114] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-27 15:15:15,891] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-27 16:49:48,377] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-27 18:15:47,316] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-27 18:51:49,116] [exception.py:124] [exception:response_for_exception] [ERROR]- Invalid HTTP_HOST header: 'ar.hz.netease.com:443ar.hz.netease.com:443'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ar.hz.netease.com:443ar.hz.netease.com:443'. The domain name provided is not valid according to RFC 1034/1035.
+[2023-11-27 18:51:49,196] [log.py:241] [log:log_response] [WARNING]- Bad Request: /
+[2023-11-27 19:23:52,973] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-27 21:29:06,912] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-11-27 23:02:29,030] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-27 23:59:31,272] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-28 00:22:44,967] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-28 00:31:33,968] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-28 00:41:47,499] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-28 00:44:34,295] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-28 02:20:33,091] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-28 02:44:05,280] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-28 02:54:08,132] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-28 03:22:42,259] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-28 04:45:50,782] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-28 05:35:32,582] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-28 07:40:41,390] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-28 08:29:30,433] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-28 08:31:17,323] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-28 09:32:54,159] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-28 10:35:13,061] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-28 10:52:45,246] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-28 10:57:02,585] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-28 11:05:30,810] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-28 11:12:05,605] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-28 13:41:37,700] [exception.py:124] [exception:response_for_exception] [ERROR]- Invalid HTTP_HOST header: 'ar.hz.netease.com:443ar.hz.netease.com:443'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ar.hz.netease.com:443ar.hz.netease.com:443'. The domain name provided is not valid according to RFC 1034/1035.
+[2023-11-28 13:41:37,711] [log.py:241] [log:log_response] [WARNING]- Bad Request: /
+[2023-11-28 13:48:02,560] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-28 14:22:35,872] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-11-28 15:25:39,708] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-11-28 16:18:46,930] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-28 17:30:54,213] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-28 18:01:18,387] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-28 18:18:51,461] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-28 18:52:57,568] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-28 19:21:21,567] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-28 20:28:08,776] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-28 21:09:25,200] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-28 21:40:21,111] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-11-28 22:57:50,814] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-11-28 23:29:53,928] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-28 23:41:21,873] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-11-29 00:57:02,134] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-29 01:09:54,302] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-29 01:19:57,622] [exception.py:124] [exception:response_for_exception] [ERROR]- Invalid HTTP_HOST header: 'ar.hz.netease.com:443ar.hz.netease.com:443'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ar.hz.netease.com:443ar.hz.netease.com:443'. The domain name provided is not valid according to RFC 1034/1035.
+[2023-11-29 01:19:57,623] [log.py:241] [log:log_response] [WARNING]- Bad Request: /
+[2023-11-29 02:42:20,404] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-29 04:06:53,438] [exception.py:124] [exception:response_for_exception] [ERROR]- Invalid HTTP_HOST header: 'ar.hz.netease.com:443ar.hz.netease.com:443'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ar.hz.netease.com:443ar.hz.netease.com:443'. The domain name provided is not valid according to RFC 1034/1035.
+[2023-11-29 04:06:53,440] [log.py:241] [log:log_response] [WARNING]- Bad Request: /
+[2023-11-29 04:47:56,661] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-29 08:46:06,409] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-29 10:02:21,828] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-29 10:06:13,566] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-29 10:21:28,423] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-29 10:58:01,396] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-29 12:04:38,969] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-29 14:09:01,742] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-29 14:57:00,010] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-11-29 15:46:27,288] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-29 20:38:00,491] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-29 21:32:45,400] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-29 21:39:50,946] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-29 21:58:23,494] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-29 22:00:20,664] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-29 22:14:58,783] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-11-30 00:25:42,573] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-30 04:05:52,470] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-11-30 04:10:39,970] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-30 06:32:25,421] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-30 09:45:05,365] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-30 10:26:15,069] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-11-30 12:21:53,633] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-30 14:29:37,439] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-30 16:12:15,351] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-30 19:13:30,936] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-11-30 19:29:35,985] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-30 20:04:19,706] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-30 21:58:17,112] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-11-30 23:18:46,823] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-11-30 23:36:44,106] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-12-01 00:30:01,239] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-12-01 00:57:42,446] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-12-01 03:04:30,120] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-12-01 03:07:03,196] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-12-01 03:30:47,062] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-12-01 03:59:44,371] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-12-01 04:35:09,859] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/.env
+[2023-12-01 04:35:10,312] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/.env.local
+[2023-12-01 04:35:10,539] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/info.php
+[2023-12-01 04:35:10,996] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/src/.env
+[2023-12-01 07:13:55,877] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-12-01 14:15:58,656] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-12-01 14:52:30,380] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-12-01 15:18:35,999] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-12-01 16:02:31,392] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/config/getClientIp
+[2023-12-01 17:18:19,248] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-01 18:04:22,051] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-12-01 18:06:10,006] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-12-01 18:41:23,697] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-01 18:46:39,776] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/netoptions
+[2023-12-01 19:19:29,465] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-12-01 20:25:29,754] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-12-01 20:36:18,646] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-12-01 20:54:25,558] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-12-01 22:47:20,360] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-12-01 23:12:17,074] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-12-01 23:38:59,383] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-12-01 23:47:39,785] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-12-01 23:48:59,830] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-12-02 01:25:42,952] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-12-02 01:42:21,156] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-02 03:03:07,671] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-12-02 05:22:15,427] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-12-02 07:10:28,474] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-02 10:18:49,874] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-12-02 11:49:23,667] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-12-02 11:49:27,290] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-02 12:52:02,168] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-12-02 13:43:24,054] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-12-02 17:03:47,995] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-12-02 17:40:46,518] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-02 19:32:06,162] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-12-02 22:39:52,466] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-12-02 23:37:44,016] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-03 05:31:11,602] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-12-03 06:54:39,817] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-12-03 07:42:07,440] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-12-03 10:23:50,802] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-12-03 11:15:09,838] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-12-03 11:55:28,897] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-12-03 15:41:13,208] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-12-03 16:04:22,571] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-03 16:48:17,457] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-12-03 20:21:18,325] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v2/cmdb/system/admin
+[2023-12-03 22:11:17,234] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-12-04 00:08:46,839] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-12-04 00:35:10,369] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-12-04 04:23:40,624] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/getxx/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./StudentExamination/views.py", line 249, in get_Logistic
+    data = data["data"]["track_info"]["tracking"]["providers"][0]["events"]
+KeyError: 'track_info'
+[2023-12-04 04:33:40,798] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/getxx/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./StudentExamination/views.py", line 249, in get_Logistic
+    data = data["data"]["track_info"]["tracking"]["providers"][0]["events"]
+KeyError: 'track_info'
+[2023-12-04 04:53:40,898] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/getxx/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./StudentExamination/views.py", line 249, in get_Logistic
+    data = data["data"]["track_info"]["tracking"]["providers"][0]["events"]
+KeyError: 'track_info'
+[2023-12-04 05:23:40,986] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/getxx/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./StudentExamination/views.py", line 249, in get_Logistic
+    data = data["data"]["track_info"]["tracking"]["providers"][0]["events"]
+KeyError: 'track_info'
+[2023-12-04 06:08:59,306] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-12-04 06:56:30,105] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-12-04 07:03:30,450] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-12-04 07:41:35,637] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-04 08:11:16,571] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-12-04 09:35:36,042] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-12-04 11:00:35,925] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/issafety
+[2023-12-04 11:09:25,203] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-12-04 11:16:16,863] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/upgrade
+[2023-12-04 11:58:12,160] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-12-04 12:55:41,349] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-12-04 13:20:00,326] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-12-04 14:23:55,222] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-04 15:01:56,755] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/settings/search
+[2023-12-04 15:59:45,211] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/language
+[2023-12-04 17:43:52,766] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/monitors/iooptions
+[2023-12-04 21:12:43,054] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-12-04 23:47:21,115] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-12-05 03:59:10,958] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/demo
+[2023-12-05 05:07:15,950] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-12-05 05:56:04,887] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/auth/captcha
+[2023-12-05 06:59:30,765] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-05 07:16:52,665] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
