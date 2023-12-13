@@ -11592,3 +11592,73 @@ your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 416880 bytes (407 KB) for 8 cores
 *** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x18a0bb0 pid: 23731 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23731)
+spawned uWSGI worker 1 (pid: 23750, cores: 2)
+spawned uWSGI worker 2 (pid: 23751, cores: 2)
+spawned uWSGI worker 3 (pid: 23753, cores: 2)
+spawned uWSGI worker 4 (pid: 23754, cores: 2)
+[pid: 23753|app: 0|req: 1/1] 111.198.24.76 () {38 vars in 653 bytes} [Wed Dec 13 05:57:05 2023] GET /api/gtimg/ => generated 2322 bytes in 145 msecs (HTTP/1.1 200) 8 headers in 370 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 1/2] 111.198.24.76 () {44 vars in 783 bytes} [Wed Dec 13 05:57:08 2023] POST /api/testlogin/ => generated 49 bytes in 93 msecs (HTTP/1.1 200) 8 headers in 244 bytes (1 switches on core 0)
+[pid: 23753|app: 0|req: 2/3] 111.198.24.76 () {44 vars in 783 bytes} [Wed Dec 13 05:57:11 2023] POST /api/testlogin/ => generated 42 bytes in 13 msecs (HTTP/1.1 200) 9 headers in 395 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 2/4] 111.198.24.76 () {46 vars in 758 bytes} [Wed Dec 13 05:57:39 2023] OPTIONS /api/getmain/ => generated 0 bytes in 0 msecs (HTTP/1.1 200) 7 headers in 335 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 3/5] 111.198.24.76 () {44 vars in 745 bytes} [Wed Dec 13 05:57:39 2023] POST /api/getmain/ => generated 791 bytes in 8 msecs (HTTP/1.1 200) 8 headers in 245 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 4/6] 111.198.24.76 () {44 vars in 745 bytes} [Wed Dec 13 05:58:15 2023] POST /api/getmain/ => generated 791 bytes in 5 msecs (HTTP/1.1 200) 8 headers in 245 bytes (1 switches on core 1)
+[pid: 23753|app: 0|req: 3/7] 111.198.24.76 () {44 vars in 745 bytes} [Wed Dec 13 06:00:12 2023] POST /api/getmain/ => generated 791 bytes in 5 msecs (HTTP/1.1 200) 8 headers in 245 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 5/8] 111.198.24.76 () {44 vars in 745 bytes} [Wed Dec 13 06:02:36 2023] POST /api/getmain/ => generated 791 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 245 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 6/9] 111.198.24.76 () {44 vars in 745 bytes} [Wed Dec 13 06:03:50 2023] POST /api/getmain/ => generated 791 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 245 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 7/10] 111.198.24.76 () {38 vars in 699 bytes} [Wed Dec 13 06:03:57 2023] GET / => generated 0 bytes in 5 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 23753|app: 0|req: 4/11] 111.198.24.76 () {38 vars in 711 bytes} [Wed Dec 13 06:03:57 2023] GET /login/ => generated 4317 bytes in 14 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 8/12] 111.198.24.76 () {38 vars in 654 bytes} [Wed Dec 13 06:03:57 2023] GET /api/gtimg/ => generated 2424 bytes in 22 msecs (HTTP/1.1 200) 8 headers in 370 bytes (1 switches on core 1)
+[pid: 23750|app: 0|req: 1/13] 111.198.24.76 () {40 vars in 713 bytes} [Wed Dec 13 06:03:57 2023] GET /favicon.ico => generated 0 bytes in 97 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 2/14] 111.198.24.76 () {40 vars in 703 bytes} [Wed Dec 13 06:03:57 2023] GET /login/ => generated 4317 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 9/15] 220.196.160.146 () {42 vars in 833 bytes} [Wed Dec 13 06:04:10 2023] GET /gtimg/ => generated 0 bytes in 0 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 10/16] 220.196.160.75 () {40 vars in 801 bytes} [Wed Dec 13 06:04:12 2023] GET /gtimg/ => generated 0 bytes in 0 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 11/17] 220.196.160.75 () {40 vars in 801 bytes} [Wed Dec 13 06:04:12 2023] GET /login/ => generated 4317 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 12/18] 220.196.160.75 () {38 vars in 703 bytes} [Wed Dec 13 06:04:12 2023] GET /api/gtimg/ => generated 2110 bytes in 16 msecs (HTTP/1.1 200) 8 headers in 370 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 13/19] 111.198.24.76 () {40 vars in 710 bytes} [Wed Dec 13 06:04:16 2023] GET /api/gtimg/ => generated 2309 bytes in 14 msecs (HTTP/1.1 200) 8 headers in 370 bytes (1 switches on core 0)
+[pid: 23753|app: 0|req: 5/20] 111.198.24.76 () {44 vars in 772 bytes} [Wed Dec 13 06:04:20 2023] GET /api/gtimg/ => generated 2839 bytes in 15 msecs (HTTP/1.1 200) 8 headers in 370 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 14/21] 111.198.24.76 () {44 vars in 783 bytes} [Wed Dec 13 06:04:30 2023] POST /api/testlogin/ => generated 49 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 244 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 15/22] 111.198.24.76 () {44 vars in 783 bytes} [Wed Dec 13 06:04:34 2023] POST /api/testlogin/ => generated 42 bytes in 10 msecs (HTTP/1.1 200) 9 headers in 395 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 16/23] 111.198.24.76 () {44 vars in 745 bytes} [Wed Dec 13 06:04:42 2023] POST /api/getmain/ => generated 791 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 245 bytes (1 switches on core 1)
+[pid: 23753|app: 0|req: 6/24] 111.198.24.76 () {44 vars in 745 bytes} [Wed Dec 13 06:06:15 2023] POST /api/getmain/ => generated 790 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 245 bytes (1 switches on core 1)
+[pid: 23754|app: 0|req: 1/25] 111.198.24.76 () {38 vars in 653 bytes} [Wed Dec 13 06:07:36 2023] GET /api/gtimg/ => generated 2660 bytes in 115 msecs (HTTP/1.1 200) 8 headers in 370 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 17/26] 111.198.24.76 () {42 vars in 715 bytes} [Wed Dec 13 06:07:39 2023] GET /api/gtimg/ => generated 2175 bytes in 13 msecs (HTTP/1.1 200) 8 headers in 370 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 18/27] 111.198.24.76 () {44 vars in 783 bytes} [Wed Dec 13 06:07:43 2023] POST /api/testlogin/ => generated 49 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 252 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 19/28] 111.198.24.76 () {44 vars in 783 bytes} [Wed Dec 13 06:07:53 2023] POST /api/testlogin/ => generated 49 bytes in 5 msecs (HTTP/1.1 200) 8 headers in 252 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 20/29] 111.198.24.76 () {44 vars in 783 bytes} [Wed Dec 13 06:07:56 2023] POST /api/testlogin/ => generated 49 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 252 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 21/30] 111.198.24.76 () {44 vars in 783 bytes} [Wed Dec 13 06:07:59 2023] POST /api/testlogin/ => generated 49 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 252 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 22/31] 111.198.24.76 () {44 vars in 783 bytes} [Wed Dec 13 06:08:06 2023] POST /api/testlogin/ => generated 49 bytes in 5 msecs (HTTP/1.1 200) 8 headers in 252 bytes (1 switches on core 1)
+[pid: 23754|app: 0|req: 2/32] 111.198.24.76 () {44 vars in 785 bytes} [Wed Dec 13 06:08:11 2023] POST /api/testlogin/ => generated 49 bytes in 6 msecs (HTTP/1.1 200) 8 headers in 252 bytes (1 switches on core 1)
+[pid: 23753|app: 0|req: 7/33] 198.235.24.238 () {30 vars in 592 bytes} [Wed Dec 13 06:09:02 2023] GET / => generated 0 bytes in 4 msecs (HTTP/1.0 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 23753|app: 0|req: 8/34] 103.85.85.181 () {38 vars in 566 bytes} [Wed Dec 13 06:10:38 2023] HEAD / => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 1)
+[pid: 23754|app: 0|req: 3/35] 103.85.85.181 () {36 vars in 548 bytes} [Wed Dec 13 06:10:38 2023] GET /login/ => generated 4317 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 23754|app: 0|req: 4/36] 103.85.85.181 () {40 vars in 632 bytes} [Wed Dec 13 06:10:38 2023] HEAD /1234.php => generated 0 bytes in 7 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 1)
+[pid: 23753|app: 0|req: 9/37] 103.85.85.181 () {40 vars in 640 bytes} [Wed Dec 13 06:10:38 2023] HEAD /Wp-Login.php => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 23/38] 103.85.85.181 () {40 vars in 635 bytes} [Wed Dec 13 06:10:38 2023] HEAD /wumim.php => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Dec 13 14:10:54 2023] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 28 February 2023 12:04:58
+os: Linux-3.10.0-1160.83.1.el7.x86_64 #1 SMP Wed Jan 25 16:41:43 UTC 2023
+nodename: VM-8-15-centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/an/Examin/Examination
+writing pidfile to uwsgi.pid
+detected binary path: /home/an/python_examin/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/an/Examin/Examination
+your processes number limit is 7907
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.1 (default, Feb 17 2023, 13:53:38)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]

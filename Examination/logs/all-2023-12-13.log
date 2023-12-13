@@ -58,3 +58,10 @@
 [2023-12-13 04:48:19,476] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
 [2023-12-13 05:33:55,130] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
 >>>>>>> Stashed changes
+[2023-12-13 05:57:05,544] [views.py:111] [views:gtimg] [INFO]- 验证码:K387
+[2023-12-13 06:03:57,700] [views.py:111] [views:gtimg] [INFO]- 验证码:B7JR
+[2023-12-13 06:04:12,379] [views.py:111] [views:gtimg] [INFO]- 验证码:309I
+[2023-12-13 06:04:16,273] [views.py:111] [views:gtimg] [INFO]- 验证码:R[MH
+[2023-12-13 06:04:20,332] [views.py:111] [views:gtimg] [INFO]- 验证码:WRYK
+[2023-12-13 06:07:36,409] [views.py:111] [views:gtimg] [INFO]- 验证码:GM97
+[2023-12-13 06:07:39,809] [views.py:111] [views:gtimg] [INFO]- 验证码:5N10
