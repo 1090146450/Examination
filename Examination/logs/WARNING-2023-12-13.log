@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 [2023-12-13 13:51:14,013] [log.py:241] [log:log_response] [WARNING]- Not Found: /static/plugins/bootstrap-3.4.1/css/bootstrap.min.css
 [2023-12-13 13:51:14,014] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET /static/plugins/bootstrap-3.4.1/css/bootstrap.min.css HTTP/1.1" 404 13967
 [2023-12-13 13:51:14,100] [log.py:241] [log:log_response] [WARNING]- Not Found: /favicon.ico
 [2023-12-13 13:51:14,101] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 13967
+=======
+[2023-12-13 04:48:19,476] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+[2023-12-13 05:33:55,130] [log.py:241] [log:log_response] [WARNING]- Not Found: /api/v1/dashboard/base/all/all
+>>>>>>> Stashed changes
