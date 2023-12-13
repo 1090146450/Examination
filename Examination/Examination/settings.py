@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5a_v-u6=v4f=8rnue=z$bx1r5=554n6!1u3mcxl8(#5^=2mfu_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -111,12 +111,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # 日志
 cur_path = os.path.dirname(os.path.realpath(__file__))  # log_path是存放日志的路径
 log_path = os.path.join(os.path.dirname(cur_path), 'logs')
-print(cur_path,log_path)
 if not os.path.exists(log_path): os.mkdir(log_path)  # 如果不存在这个logs文件夹，就自动创建一个
-
+BASE_LOG_DIR = os.path.join(BASE_DIR, "log")
 LOGGING = {
     'version': 1,
-    # 'disable_existing_loggers': True,  # 禁用已经存在的logger实例
+    'disable_existing_loggers': False,  # 禁用已经存在的logger实例
     # 日志文件格式
     'formatters': {
         # 详细的日志格式
@@ -140,7 +139,7 @@ LOGGING = {
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': os.path.join(log_path, 'all-{}.log'.format(time.strftime('%Y-%m-%d'))),
             'maxBytes': 1024 * 1024 * 50,  # 文件大小
-            'backupCount': 5,  # 备份数
+            'backupCount': 2,  # 备份数
             'formatter': 'standard',  # 输出格式
             'encoding': 'utf-8',  # 设置默认编码，否则打印出来汉字乱码
         },
@@ -150,7 +149,7 @@ LOGGING = {
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': os.path.join(log_path, 'error-{}.log'.format(time.strftime('%Y-%m-%d'))),
             'maxBytes': 1024 * 1024 * 50,  # 文件大小
-            'backupCount': 5,  # 备份数
+            'backupCount': 2,  # 备份数
             'formatter': 'standard',  # 输出格式
             'encoding': 'utf-8',  # 设置默认编码
         },
@@ -160,23 +159,23 @@ LOGGING = {
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': os.path.join(log_path, 'WARNING-{}.log'.format(time.strftime('%Y-%m-%d'))),
             'maxBytes': 1024 * 1024 * 50,  # 文件大小
-            'backupCount': 5,  # 备份数
+            'backupCount': 2,  # 备份数
             'formatter': 'standard',  # 输出格式
             'encoding': 'utf-8',  # 设置默认编码
         },
-        # # 控制台输出
-        # 'console': {
-        #     'level': 'DEBUG',
-        #     'class': 'logging.StreamHandler',
-        #     'formatter': 'standard'
-        # },
-        # # 输出info日志
+        # 控制台输出
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'standard'
+        },
+        # 输出info日志
         # 'info': {
         #     'level': 'INFO',
         #     'class': 'logging.handlers.RotatingFileHandler',
         #     'filename': os.path.join(log_path, 'info-{}.log'.format(time.strftime('%Y-%m-%d'))),
         #     'maxBytes': 1024 * 1024 * 50,
-        #     'backupCount': 5,
+        #     'backupCount': 2,
         #     'formatter': 'standard',
         #     'encoding': 'utf-8',  # 设置默认编码
         # },
@@ -194,8 +193,8 @@ LOGGING = {
     },
     # log 调用时需要当作参数传入
     'log': {
-        'handlers': ['error', 'WARNING', 'default'],
-        # 'handlers': ['error', 'info', 'WARNING', 'console', 'default'],
+        # 'handlers': ['error', 'WARNING', 'default'],
+        'handlers': ['error', 'info', 'WARNING', 'console', 'default'],
         # 'error', 'info', 'console',
         'level': 'INFO',
         'propagate': True

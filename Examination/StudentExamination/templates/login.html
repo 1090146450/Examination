@@ -106,7 +106,7 @@
                         <div class="div">{{form.errors.passwd.0}}</div>
                         {{ form.random_img }}
                         <div class="getimg">
-                            <img class="getimg" id="getimg" src="/gtimg/">
+                            <img class="getimg" id="getimg" src="/api/gtimg/">
                         </div>
                         <div class="div">{{form.errors.random_img.0}}</div>
                         <button class="f" type="submit">GO</button>
@@ -118,6 +118,8 @@
     <div class="icp">© 2023 alsoeasy <a href="http://beian.miit.gov.cn/" target="_blank"> 京ICP备2023002782号-1</a></div>
     </body>
     <script src="{% static 'plugins/jquery-3.6.1.min.js' %}"></script>
+    <script src="{% static 'plugins/bootstrap-3.4.1/js/bootstrap.js' %}"></script>
+
     <script type="text/javascript">
         $(function () {
             get_rendomimg();
@@ -126,7 +128,7 @@
         function get_rendomimg() {
             $("#getimg").click(
                 function () {
-                    document.getElementById('getimg').src = '/gtimg/?r=' + Math.random();
+                    document.getElementById('getimg').src = '/api/gtimg/?r=' + Math.random();
                 })
         }
     </script>

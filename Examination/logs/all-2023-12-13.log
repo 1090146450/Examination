@@ -1,0 +1,55 @@
+[2023-12-13 13:50:25,335] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-13 13:50:34,919] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4370
+[2023-12-13 13:50:34,979] [views.py:111] [views:gtimg] [INFO]- VG3W
+[2023-12-13 13:50:34,979] [views.py:112] [views:gtimg] [INFO]- 验证码:VG3W
+[2023-12-13 13:50:35,321] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2796
+[2023-12-13 13:50:35,394] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2023-12-13 13:50:35,399] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /login/ HTTP/1.1" 200 4317
+[2023-12-13 13:50:39,882] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4370
+[2023-12-13 13:50:40,026] [views.py:111] [views:gtimg] [INFO]- H0AW
+[2023-12-13 13:50:40,026] [views.py:112] [views:gtimg] [INFO]- 验证码:H0AW
+[2023-12-13 13:50:40,070] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2281
+[2023-12-13 13:50:40,193] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2023-12-13 13:50:40,198] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /login/ HTTP/1.1" 200 4317
+[2023-12-13 13:50:41,006] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4370
+[2023-12-13 13:50:41,083] [views.py:111] [views:gtimg] [INFO]- B35Q
+[2023-12-13 13:50:41,084] [views.py:112] [views:gtimg] [INFO]- 验证码:B35Q
+[2023-12-13 13:50:41,120] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2559
+[2023-12-13 13:50:41,197] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2023-12-13 13:50:41,201] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /login/ HTTP/1.1" 200 4317
+[2023-12-13 13:51:06,494] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4370
+[2023-12-13 13:51:06,566] [views.py:111] [views:gtimg] [INFO]- 486K
+[2023-12-13 13:51:06,567] [views.py:112] [views:gtimg] [INFO]- 验证码:486K
+[2023-12-13 13:51:06,602] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2423
+[2023-12-13 13:51:06,694] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2023-12-13 13:51:06,700] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /login/ HTTP/1.1" 200 4317
+[2023-12-13 13:51:13,745] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 302 0
+[2023-12-13 13:51:13,897] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /index/ HTTP/1.1" 200 3599
+[2023-12-13 13:51:14,013] [log.py:241] [log:log_response] [WARNING]- Not Found: /static/plugins/bootstrap-3.4.1/css/bootstrap.min.css
+[2023-12-13 13:51:14,014] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET /static/plugins/bootstrap-3.4.1/css/bootstrap.min.css HTTP/1.1" 404 13967
+[2023-12-13 13:51:14,100] [log.py:241] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2023-12-13 13:51:14,101] [basehttp.py:187] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 13967
+[2023-12-13 13:51:21,392] [views.py:111] [views:gtimg] [INFO]- 8WMY
+[2023-12-13 13:51:21,393] [views.py:112] [views:gtimg] [INFO]- 验证码:8WMY
+[2023-12-13 13:51:21,432] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/?r=0.802664386274025 HTTP/1.1" 200 2474
+[2023-12-13 13:52:10,593] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-12-13 13:52:11,736] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-13 13:52:51,706] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-13 13:52:53,082] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4370
+[2023-12-13 13:52:53,103] [views.py:111] [views:gtimg] [INFO]- 验证码:K7A6
+[2023-12-13 13:52:53,407] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2121
+[2023-12-13 13:53:01,117] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /login/ HTTP/1.1" 200 4317
+[2023-12-13 13:53:01,238] [views.py:111] [views:gtimg] [INFO]- 验证码:U[F6
+[2023-12-13 13:53:01,283] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 1883
+[2023-12-13 13:53:08,002] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4371
+[2023-12-13 13:53:08,215] [views.py:111] [views:gtimg] [INFO]- 验证码:G5MA
+[2023-12-13 13:53:08,303] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2826
+[2023-12-13 13:53:10,374] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4371
+[2023-12-13 13:53:10,481] [views.py:111] [views:gtimg] [INFO]- 验证码:H368
+[2023-12-13 13:53:10,524] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2190
+[2023-12-13 13:53:11,314] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4371
+[2023-12-13 13:53:11,412] [views.py:111] [views:gtimg] [INFO]- 验证码:4RK1
+[2023-12-13 13:53:11,513] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2235
+[2023-12-13 13:53:12,142] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 200 4371
+[2023-12-13 13:53:12,239] [views.py:111] [views:gtimg] [INFO]- 验证码:6U8I
+[2023-12-13 13:53:12,284] [basehttp.py:187] [basehttp:log_message] [INFO]- "GET /api/gtimg/ HTTP/1.1" 200 2277
