@@ -115,7 +115,7 @@ if not os.path.exists(log_path): os.mkdir(log_path)  # 如果不存在这个logs
 BASE_LOG_DIR = os.path.join(BASE_DIR, "log")
 LOGGING = {
     'version': 1,
-    'disable_existing_loggers': False,  # 禁用已经存在的logger实例
+    'disable_existing_loggers': True,  # 禁用已经存在的logger实例
     # 日志文件格式
     'formatters': {
         # 详细的日志格式
