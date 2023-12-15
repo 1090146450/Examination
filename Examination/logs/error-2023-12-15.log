@@ -1,0 +1,12 @@
+[2023-12-15 16:03:52,744] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\baiduwangpan\python_virtualenv\python_vx\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\baiduwangpan\python\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "D:\02_Program\04_Examination\Examination\StudentExamination\views.py", line 222, in add_index
+    by = dict(str(by))
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+[2023-12-15 16:03:52,776] [basehttp.py:187] [basehttp:log_message] [ERROR]- "POST /api/addmain/ HTTP/1.1" 500 145

@@ -213,18 +213,15 @@ field = {"pid": 1, "pdName": "huawei", "purchasePlatform": 0, "buyDate": "2021.1
 def add_index(request):
     """添加页面"""
     if request.method == "POST":
-        by = request.body.decode("utf-8")
+        plat = {}
         for i in ["pid", "pdName", "purchasePlatform",
                   "buyDate", "goonDate", "expectDate",
                   "price", "sellprice", "purchaseState", "kddh", ]:
-            if i not in by:
+            if not request.POST.get(i):
                 return JsonResponse({"status": 200, "error": f"缺少参数{i}"})
-        logger.info(str(by))
-        try:
-            plat = json.loads(by)
-        except Exception as e:
-            logger.info(str(e))
-            return JsonResponse({"status": 200, "error": f"{e}"})
+            else:
+                plat[i] = request.POST.get(i)
+        logger.info(plat)
         cf = check_field(plat)
         if cf["status"] == 201:
             return JsonResponse(cf)
@@ -244,7 +241,7 @@ def add_index(request):
                 return JsonResponse({"status": 200, "data": "数据添加成功"})
             except Exception as e:
                 transaction.set_rollback(True)
-                return JsonResponse({"status": 201, "error": f"{str(e)}"})
+                return JsonResponse({"status": 201, "error": f"添加失败:{str(e)}"})
         else:
             return JsonResponse({"status": 201, "error": "购买名称或者编号已存在"})
     else:
@@ -330,13 +327,15 @@ def get_OneLogistic(request):
 def updata_information(request):
     """更改详情数据"""
     if request.method == "POST":
-        by = request.body.decode("utf-8")
+        plat = {}
         for i in ["pid", "pdName", "purchasePlatform",
                   "buyDate", "goonDate", "expectDate",
                   "price", "sellprice", "purchaseState", "kddh", ]:
-            if i not in by:
+            if not request.POST.get(i):
                 return JsonResponse({"status": 200, "error": f"缺少参数{i}"})
-        plat = json.loads(by)
+            else:
+                plat[i] = request.POST.get(i)
+        logger.info(plat)
         cf = check_field(plat)
         if cf["status"] == 201:
             return JsonResponse(cf)
