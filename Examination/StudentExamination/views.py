@@ -219,8 +219,12 @@ def add_index(request):
                   "price", "sellprice", "purchaseState", "kddh", ]:
             if i not in by:
                 return JsonResponse({"status": 200, "error": f"缺少参数{i}"})
-        print(by)
-        plat = json.loads(by)
+        logger.info(str(by))
+        try:
+            plat = json.loads(by)
+        except Exception as e:
+            logger.info(str(e))
+            return JsonResponse({"status": 200, "error": f"{e}"})
         cf = check_field(plat)
         if cf["status"] == 201:
             return JsonResponse(cf)

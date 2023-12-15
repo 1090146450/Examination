@@ -45,7 +45,7 @@ def get_kd(dh):
 def check_field(field):
     """校验字段"""
     re_dic = {"status": 201, "error": "无法处理该请求"}
-    re1 = re.compile(r"^\d{5,20}$").fullmatch(str(field["pid"]))
+    re1 = re.compile(r"^\d{1,200}$").fullmatch(str(field["pid"]))
     if re1:
         re_dic["error"] = "pid字段格式错误"
         return re_dic
