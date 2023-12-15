@@ -1,0 +1,191 @@
+[2023-12-15 15:40:03,513] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-15 15:40:08,242] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": 33,
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 15:40:08,260] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 49
+[2023-12-15 15:40:41,620] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-12-15 15:40:45,199] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-15 15:40:48,303] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": 33,
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 15:40:48,324] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 49
+[2023-12-15 15:41:42,058] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-12-15 15:41:43,095] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-15 15:41:48,176] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": 33,
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 15:41:48,198] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 49
+[2023-12-15 15:42:07,264] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-12-15 15:42:08,202] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-15 15:42:21,041] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": 33,
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 15:42:21,108] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 279
+[2023-12-15 15:42:28,790] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": 33,
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 15:42:29,051] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 49
+[2023-12-15 15:42:41,218] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": "123",
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 15:42:41,468] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 49
+[2023-12-15 15:42:48,903] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": 234,
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 15:42:49,147] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 49
+[2023-12-15 15:42:57,949] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-12-15 15:42:58,856] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-15 15:43:26,188] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": "a",
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 15:43:26,446] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 49
+[2023-12-15 15:43:29,110] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": "a",
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 15:43:29,349] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 49
+[2023-12-15 15:43:39,220] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": "a",
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 15:43:39,458] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 49
+[2023-12-15 15:43:52,758] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-12-15 15:43:53,634] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-15 15:43:56,241] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": "a",
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 15:43:56,261] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 49
+[2023-12-15 15:44:02,193] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": "000",
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 15:44:02,452] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 49
