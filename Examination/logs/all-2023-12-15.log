@@ -322,4 +322,210 @@ ValueError: dictionary update sequence element #0 has length 1; 2 is required
 
 
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 >>>>>>> 197443f486f729c210d6458820d0021f928ed937
+=======
+[2023-12-15 07:47:45,890] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": 33,
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 07:48:27,569] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": 33,
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+    
+
+
+[2023-12-15 07:48:32,889] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": 33,
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+        
+
+
+[2023-12-15 07:48:39,281] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": 33,
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }   
+
+
+[2023-12-15 07:48:54,343] [views.py:222] [views:add_index] [INFO]- {
+        "id": 1,
+        "pid": 89,
+        "pdName": "华为mete60P1",
+        "purchasePlatform": 2,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+[2023-12-15 07:48:54,343] [views.py:226] [views:add_index] [INFO]- Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-15 07:49:02,478] [views.py:222] [views:add_index] [INFO]- {
+        "id": 1,
+        "pid": 89,
+        "pdName": "华为mete60P1",
+        "purchasePlatform": 2,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+[2023-12-15 07:49:02,478] [views.py:226] [views:add_index] [INFO]- Expecting property name enclosed in double quotes: line 2 column 1 (char 3)
+[2023-12-15 07:49:18,284] [views.py:222] [views:add_index] [INFO]- {
+"id": 1,
+"pid": 89,
+"pdName": "华为mete60P1",
+        "purchasePlatform": 2,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+[2023-12-15 07:49:18,284] [views.py:226] [views:add_index] [INFO]- Expecting value: line 2 column 6 (char 8)
+[2023-12-15 07:49:42,368] [views.py:222] [views:add_index] [INFO]- {
+"id": 1,
+"pid": 89,
+"pdName": "华为mete60P1",
+"purchasePlatform": 2,
+"buyDate": "2023.11.21 16:49",
+"goonDate": "2023.11.09 16:49",
+"expectDate": "2023.11.25 16:49",
+"price": 20999,
+"sellprice": 2299,
+"kddh": "JDX021297721039",
+"purchaseState":1
+    }
+[2023-12-15 07:49:42,368] [views.py:226] [views:add_index] [INFO]- Expecting value: line 2 column 6 (char 8)
+[2023-12-15 07:50:01,948] [views.py:222] [views:add_index] [INFO]- {
+"id": 1,
+"pid": 89,
+"pdName": "华为mete60P1",
+"purchasePlatform": 2,
+"buyDate":"2023.11.21 16:49",
+"goonDate": "2023.11.09 16:49",
+"expectDate": "2023.11.25 16:49",
+"price": 20999,
+"sellprice": 2299,
+"kddh": "JDX021297721039",
+"purchaseState":1
+    }
+[2023-12-15 07:50:01,948] [views.py:226] [views:add_index] [INFO]- Expecting value: line 2 column 6 (char 8)
+[2023-12-15 07:50:13,846] [views.py:222] [views:add_index] [INFO]- {
+"id": 1,
+"pid": 89,
+"pdName": "华为mete60P1",
+"purchasePlatform": 2,
+"buyDate":"2023.11.21 16:49",
+"goonDate": "2023.11.09 16:49",
+"expectDate": "2023.11.25 16:49",
+"price": 20999,
+"sellprice": 2299,
+"kddh": "JDX021297721039",
+"purchaseState":1
+    }
+[2023-12-15 07:50:13,847] [views.py:226] [views:add_index] [INFO]- Expecting value: line 2 column 6 (char 8)
+[2023-12-15 07:51:06,896] [views.py:222] [views:add_index] [INFO]- {
+	"id":  1,
+	"pid":  89,
+	"pdName":   "华为mete60P1",
+	"purchasePlatform":  2,
+	"buyDate": "2023.11.21 16:49",
+	"goonDate":   "2023.11.09 16:49",
+	"expectDate":   "2023.11.25 16:49",
+	"price":  20999,
+	"sellprice":  2299,
+	"kddh":   "JDX021297721039",
+	"purchaseState": 1    
+}
+[2023-12-15 07:51:06,896] [views.py:226] [views:add_index] [INFO]- Expecting value: line 2 column 8 (char 10)
+[2023-12-15 07:51:17,192] [views.py:222] [views:add_index] [INFO]- {
+	"id":  1,
+	"pid":  89,
+	"pdName":   "华为mete60P1",
+	"purchasePlatform":  2,
+	"buyDate": "2023.11.21 16:49",
+	"goonDate":   "2023.11.09 16:49",
+	"expectDate":   "2023.11.25 16:49",
+	"price":  20999,
+	"sellprice":  2299,
+	"kddh":   "JDX021297721039",
+	"purchaseState": 1    
+}
+[2023-12-15 07:51:17,193] [views.py:226] [views:add_index] [INFO]- Expecting value: line 2 column 8 (char 10)
+[2023-12-15 07:52:26,743] [views.py:222] [views:add_index] [INFO]- {"id":  1,"pid":  89,"pdName":   "华为mete60P1","purchasePlatform":  2,"buyDate": "2023.11.21 16:49","goonDate":   "2023.11.09 16:49","expectDate":   "2023.11.25 16:49","price":  20999,"sellprice":  2299,"kddh":   "JDX021297721039","purchaseState": 1    }
+[2023-12-15 07:52:26,744] [views.py:226] [views:add_index] [INFO]- Expecting value: line 1 column 8 (char 7)
+[2023-12-15 07:52:33,147] [views.py:222] [views:add_index] [INFO]- {"id":  1,"pid":  89,"pdName":   "华为mete60P1","purchasePlatform":  2,"buyDate": "2023.11.21 16:49","goonDate":   "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":  20999,"sellprice":  2299,"kddh":   "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:52:33,147] [views.py:226] [views:add_index] [INFO]- Expecting value: line 1 column 8 (char 7)
+[2023-12-15 07:52:41,447] [views.py:222] [views:add_index] [INFO]- {"id":  1,"pid":  89,"pdName":   "huamete60P1","purchasePlatform":  2,"buyDate": "2023.11.21 16:49","goonDate":   "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":  20999,"sellprice":  2299,"kddh":   "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:52:41,447] [views.py:226] [views:add_index] [INFO]- Expecting value: line 1 column 8 (char 7)
+[2023-12-15 07:52:43,811] [views.py:222] [views:add_index] [INFO]- {"id":  1,"pid":  89,"pdName":   "huamete60P1","purchasePlatform":  2,"buyDate": "2023.11.21 16:49","goonDate":   "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":  20999,"sellprice":  2299,"kddh":   "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:52:43,811] [views.py:226] [views:add_index] [INFO]- Expecting value: line 1 column 8 (char 7)
+[2023-12-15 07:53:48,251] [views.py:222] [views:add_index] [INFO]- {"id": 1,"pid":  89,"pdName":   "huamete60P1","purchasePlatform":  2,"buyDate": "2023.11.21 16:49","goonDate":   "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":  20999,"sellprice":  2299,"kddh":   "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:53:48,251] [views.py:226] [views:add_index] [INFO]- Expecting value: line 1 column 7 (char 6)
+[2023-12-15 07:53:53,713] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":  89,"pdName":   "huamete60P1","purchasePlatform":  2,"buyDate": "2023.11.21 16:49","goonDate":   "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":  20999,"sellprice":  2299,"kddh":   "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:53:53,713] [views.py:226] [views:add_index] [INFO]- Expecting value: line 1 column 16 (char 15)
+[2023-12-15 07:54:01,822] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":  89,"pdName":   "huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate":   "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":  20999,"sellprice":  2299,"kddh":   "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:54:01,822] [views.py:226] [views:add_index] [INFO]- Expecting value: line 1 column 16 (char 15)
+[2023-12-15 07:54:06,340] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":  89,"pdName":   "huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate":   "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":  20999,"sellprice":  2299,"kddh":   "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:54:06,341] [views.py:226] [views:add_index] [INFO]- Expecting value: line 1 column 16 (char 15)
+[2023-12-15 07:54:17,257] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":   "huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate":   "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":  20999,"sellprice":  2299,"kddh":   "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:54:17,257] [views.py:226] [views:add_index] [INFO]- Expecting value: line 1 column 28 (char 27)
+[2023-12-15 07:54:24,260] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":"huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate":   "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":  20999,"sellprice":  2299,"kddh":   "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:54:24,261] [views.py:226] [views:add_index] [INFO]- Expecting value: line 1 column 104 (char 103)
+[2023-12-15 07:54:29,052] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":"huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate":   "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":20999,"sellprice":  2299,"kddh":   "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:54:29,052] [views.py:226] [views:add_index] [INFO]- Expecting value: line 1 column 104 (char 103)
+[2023-12-15 07:54:31,579] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":"huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate":   "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":20999,"sellprice":2299,"kddh":   "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:54:31,579] [views.py:226] [views:add_index] [INFO]- Expecting value: line 1 column 104 (char 103)
+[2023-12-15 07:54:37,118] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":"huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate": "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":20999,"sellprice":2299,"kddh":   "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:54:37,118] [views.py:226] [views:add_index] [INFO]- Expecting value: line 1 column 194 (char 193)
+[2023-12-15 07:54:40,025] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":"huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate": "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":20999,"sellprice":2299,"kddh": "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:54:52,664] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":"huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate": "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":20999,"sellprice":2299,"kddh": "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:54:56,400] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":"huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate": "2023.11.09 16:49","expectDate":"2023.11.25 16:49","price":20999,"sellprice":2299,"kddh": "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:55:07,481] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":"huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate": "2023.1.1 11:11","expectDate":"2023.11.25 16:49","price":20999,"sellprice":2299,"kddh": "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:55:15,880] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":"huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate": "2023.1.1 11:11","expectDate":"2023.1.1 11:11","price":20999,"sellprice":2299,"kddh": "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:55:28,052] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":"huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate": "2023.11.21 16:49","expectDate":"2023.1.1 11:11","price":20999,"sellprice":2299,"kddh": "JDX021297721039","purchaseState": 1}
+[2023-12-15 07:55:39,599] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":"huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate": "2023.11.21 16:49","expectDate":"2023.11.21 16:49","price":20999,"sellprice":2299,"kddh": "JDX021297721039","purchaseState": 1}
+>>>>>>> Stashed changes
