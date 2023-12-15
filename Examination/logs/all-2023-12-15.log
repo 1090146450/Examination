@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [2023-12-15 15:40:03,513] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
 [2023-12-15 15:40:08,242] [views.py:222] [views:add_index] [INFO]- {"id":2,
         "pid": 33,
@@ -189,3 +190,33 @@
 
 
 [2023-12-15 15:44:02,452] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 49
+=======
+[2023-12-15 07:38:14,364] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": 3,
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+[2023-12-15 07:38:21,329] [views.py:222] [views:add_index] [INFO]- {"id":2,
+        "pid": 33,
+        "pdName": "华为mete60Pro1",
+        "purchasePlatform": 3,
+        "buyDate": "2023.11.21 16:49",
+        "goonDate": "2023.11.09 16:49",
+        "expectDate": "2023.11.25 16:49",
+        "price": 20999,
+        "sellprice": 2299,
+        "kddh": "JDX021297721039",
+        "purchaseState":1
+    }
+
+
+>>>>>>> Stashed changes
