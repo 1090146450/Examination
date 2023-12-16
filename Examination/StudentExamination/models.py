@@ -47,7 +47,7 @@ class ProductDetails(models.Model):
     expectDate = models.CharField(max_length=100,verbose_name="预期到达日期")
     price = models.SmallIntegerField(verbose_name="购买价格")
     sellPrice = models.SmallIntegerField(verbose_name="出售价格")
-    kddh = models.CharField(max_length=100,verbose_name="快递单号")
+    kddh = models.CharField(max_length=100,verbose_name="快递单号",unique=True,blank=True,null=True)
     # 利润
     stateOpen = 0
     stateEnd = 1

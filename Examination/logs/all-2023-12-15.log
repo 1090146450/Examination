@@ -529,3 +529,63 @@ ValueError: dictionary update sequence element #0 has length 1; 2 is required
 [2023-12-15 07:55:28,052] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":"huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate": "2023.11.21 16:49","expectDate":"2023.1.1 11:11","price":20999,"sellprice":2299,"kddh": "JDX021297721039","purchaseState": 1}
 [2023-12-15 07:55:39,599] [views.py:222] [views:add_index] [INFO]- {"id":1,"pid":89,"pdName":"huamete60P1","purchasePlatform":2,"buyDate": "2023.11.21 16:49","goonDate": "2023.11.21 16:49","expectDate":"2023.11.21 16:49","price":20999,"sellprice":2299,"kddh": "JDX021297721039","purchaseState": 1}
 >>>>>>> Stashed changes
+[2023-12-15 08:47:26,098] [views.py:224] [views:add_index] [INFO]- {'pid': '11', 'pdName': '222', 'purchasePlatform': '2', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '1', 'kddh': 'YT2505682327311'}
+[2023-12-15 08:47:32,453] [views.py:224] [views:add_index] [INFO]- {'pid': 'a', 'pdName': '222c', 'purchasePlatform': '2', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '1', 'kddh': 'YT2505682327311'}
+[2023-12-15 08:47:35,920] [views.py:224] [views:add_index] [INFO]- {'pid': '123', 'pdName': '222c', 'purchasePlatform': '2', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '1', 'kddh': 'YT2505682327311'}
+[2023-12-15 08:47:45,109] [views.py:224] [views:add_index] [INFO]- {'pid': '123', 'pdName': '222c', 'purchasePlatform': '2', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': 'a', 'kddh': 'YT2505682327311'}
+[2023-12-15 08:47:45,119] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/addmain/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 225, in add_index
+    cf = check_field(plat)
+  File "./StudentExamination/forms/ThirdParty.py", line 76, in check_field
+    if int(field["purchaseState"]) not in [0, 1]:
+ValueError: invalid literal for int() with base 10: 'a'
+[2023-12-16 07:14:00,358] [views.py:338] [views:updata_information] [INFO]- {'pid': '11', 'pdName': '22200', 'purchasePlatform': '京东', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '已结算', 'kddh': 'YT2505682327311'}
+[2023-12-16 07:14:00,360] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 339, in updata_information
+    cf = check_field(plat)
+  File "./StudentExamination/forms/ThirdParty.py", line 58, in check_field
+    if int(field["purchasePlatform"]) not in [0, 1, 2, 3]:
+ValueError: invalid literal for int() with base 10: '京东'
+[2023-12-16 07:15:56,271] [views.py:338] [views:updata_information] [INFO]- {'pid': '11', 'pdName': '222', 'purchasePlatform': '0', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '已结算', 'kddh': 'YT2505682327311'}
+[2023-12-16 07:15:56,272] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 339, in updata_information
+    cf = check_field(plat)
+  File "./StudentExamination/forms/ThirdParty.py", line 76, in check_field
+    if int(field["purchaseState"]) not in [0, 1]:
+ValueError: invalid literal for int() with base 10: '已结算'
+[2023-12-16 07:16:52,405] [views.py:338] [views:updata_information] [INFO]- {'pid': '11', 'pdName': '222', 'purchasePlatform': '0', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '已结算', 'kddh': 'YT2505682327311'}
+[2023-12-16 07:16:52,415] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /api/updata/
+Traceback (most recent call last):
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/an/python_examin/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "./StudentExamination/views.py", line 339, in updata_information
+    cf = check_field(plat)
+  File "./StudentExamination/forms/ThirdParty.py", line 76, in check_field
+    if int(field["purchaseState"]) not in [0, 1]:
+ValueError: invalid literal for int() with base 10: '已结算'
+[2023-12-16 07:17:03,153] [views.py:338] [views:updata_information] [INFO]- {'pid': '11', 'pdName': '222', 'purchasePlatform': '0', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '0', 'kddh': 'YT2505682327311'}
