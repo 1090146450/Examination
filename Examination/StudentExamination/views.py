@@ -328,6 +328,7 @@ def updata_information(request):
     """更改详情数据"""
     if request.method == "POST":
         plat = {}
+        logger.info(str(request.POST))
         for i in ["pid", "pdName", "purchasePlatform",
                   "buyDate", "goonDate", "expectDate",
                   "price", "sellprice", "purchaseState", "kddh", ]:
