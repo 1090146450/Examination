@@ -18,19 +18,19 @@ def get_kd(dh):
         }
     ]
     # 注册
-    request = requests.post(url=f"https://api.17track.net/track/v2.2/register", headers=params, json=data)
+    # request = requests.post(url=f"https://api.17track.net/track/v2.2/register", headers=params, json=data)
     # 获取注册列表
     # request = requests.request("POST", "https://api.17track.net/track/v2/gettracklist", headers=params)
     # 进行推送
     # request = requests.post(url="https://api.17track.net/track/v2.2/push",headers=params,json=data)
     # 获取详情
-    # request = requests.post(url="https://api.17track.net/track/v2.2/gettrackinfo", json=data, headers=params)
+    request = requests.post(url="https://api.17track.net/track/v2.2/gettrackinfo", json=data, headers=params)
     # print(request.text)
     # request = requests.get(url="https://tools.mgtv100.com/external/v1/logistics/query?no=JDX021030924355")
     return json.loads(request.text)
 
 
-print(get_kd("9856768075519"))
+print(get_kd("JDX021566405622"))
 
 
 dh = "9856768075519"
@@ -73,4 +73,3 @@ def get_kd(dh):
         return None
 
 
-print(get_kd(dh))

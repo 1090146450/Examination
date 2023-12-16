@@ -216,7 +216,7 @@ def add_index(request):
         plat = {}
         for i in ["pid", "pdName", "purchasePlatform",
                   "buyDate", "goonDate", "expectDate",
-                  "price", "sellprice", "purchaseState", "kddh", ]:
+                  "price", "sellprice", "purchaseState", "kddh"]:
             if not request.POST.get(i):
                 return JsonResponse({"status": 200, "error": f"缺少参数{i}"})
             else:
@@ -228,9 +228,12 @@ def add_index(request):
         if not ProductDetails.objects.filter(pid=plat["pid"]).exists() and not ProductDetails.objects.filter(
                 pdName=plat["pdName"]).exists():
             try:
-                kd = check_Logistic(plat["kddh"])
-                if kd["status"] == 201:
-                    return JsonResponse(kd)
+                if plat["kddh"] == "1":
+                    plat["kddh"] = None
+                else:
+                    kd = check_Logistic(plat["kddh"])
+                    if kd["status"] == 201:
+                        return JsonResponse(kd)
                 ProductDetails(pid=plat["pid"], pdName=plat["pdName"],
                                purchasePlatform=plat["purchasePlatform"]
                                , buyDate=plat["buyDate"], goonDate=plat["goonDate"],
@@ -241,6 +244,7 @@ def add_index(request):
                 return JsonResponse({"status": 200, "data": "数据添加成功"})
             except Exception as e:
                 transaction.set_rollback(True)
+                logger.info(str(e))
                 return JsonResponse({"status": 201, "error": f"添加失败:{str(e)}"})
         else:
             return JsonResponse({"status": 201, "error": "购买名称或者编号已存在"})
