@@ -244,7 +244,7 @@ def add_index(request):
                 return JsonResponse({"status": 200, "data": "数据添加成功"})
             except Exception as e:
                 transaction.set_rollback(True)
-                logger.info(str(e))
+                logger.info(f"添加失败:{str(e)}")
                 return JsonResponse({"status": 201, "error": f"添加失败:{str(e)}"})
         else:
             return JsonResponse({"status": 201, "error": "购买名称或者编号已存在"})

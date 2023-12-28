@@ -1,0 +1,42 @@
+[2023-12-28 10:14:40,216] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-28 10:14:43,335] [views.py:224] [views:add_index] [INFO]- {'pid': '1703685252853', 'pdName': '333', 'purchasePlatform': '0', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '0', 'kddh': '222222'}
+[2023-12-28 10:14:43,661] [views.py:247] [views:add_index] [INFO]- ''
+[2023-12-28 10:14:43,679] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 43
+[2023-12-28 10:16:43,879] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-12-28 10:16:44,799] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-28 10:17:40,434] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-12-28 10:17:41,432] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-28 10:17:45,447] [views.py:224] [views:add_index] [INFO]- {'pid': '1703685252853', 'pdName': '333', 'purchasePlatform': '0', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '0', 'kddh': '222222'}
+[2023-12-28 10:17:45,761] [views.py:248] [views:add_index] [INFO]- 添加失败:''
+[2023-12-28 10:17:45,777] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 43
+[2023-12-28 10:17:59,485] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\views.py changed, reloading.
+[2023-12-28 10:18:00,630] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-28 10:19:40,878] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-12-28 10:19:41,998] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-28 10:19:47,034] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-12-28 10:19:48,205] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-28 10:20:02,144] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-12-28 10:20:03,164] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-28 10:20:05,794] [views.py:224] [views:add_index] [INFO]- {'pid': '1703685252853', 'pdName': '333', 'purchasePlatform': '0', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '0', 'kddh': '222222'}
+[2023-12-28 10:20:06,143] [views.py:247] [views:add_index] [INFO]- 添加失败:''
+[2023-12-28 10:20:06,160] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 43
+[2023-12-28 10:21:34,080] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-12-28 10:21:35,114] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-28 10:21:43,326] [views.py:224] [views:add_index] [INFO]- {'pid': '1703685252853', 'pdName': '333', 'purchasePlatform': '0', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '0', 'kddh': '222222'}
+[2023-12-28 10:21:43,680] [views.py:247] [views:add_index] [INFO]- 添加失败:''
+[2023-12-28 10:21:43,806] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 43
+[2023-12-28 10:22:00,928] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-12-28 10:22:02,003] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-28 10:22:06,116] [views.py:224] [views:add_index] [INFO]- {'pid': '1703685252853', 'pdName': '333', 'purchasePlatform': '0', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '0', 'kddh': '222222'}
+[2023-12-28 10:22:06,429] [views.py:247] [views:add_index] [INFO]- 添加失败:''
+[2023-12-28 10:22:06,447] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 43
+[2023-12-28 10:22:38,395] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-12-28 10:22:39,390] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-28 10:22:40,013] [views.py:224] [views:add_index] [INFO]- {'pid': '1703685252853', 'pdName': '333', 'purchasePlatform': '0', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '0', 'kddh': '222222'}
+[2023-12-28 10:22:40,287] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 67
+[2023-12-28 10:22:43,332] [views.py:224] [views:add_index] [INFO]- {'pid': '1703685252853', 'pdName': '333', 'purchasePlatform': '0', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '0', 'kddh': '222222'}
+[2023-12-28 10:22:43,667] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 67
+[2023-12-28 10:25:26,912] [autoreload.py:266] [autoreload:trigger_reload] [INFO]- D:\02_Program\04_Examination\Examination\StudentExamination\forms\ThirdParty.py changed, reloading.
+[2023-12-28 10:25:28,154] [autoreload.py:677] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2023-12-28 10:30:37,435] [views.py:224] [views:add_index] [INFO]- {'pid': '1703685252853', 'pdName': '333', 'purchasePlatform': '0', 'buyDate': '2023.11.21 16:49', 'goonDate': '2023.11.21 16:49', 'expectDate': '2023.11.21 16:49', 'price': '22231', 'sellprice': '2213', 'purchaseState': '0', 'kddh': '1'}
+[2023-12-28 10:30:37,513] [basehttp.py:187] [basehttp:log_message] [INFO]- "POST /api/addmain/ HTTP/1.1" 200 45

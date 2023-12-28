@@ -37,7 +37,9 @@ def get_kd(dh):
             url = f"https://alayn.baidu.com/express/appdetail/get_com?num={dh}&cb=jsonp_{str(timestamp).replace('.', '_')}"
             request = requests.get(url=url, headers=params)
             gs = re1.findall(request.text)[0]
-            return kdbm[gs]
+            if gs:
+                return kdbm[gs]
+            return None
     else:
         return None
 
