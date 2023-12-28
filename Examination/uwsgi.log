@@ -3438,3 +3438,45 @@ spawned uWSGI worker 4 (pid: 24466, cores: 2)
 [pid: 24465|app: 0|req: 7/74] 183.136.225.29 () {34 vars in 485 bytes} [Thu Dec 28 01:49:00 2023] GET / => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
 [pid: 24462|app: 0|req: 3/75] 183.136.225.29 () {34 vars in 497 bytes} [Thu Dec 28 01:49:00 2023] GET /login/ => generated 4497 bytes in 2 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
 [pid: 24466|app: 0|req: 47/76] 183.136.225.29 () {36 vars in 548 bytes} [Thu Dec 28 01:49:00 2023] GET /favicon.ico => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 24465|app: 0|req: 8/77] 198.235.24.195 () {30 vars in 605 bytes} [Thu Dec 28 02:39:00 2023] GET / => generated 0 bytes in 0 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 1)
+[pid: 24462|app: 0|req: 4/78] 198.235.24.195 () {32 vars in 657 bytes} [Thu Dec 28 02:39:01 2023] GET /login/ => generated 4497 bytes in 2 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+[pid: 24466|app: 0|req: 48/79] 198.12.89.147 () {32 vars in 400 bytes} [Thu Dec 28 03:40:48 2023] GET /mbilling/locale.js => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 1)
+[pid: 24463|app: 0|req: 20/80] 198.12.89.147 () {32 vars in 382 bytes} [Thu Dec 28 03:40:48 2023] GET /locale.js => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 1)
+[pid: 24463|app: 0|req: 21/81] 221.11.5.62 () {44 vars in 729 bytes} [Thu Dec 28 04:32:44 2023] HEAD / => generated 0 bytes in 0 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 24465|app: 0|req: 9/82] 221.11.5.62 () {44 vars in 741 bytes} [Thu Dec 28 04:32:44 2023] HEAD /login/ => generated 4551 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+[pid: 24463|app: 0|req: 22/83] 140.224.64.177 () {44 vars in 745 bytes} [Thu Dec 28 05:05:16 2023] GET / => generated 0 bytes in 0 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 1)
+[pid: 24465|app: 0|req: 10/84] 140.224.64.177 () {44 vars in 757 bytes} [Thu Dec 28 05:05:16 2023] GET /login/ => generated 4497 bytes in 2 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+[pid: 24466|app: 0|req: 49/85] 140.224.64.177 () {44 vars in 752 bytes} [Thu Dec 28 05:05:16 2023] GET / => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 24466|app: 0|req: 50/86] 78.108.177.52 () {30 vars in 401 bytes} [Thu Dec 28 05:19:37 2023] GET / => generated 0 bytes in 0 msecs (HTTP/1.0 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 24466|app: 0|req: 51/87] 47.119.179.68 () {32 vars in 378 bytes} [Thu Dec 28 05:40:42 2023] GET /.env => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Dec 28 13:47:45 2023] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 28 February 2023 12:04:58
+os: Linux-3.10.0-1160.83.1.el7.x86_64 #1 SMP Wed Jan 25 16:41:43 UTC 2023
+nodename: VM-8-15-centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/an/Examin/Examination
+writing pidfile to uwsgi.pid
+detected binary path: /home/an/python_examin/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/an/Examin/Examination
+your processes number limit is 7907
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.1 (default, Feb 17 2023, 13:53:38)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x26f6bb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
