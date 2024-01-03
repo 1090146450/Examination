@@ -1,3 +1,4 @@
+# !coding=utf-8
 import json
 import logging
 from io import BytesIO
@@ -5,13 +6,14 @@ from django.db import transaction
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 from StudentExamination.models import admin, test_paper, teacher, Express_delivry, ProductDetails
-from StudentExamination.forms.ThirdParty import get_kd, check_field, check_Logistic
+from StudentExamination.forms.ThirdParty import get_kd, check_field, check_Logistic, getDimension, getMapHtml
 from StudentExamination.forms.StudentForm import RegisterModelForm, loginModelForm
 from StudentExamination.forms.randimg import check_code
 from StudentExamination.forms.MD5 import md5
-import requests, datetime, re
+import requests, re
 
-logger =logging.getLogger("django")
+logger = logging.getLogger("django")
+
 
 # Create your views here.
 def register(request):
@@ -414,4 +416,39 @@ def deleteCommodity(request):
         else:
             return JsonResponse({"status": 201, "error": "缺少参数pid"})
     else:
-        return JsonResponse({"status": 201, "error": "不支持的请求方法"})
+        return JsonResponse({"status": 502, "error": "不支持的请求方法"})
+
+
+def getExpressDeliveryDetails(request):
+    if request.method == "GET":
+        kddh = request.GET.get("kddh")
+        if not kddh:
+            return JsonResponse({"status": 201, "error": "快递单号为空"})
+        EDD = Express_delivry.objects.filter(dh=kddh)
+        if EDD.exists():
+            reEDD = EDD.values("expre_data")
+            reEDD["status"] = 200
+            return JsonResponse(reEDD)
+        return JsonResponse({"status": 201, "error": "快递单号不存在"})
+    else:
+        return JsonResponse({"status": 502, "error": "不支持的请求方法"})
+
+
+def abctest(request):
+    logger.info("123")
+    if request.method == "GET":
+        kddh = request.GET.get("kddh")
+        if not kddh:
+            return JsonResponse({"status": 201, "error": "快递单号为空"})
+        EDD = Express_delivry.objects.filter(dh=kddh)
+        if EDD.exists():
+            kddate = EDD.values("expre_data")[0]["expre_data"]
+            kdhtml = getMapHtml(kddate)
+            if "失败" in kdhtml:
+                return JsonResponse({"status": 201, "error": f"{kdhtml}"})
+            else:
+                # return JsonResponse({"status": 200, "data": kdhtml})
+                return render(request,'tt.html',{"chart":kdhtml})
+        return JsonResponse({"status": 201, "error": "快递单号不存在"})
+    else:
+        return JsonResponse({"status": 502, "error": "不支持的请求方法?"})

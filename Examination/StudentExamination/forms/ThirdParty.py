@@ -1,6 +1,9 @@
-import requests
+# !coding=utf-8
 import datetime, re
 
+import re
+import plotly.graph_objects as go
+import requests
 from StudentExamination.models import Express_delivry
 
 
@@ -112,3 +115,76 @@ def check_Logistic(dh):
         return {"status": 200, "error": "注册成功"}
     else:
         return {"status": 201, "error": "快递单号错误，自己找找原因"}
+
+
+
+def getDimension(ress):
+    url = "https://restapi.amap.com/v3/geocode/geo?parameters"
+    key = "ff608780d5d18bab2f875a62b9c0c106"
+    params = {
+        "key": key,
+        "address": ress,
+    }
+    re = requests.get(url=url, params=params)
+    re_data = re.json()
+    if re_data["status"] == "1":
+        return re_data["geocodes"][0]["location"].split(",")
+    return f"失败{re_data['infocode']}"
+
+def getMapHtml(kd_date):
+    re_ = re.compile(r"已到达【(.*?)】", re.DOTALL)
+    sampledata = {"lat": [], "lon": [], "dataname": []}
+    kdst = re_.findall(kd_date)
+    print(kdst)
+    for i in kdst:
+        regetDi = getDimension(i)
+        if "失败" not in regetDi:
+            sampledata["lon"].append(regetDi[0])
+            sampledata["lat"].append(regetDi[1])
+            sampledata["dataname"].append(i)
+        else:
+            return regetDi
+    # 创建源数据
+    basemap_layer = [
+        dict(
+            below="traces",
+            sourcetype="raster",
+            sourceattribution="高德地图",
+            source=[
+                "http://wprd01.is.autonavi.com/appmaptile?x={x}&y={y}&z={z}&lang=zh_cn&size=1&scl=1&style=7"
+            ]
+        )
+    ]
+    print(float(sampledata["lat"][0]),float(sampledata["lon"][0]))
+    mapbox_kargs = dict(
+        zoom=9,  # 这里的zoom代表地图瓦片缩放的等级，可以依次+1、-1试一试
+        center=dict(
+            lat=float(sampledata["lat"][0]),  # 这里是设置你的地图的中心点，经纬度要设置好
+            lon=float(sampledata["lon"][0]),
+        ),
+        style="white-bg",
+        layers=basemap_layer,
+    )
+
+    layout_kargs = dict(
+        autosize=False,
+        width=1000/2,  # 这里设置的是输出的图的宽度和长度。
+        height=800/2,
+        margin=dict(
+            r=0, t=38, l=0, b=0, pad=0
+        ),
+    )
+
+    layout = go.Layout(
+        mapbox=mapbox_kargs,
+        **layout_kargs
+    )
+    fig = go.Figure(
+        data=go.Scattermapbox(lat=sampledata["lat"],  # 这里依次传递经纬度给函数
+                              lon=sampledata["lon"],
+                              mode='lines+markers',
+                              text=sampledata["dataname"],
+                              ),
+        layout=layout
+    )
+    return fig.to_html(full_html=False)
