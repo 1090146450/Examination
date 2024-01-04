@@ -351,6 +351,8 @@ def updata_information(request):
                 pdName=plat["pdName"]).exists():
             try:
                 gsdm = get_kd(plat["kddh"])
+                if plat["kddh"] == "1":
+                    gsdm = 0
                 if gsdm:
                     kddh = pid.values("kddh")[0]["kddh"]
                     kdd = Express_delivry.objects.filter(dh=kddh)
@@ -366,6 +368,8 @@ def updata_information(request):
                         }
                     ]
                     requests.post(url=f"https://api.17track.net/track/v2/register", headers=params, json=data)
+                elif gsdm == 0:
+                    pass
                 else:
                     return JsonResponse({"status": 201, "error": "快递单号格式错误"})
                 ProductDetails.objects.filter(pid=plat["pid"]).update(pdName=plat["pdName"],
@@ -448,7 +452,7 @@ def abctest(request):
                 return JsonResponse({"status": 201, "error": f"{kdhtml}"})
             else:
                 # return JsonResponse({"status": 200, "data": kdhtml})
-                return render(request,'tt.html',{"chart":kdhtml})
+                return render(request, 'tt.html', {"chart": kdhtml})
         return JsonResponse({"status": 201, "error": "快递单号不存在"})
     else:
         return JsonResponse({"status": 502, "error": "不支持的请求方法?"})
