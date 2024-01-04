@@ -369,7 +369,7 @@ def updata_information(request):
                     ]
                     requests.post(url=f"https://api.17track.net/track/v2/register", headers=params, json=data)
                 elif gsdm == 0:
-                    pass
+                    plat["kddh"] = None
                 else:
                     return JsonResponse({"status": 201, "error": "快递单号格式错误"})
                 ProductDetails.objects.filter(pid=plat["pid"]).update(pdName=plat["pdName"],
