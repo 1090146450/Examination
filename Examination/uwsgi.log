@@ -4415,3 +4415,28 @@ uwsgi socket 0 bound to TCP address 127.0.0.1:8002 fd 3
 uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 Python version: 3.9.12 (main, Jan 10 2024, 16:02:04)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0xd03f20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xd03f20 pid: 10604 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10604)
+spawned uWSGI worker 1 (pid: 10611, cores: 2)
+spawned uWSGI worker 2 (pid: 10612, cores: 2)
+spawned uWSGI worker 3 (pid: 10614, cores: 2)
+spawned uWSGI worker 4 (pid: 10615, cores: 2)
+[pid: 10615|app: 0|req: 1/1] 111.198.24.76 () {44 vars in 1277 bytes} [Wed Jan 10 08:58:22 2024] GET / => generated 0 bytes in 71 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 10615|app: 0|req: 2/2] 111.198.24.76 () {44 vars in 1289 bytes} [Wed Jan 10 08:58:22 2024] GET /login/ => generated 4356 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+[pid: 10615|app: 0|req: 4/3] 111.198.24.76 () {42 vars in 1208 bytes} [Wed Jan 10 08:58:22 2024] GET /api/gtimg/ => generated 226016 bytes in 20098 msecs (HTTP/1.1 500) 6 headers in 220 bytes (1 switches on core 0)
+[pid: 10612|app: 0|req: 1/4] 111.198.24.76 () {42 vars in 1249 bytes} [Wed Jan 10 08:58:40 2024] GET /api/gtimg/?r=0.5275132121698531 => generated 226462 bytes in 20166 msecs (HTTP/1.1 500) 6 headers in 220 bytes (1 switches on core 0)
+[pid: 10615|app: 0|req: 4/5] 111.198.24.76 () {42 vars in 1251 bytes} [Wed Jan 10 08:58:40 2024] GET /api/gtimg/?r=0.45027207039607564 => generated 226470 bytes in 20086 msecs (HTTP/1.1 500) 6 headers in 220 bytes (1 switches on core 1)
+[pid: 10611|app: 0|req: 1/6] 111.198.24.76 () {42 vars in 1251 bytes} [Wed Jan 10 08:58:41 2024] GET /api/gtimg/?r=0.47459036726041814 => generated 226469 bytes in 20170 msecs (HTTP/1.1 500) 6 headers in 220 bytes (1 switches on core 0)
+[pid: 10615|app: 0|req: 5/7] 111.198.24.76 () {42 vars in 1210 bytes} [Wed Jan 10 08:59:01 2024] GET /favicon.ico => generated 0 bytes in 0 msecs (HTTP/1.1 302) 8 headers in 249 bytes (1 switches on core 0)
+[pid: 10615|app: 0|req: 6/8] 111.198.24.76 () {42 vars in 1200 bytes} [Wed Jan 10 08:59:01 2024] GET /login/ => generated 4356 bytes in 2 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
